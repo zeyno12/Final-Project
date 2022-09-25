@@ -1,0 +1,68 @@
+#Main_Wrapper {
+  .Page_Logo {
+    position: fixed;
+    top: 24px;
+    left: 36px;
+    right: 0;
+    z-index: +3;
+    img {
+      object-fit: cover;
+      width: 77px;
+    }
+  }
+  nav {
+    .xidmet_box {
+      .main_a {
+        a {
+          text-decoration: none;
+        }
+        overflow: hidden;
+        width: 210px !important;
+        height: 100px;
+        text-decoration: none;
+        background: rgb(15, 199, 240);
+        background: linear-gradient(
+          90deg,
+          rgba(15, 199, 240, 1) 10%,
+          rgba(20, 157, 226, 1) 75%
+        );
+        padding: 25px 10px;
+        box-shadow: 3px 11px 41px 0px lightslategrey;
+        border-radius: 16px;
+        .xidmet_item {
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          color: white;
+          position: relative;
+          .circle {
+            &::before {
+              content: "";
+              width: 94px;
+              top: -53px;
+              right: -46px;
+              height: 98px;
+              background: #0fc8f0;
+              position: absolute;
+              border-radius: 50%;
+              opacity: 0.6;
+            }
+          }
+          .xidmet_word {
+            z-index: 999;
+            p {
+              font-weight: 700;
+              margin: 0;
+            }
+          }
+          .xidmet_icon {
+            img {
+              object-fit: cover;
+              width: 80%;
+            }
+          }
+        }
+      }
+    }
+  }
+}

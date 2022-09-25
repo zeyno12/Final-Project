@@ -1,0 +1,23 @@
+{
+  "name": "final-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zeyno12/Final-Project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zeyno12/Final-Project/issues"
+  },
+  "homepage": "https://github.com/zeyno12/Final-Project#readme",
+  "dependencies": {
+    "bootstrap": "^5.2.1"
+  }
+}
