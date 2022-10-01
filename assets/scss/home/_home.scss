@@ -163,18 +163,104 @@
       gap: 30px;
       .search {
         position: absolute;
-        top: 0;
-        font-size: 25px;
-        right: 0;
+        top: 20px;
+        font-size: 20px;
+        right: 32%;
         z-index: 999;
+        color: #fff;
+        background-color: #0fc8f0;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
       }
       .phone {
         position: absolute;
-        top: 0;
-
+        top: 20px;
         font-size: 20px;
-        right: 0;
+        right: 20%;
         z-index: 999;
+        .phone_text {
+          p {
+            padding: 0 28px 5px;
+            font-size: 13px;
+            font-weight: 500;
+            color: #fff;
+            margin: 0;
+          }
+        }
+        .number {
+          a {
+            text-decoration: none;
+            color: white;
+            display: inline-block;
+            font-size: 26px;
+            font-weight: 700;
+            sub {
+              display: inline-block;
+              vertical-align: baseline;
+              font-size: 18px;
+            }
+            i {
+              font-size: 20px;
+            }
+          }
+        }
+      }
+      .language {
+        .az {
+          position: absolute;
+          top: 20px;
+          font-size: 20px;
+          right: 30px;
+          z-index: 999;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          color: black;
+          background-color: #fff;
+          cursor: pointer;
+          p {
+            margin: 0;
+            font-size: 15px;
+            font-weight: 500;
+            i {
+              color: #0fc8f0;
+            }
+          }
+          &:hover {
+            .ru {
+              display: block;
+            }
+          }
+        }
+        .ru {
+          cursor: pointer;
+          position: absolute;
+          top: 14%;
+          right: 30px;
+          z-index: 999;
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          color: black;
+          background-color: #fff;
+          display: none;
+          p {
+            display: flex;
+            justify-content: center;
+            font-size: 15px;
+            font-weight: 500;
+            align-items: center;
+            margin: 0;
+            padding: 13px;
+          }
+        }
       }
     }
   }
@@ -198,14 +284,13 @@
   }
 }
 
-@keyframes transformtext {
-  0% {
-    transform: translateY(-300%);
-  }
-  50% {
-    transform: translateY(20%);
-  }
-  100% {
-    transform: translateY(-300%);
-  }
-}
+// @keyframes transformtext {
+//   0% {
+//     transform: translateY(-300%);
+//   }
+//   50% {
+//     transform: translateY(20%);
+//   }
+//   100% {
+//     transform: translateY(-300%);
+//   }

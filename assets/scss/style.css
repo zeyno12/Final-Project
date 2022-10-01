@@ -194,18 +194,125 @@
 
 #Main_Wrapper nav .nav_items .search {
   position: absolute;
-  top: 0;
-  font-size: 25px;
-  right: 0;
+  top: 20px;
+  font-size: 20px;
+  right: 32%;
   z-index: 999;
+  color: #fff;
+  background-color: #0fc8f0;
+  width: 50px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
 }
 
 #Main_Wrapper nav .nav_items .phone {
   position: absolute;
-  top: 0;
+  top: 20px;
   font-size: 20px;
-  right: 0;
+  right: 20%;
   z-index: 999;
+}
+
+#Main_Wrapper nav .nav_items .phone .phone_text p {
+  padding: 0 28px 5px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #fff;
+  margin: 0;
+}
+
+#Main_Wrapper nav .nav_items .phone .number a {
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+#Main_Wrapper nav .nav_items .phone .number a sub {
+  display: inline-block;
+  vertical-align: baseline;
+  font-size: 18px;
+}
+
+#Main_Wrapper nav .nav_items .phone .number a i {
+  font-size: 20px;
+}
+
+#Main_Wrapper nav .nav_items .language .az {
+  position: absolute;
+  top: 20px;
+  font-size: 20px;
+  right: 30px;
+  z-index: 999;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  color: black;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+#Main_Wrapper nav .nav_items .language .az p {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+#Main_Wrapper nav .nav_items .language .az p i {
+  color: #0fc8f0;
+}
+
+#Main_Wrapper nav .nav_items .language .az:hover .ru {
+  display: block;
+}
+
+#Main_Wrapper nav .nav_items .language .ru {
+  cursor: pointer;
+  position: absolute;
+  top: 14%;
+  right: 30px;
+  z-index: 999;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  color: black;
+  background-color: #fff;
+  display: none;
+}
+
+#Main_Wrapper nav .nav_items .language .ru p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 15px;
+  font-weight: 500;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+  padding: 13px;
 }
 
 @-webkit-keyframes imgscale {
@@ -251,36 +358,6 @@
   100% {
     -webkit-transform: scale(1.07);
             transform: scale(1.07);
-  }
-}
-
-@-webkit-keyframes transformtext {
-  0% {
-    -webkit-transform: translateY(-300%);
-            transform: translateY(-300%);
-  }
-  50% {
-    -webkit-transform: translateY(20%);
-            transform: translateY(20%);
-  }
-  100% {
-    -webkit-transform: translateY(-300%);
-            transform: translateY(-300%);
-  }
-}
-
-@keyframes transformtext {
-  0% {
-    -webkit-transform: translateY(-300%);
-            transform: translateY(-300%);
-  }
-  50% {
-    -webkit-transform: translateY(20%);
-            transform: translateY(20%);
-  }
-  100% {
-    -webkit-transform: translateY(-300%);
-            transform: translateY(-300%);
   }
 }
 
