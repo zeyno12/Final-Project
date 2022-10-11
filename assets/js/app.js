@@ -24,3 +24,7 @@ function openitem(e) {
   e.preventDefault();
   transformitem.classList.toggle("active1");
 }
+//aos
+AOS.init({
+  duration: 1200,
+});
