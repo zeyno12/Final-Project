@@ -1,0 +1,84 @@
+#slider_page {
+  width: 330px;
+  height: 120%;
+  background: #f8fcfe;
+  position: fixed;
+  top: -10%;
+  clip-path: ellipse(100% 50% at 100% 50%);
+  right: 0;
+  animation: slider1 0.9s linear normal;
+  #slider2_page {
+    width: 330px;
+    height: 110%;
+    background: #eaf6fd;
+    position: fixed;
+    top: -5%;
+    clip-path: ellipse(100% 50% at 100% 50%);
+    right: -110px;
+    animation: slider2 0.8s linear normal;
+    #slider3_page {
+      width: 330px;
+      height: 100%;
+      background: #d5edfa;
+      position: fixed;
+      top: -0%;
+      clip-path: ellipse(100% 50% at 100% 50%);
+      right: -220px;
+      animation: slider3 0.7s linear normal;
+    }
+  }
+}
+#Tibbi_məlumatlar {
+  position: relative;
+  z-index: +666;
+  .comeback {
+    margin-top: 8rem;
+    margin-left: 4rem;
+    a {
+      font-size: 17px;
+      font-weight: 500;
+      text-decoration: none;
+      color: #0077b3;
+    }
+  }
+  .tibbi_melumat_photo {
+    .header_text {
+      text-align: center;
+      font-size: 36px;
+      color: #159ee3;
+      font-weight: bold;
+      padding: 0 0 60px;
+    }
+
+    .photo_tibb {
+      img {
+        z-index: 666;
+        width: 100%;
+        border-radius: 8px;
+      }
+    }
+  }
+  .text_covid {
+    margin-top: 5rem;
+    h3 {
+      padding: 0 0 16px;
+      font-size: 24px;
+      font-weight: 500;
+      color: #404040;
+    }
+    p {
+      padding: 0 0 5px;
+      font-size: 13px;
+      color: #2e2e2ec4;
+    }
+    .lists_p {
+      padding: 0 0 10px 25px;
+      font-size: 15px;
+      font-weight: 500;
+      i {
+        color: #0077b3;
+        font-size: 16px;
+      }
+    }
+  }
+}

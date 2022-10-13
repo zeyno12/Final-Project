@@ -22,9 +22,13 @@ const transformitem = document.querySelector(".transform_itemas");
 opendata.addEventListener("click", openitem);
 function openitem(e) {
   e.preventDefault();
-  transformitem.classList.toggle("active1");
+  transformitem.classList.toggle("active");
+  console.log(true);
 }
-//aos
-AOS.init({
-  duration: 1200,
+
+//accordion doctors
+const Openaccardion = document.querySelector(".accordion__data");
+Openaccardion.addEventListener("click", () => {
+  const accardionitem = document.querySelector(".accordion__item");
+  accardionitem.classList.toggle("active2");
 });
