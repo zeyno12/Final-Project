@@ -5,7 +5,7 @@
   top: 24px;
   left: 36px;
   right: 0;
-  z-index: +999;
+  z-index: 666;
 }
 
 .Page_Logo img {
@@ -349,6 +349,62 @@ nav .nav_items .nav {
   border: none;
 }
 
+nav .nav_items .nav .transform_itemas {
+  width: 665px;
+  height: 100vh;
+  position: absolute;
+  top: 90px;
+  right: 0;
+  z-index: +999;
+  padding: 40px 20px;
+  -webkit-transform: translateX(0px);
+          transform: translateX(0px);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  overflow-y: scroll;
+  background-color: #e24775;
+}
+
+nav .nav_items .nav .transform_itemas .rightside_nav,
+nav .nav_items .nav .transform_itemas .leftside_nav {
+  overflow: hidden;
+}
+
+nav .nav_items .nav .transform_itemas .rightside_nav ul,
+nav .nav_items .nav .transform_itemas .leftside_nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+nav .nav_items .nav .transform_itemas .rightside_nav ul li,
+nav .nav_items .nav .transform_itemas .leftside_nav ul li {
+  margin: 0;
+  list-style: none;
+  padding: 0 0 30px;
+}
+
+nav .nav_items .nav .transform_itemas .rightside_nav ul li a,
+nav .nav_items .nav .transform_itemas .leftside_nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  padding: 0 0 18px;
+  font-size: 17px;
+}
+
+nav .nav_items .nav .transform_itemas .rightside_nav ul li .bold_text,
+nav .nav_items .nav .transform_itemas .leftside_nav ul li .bold_text {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+}
+
+nav .nav_items .nav .transform_itemas .rightside_nav ul li:hover,
+nav .nav_items .nav .transform_itemas .leftside_nav ul li:hover {
+  text-decoration: underline;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
 nav .nav_items .btn-nav {
   position: absolute;
   width: 50px;
@@ -546,8 +602,8 @@ footer .end_text .connection_items .scale_phone {
 }
 
 .active {
-  -webkit-transform: translatesX(0px);
-          transform: translatesX(0px);
+  -webkit-transform: translatesX(0px) !important;
+          transform: translatesX(0px) !important;
 }
 
 @-webkit-keyframes slider1 {
@@ -742,7 +798,7 @@ footer .end_text .connection_items .scale_phone {
 
 #slider_page {
   width: 330px;
-  height: 120%;
+  height: 100%;
   background: #f8fcfe;
   position: fixed;
   top: -10%;
@@ -755,7 +811,7 @@ footer .end_text .connection_items .scale_phone {
 
 #slider_page #slider2_page {
   width: 330px;
-  height: 110%;
+  height: 100%;
   background: #eaf6fd;
   position: fixed;
   top: -5%;
@@ -844,6 +900,26 @@ footer .end_text .connection_items .scale_phone {
   z-index: +999;
 }
 
+#Hekimler .comeback {
+  margin-top: 2rem;
+  margin-left: 4rem;
+}
+
+#Hekimler .comeback a {
+  font-size: 17px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #0077b3;
+}
+
+#Hekimler .header_text {
+  text-align: center;
+  font-size: 36px;
+  color: #159ee3;
+  font-weight: bold;
+  padding: 0 0 60px;
+}
+
 #Hekimler ul {
   padding: 0;
 }
@@ -854,24 +930,49 @@ footer .end_text .connection_items .scale_phone {
   list-style: none;
 }
 
-#Hekimler ul li .accordion__data {
+#Hekimler ul li .accordion {
+  background-color: #159ee3;
+  color: white;
   cursor: pointer;
-  border: 1px solid blue;
-  border-radius: 8px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  padding: 21px 60px 21px 35px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  border-radius: 5px;
 }
 
-#Hekimler ul li .accordion__item {
-  visibility: hidden;
-  height: 0px;
+#Hekimler ul li .panel {
+  visibility: visible;
+  height: auto;
 }
 
-.avtive2 {
+#Hekimler ul li .panel .card_photo {
+  margin-top: 1rem;
+}
+
+#Hekimler ul li .panel .card_photo img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+#Hekimler ul li .panel .card_text .blue {
+  padding: 0 0 8px;
+  font-size: 13px;
+  font-weight: 500;
+  margin: 0;
+  color: #159ee3;
+}
+
+#Hekimler ul li .panel .card_text .gray {
+  color: #7c7c7c;
+  font-size: 13px;
+}
+
+.active2 {
   visibility: visible !important;
   height: auto !important;
 }

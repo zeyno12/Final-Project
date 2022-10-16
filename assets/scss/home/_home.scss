@@ -3,7 +3,7 @@
   top: 24px;
   left: 36px;
   right: 0;
-  z-index: +999;
+  z-index: 666;
   img {
     object-fit: cover;
     width: 77px;
@@ -284,47 +284,47 @@ nav {
       width: auto;
       display: inline-block;
       border: none;
-      // .transform_itemas {
-      //   width: 665px;
-      //   height: 100vh;
-      //   position: absolute;
-      //   top: 90px;
-      //   right: 0;
-      //   z-index: +5;
-      //   padding: 40px 20px;
-      //   transform: translateX(900px);
-      //   transition: 0.3s ease-in-out;
-      //   overflow-y: scroll;
-      //   background-color: #e24775;
-      //   .rightside_nav,
-      //   .leftside_nav {
-      //     overflow: hidden;
-      //     ul {
-      //       margin: 0;
-      //       padding: 0;
-      //       li {
-      //         margin: 0;
-      //         list-style: none;
-      //         a {
-      //           text-decoration: none;
-      //           color: #fff;
-      //           padding: 0 0 18px;
-      //           font-size: 17px;
-      //         }
-      //         padding: 0 0 30px;
-      //         .bold_text {
-      //           font-size: 24px;
-      //           font-weight: bold;
-      //           color: #fff;
-      //         }
-      //         &:hover {
-      //           text-decoration: underline;
-      //           transition: 0.5s ease-in-out;
-      //         }
-      //       }
-      //     }
-      //   }
-      // }
+      .transform_itemas {
+        width: 665px;
+        height: 100vh;
+        position: absolute;
+        top: 90px;
+        right: 0;
+        z-index: +999;
+        padding: 40px 20px;
+        transform: translateX(0px);
+        transition: 0.3s ease-in-out;
+        overflow-y: scroll;
+        background-color: #e24775;
+        .rightside_nav,
+        .leftside_nav {
+          overflow: hidden;
+          ul {
+            margin: 0;
+            padding: 0;
+            li {
+              margin: 0;
+              list-style: none;
+              a {
+                text-decoration: none;
+                color: #fff;
+                padding: 0 0 18px;
+                font-size: 17px;
+              }
+              padding: 0 0 30px;
+              .bold_text {
+                font-size: 24px;
+                font-weight: bold;
+                color: #fff;
+              }
+              &:hover {
+                text-decoration: underline;
+                transition: 0.5s ease-in-out;
+              }
+            }
+          }
+        }
+      }
     }
     .btn-nav {
       position: absolute;
@@ -483,7 +483,7 @@ footer {
   }
 }
 .active {
-  transform: translatesX(0px);
+  transform: translatesX(0px) !important;
 }
 @keyframes slider1 {
   100% {

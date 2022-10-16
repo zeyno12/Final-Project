@@ -9,7 +9,7 @@ var swiper = new Swiper(".mySwiper", {
     delay: 4000,
   },
 });
-//button nav
+
 $(window).load(function () {
   $(".btn-nav").on("click tap", function () {
     $(this).toggleClass("animated");
@@ -18,17 +18,29 @@ $(window).load(function () {
 
 const opendata = document.querySelector(".btn-nav");
 const transformitem = document.querySelector(".transform_itemas");
-
 opendata.addEventListener("click", openitem);
 function openitem(e) {
   e.preventDefault();
   transformitem.classList.toggle("active");
-  console.log(true);
 }
 
-//accordion doctors
-const Openaccardion = document.querySelector(".accordion__data");
+// var acc = document.getElementsByClassName("accordion");
+// var i;
+// for (i = 0; i < acc.length; i++) {
+//   acc[i].addEventListener("click", function () {
+//     this.classList.toggle("active");
+//     var panel = this.nextElementSibling;
+//     if (panel.style.display === "block") {
+//       panel.style.display = "none";
+//     } else {
+//       panel.style.display = "block";
+//     }
+//   });
+// }
+
+const Openaccardion = document.querySelector(".accordion");
 Openaccardion.addEventListener("click", () => {
-  const accardionitem = document.querySelector(".accordion__item");
+  const accardionitem = document.querySelector(".row");
+  console.log(true);
   accardionitem.classList.toggle("active2");
 });

@@ -2,6 +2,24 @@
   margin-top: 7rem;
   position: relative;
   z-index: +999;
+  .comeback {
+    margin-top: 2rem;
+    margin-left: 4rem;
+    a {
+      font-size: 17px;
+      font-weight: 500;
+      text-decoration: none;
+      color: #0077b3;
+    }
+  }
+  .header_text {
+    text-align: center;
+    font-size: 36px;
+    color: #159ee3;
+    font-weight: bold;
+    padding: 0 0 60px;
+  }
+
   ul {
     padding: 0;
     li {
@@ -9,22 +27,49 @@
       margin: 4px 0px;
       list-style: none;
       .accordion {
-        &__data {
-          cursor: pointer;
-          border: 1px solid blue;
-          border-radius: 8px;
-          display: flex;
-          justify-content: space-between;
+        background-color: #159ee3;
+        color: white;
+        cursor: pointer;
+        padding: 21px 60px 21px 35px;
+        color: #fff;
+        font-size: 18px;
+        font-weight: 500;
+        width: 100%;
+        text-align: left;
+        border: none;
+        outline: none;
+        border-radius: 5px;
+      }
+
+      .panel {
+        visibility: visible;
+        height: auto;
+        .card_photo {
+          margin-top: 1rem;
+          img {
+            width: 100%;
+            border-radius: 5px;
+          }
         }
-        &__item {
-          visibility: hidden;
-          height: 0px;
+        .card_text {
+          .blue {
+            padding: 0 0 8px;
+            font-size: 13px;
+            font-weight: 500;
+            margin: 0;
+            color: #159ee3;
+          }
+          .gray {
+            color: #7c7c7c;
+            font-size: 13px;
+          }
         }
       }
     }
   }
 }
-.avtive2 {
+
+.active2 {
   visibility: visible !important;
   height: auto !important;
 }
