@@ -1,0 +1,43 @@
+#Onlayn_qeydiyyat {
+  margin-top: 5rem;
+  position: relative;
+  z-index: +999;
+  .comeback {
+    margin-top: 3rem;
+    margin-left: 4rem;
+    a {
+      font-size: 17px;
+      font-weight: 500;
+      text-decoration: none;
+      color: #0077b3;
+    }
+  }
+  .header_text {
+    text-align: center;
+    font-size: 33px;
+    color: #159ee3;
+    font-weight: bold;
+    padding: 0 0 60px;
+  }
+  .form_item {
+    .form_text {
+      input {
+        padding: 14px;
+        border-radius: 5px;
+        border: 1px solid darkgray;
+      }
+    }
+    .select {
+      label {
+        font-size: 15px;
+        color: #c2c2c2;
+        font-weight: 500;
+      }
+      select {
+        padding: 14px 50px;
+        border-radius: 5px;
+        border: 1px solid darkgray;
+      }
+    }
+  }
+}

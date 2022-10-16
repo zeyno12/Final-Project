@@ -798,7 +798,7 @@ footer .end_text .connection_items .scale_phone {
 
 #slider_page {
   width: 330px;
-  height: 100%;
+  height: 120%;
   background: #f8fcfe;
   position: fixed;
   top: -10%;
@@ -811,7 +811,7 @@ footer .end_text .connection_items .scale_phone {
 
 #slider_page #slider2_page {
   width: 330px;
-  height: 100%;
+  height: 110%;
   background: #eaf6fd;
   position: fixed;
   top: -5%;
@@ -945,21 +945,16 @@ footer .end_text .connection_items .scale_phone {
   border-radius: 5px;
 }
 
-#Hekimler ul li .panel {
-  visibility: visible;
-  height: auto;
-}
-
-#Hekimler ul li .panel .card_photo {
+#Hekimler ul li .panel_row .panel .card_photo {
   margin-top: 1rem;
 }
 
-#Hekimler ul li .panel .card_photo img {
+#Hekimler ul li .panel_row .panel .card_photo img {
   width: 100%;
   border-radius: 5px;
 }
 
-#Hekimler ul li .panel .card_text .blue {
+#Hekimler ul li .panel_row .panel .card_text .blue {
   padding: 0 0 8px;
   font-size: 13px;
   font-weight: 500;
@@ -967,14 +962,53 @@ footer .end_text .connection_items .scale_phone {
   color: #159ee3;
 }
 
-#Hekimler ul li .panel .card_text .gray {
+#Hekimler ul li .panel_row .panel .card_text .gray {
   color: #7c7c7c;
   font-size: 13px;
 }
 
-.active2 {
-  visibility: visible !important;
-  height: auto !important;
+#Onlayn_qeydiyyat {
+  margin-top: 5rem;
+  position: relative;
+  z-index: +999;
+}
+
+#Onlayn_qeydiyyat .comeback {
+  margin-top: 3rem;
+  margin-left: 4rem;
+}
+
+#Onlayn_qeydiyyat .comeback a {
+  font-size: 17px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #0077b3;
+}
+
+#Onlayn_qeydiyyat .header_text {
+  text-align: center;
+  font-size: 33px;
+  color: #159ee3;
+  font-weight: bold;
+  padding: 0 0 60px;
+}
+
+#Onlayn_qeydiyyat .form_item .form_text input {
+  padding: 14px;
+  border-radius: 5px;
+  border: 1px solid darkgray;
+}
+
+#Onlayn_qeydiyyat .form_item .select label {
+  font-size: 15px;
+  color: #c2c2c2;
+  font-weight: 500;
+}
+
+#Onlayn_qeydiyyat .form_item .select select {
+  padding: 14px 50px;
+  border-radius: 5px;
+  border: 1px solid darkgray;
 }
 
 *,

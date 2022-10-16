@@ -40,36 +40,33 @@
         outline: none;
         border-radius: 5px;
       }
-
-      .panel {
-        visibility: visible;
-        height: auto;
-        .card_photo {
-          margin-top: 1rem;
-          img {
-            width: 100%;
-            border-radius: 5px;
+      .panel_row {
+        // display: none;
+        // height: 0px;
+        // display: flex !important;
+        .panel {
+          .card_photo {
+            margin-top: 1rem;
+            img {
+              width: 100%;
+              border-radius: 5px;
+            }
           }
-        }
-        .card_text {
-          .blue {
-            padding: 0 0 8px;
-            font-size: 13px;
-            font-weight: 500;
-            margin: 0;
-            color: #159ee3;
-          }
-          .gray {
-            color: #7c7c7c;
-            font-size: 13px;
+          .card_text {
+            .blue {
+              padding: 0 0 8px;
+              font-size: 13px;
+              font-weight: 500;
+              margin: 0;
+              color: #159ee3;
+            }
+            .gray {
+              color: #7c7c7c;
+              font-size: 13px;
+            }
           }
         }
       }
     }
   }
-}
-
-.active2 {
-  visibility: visible !important;
-  height: auto !important;
 }

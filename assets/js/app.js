@@ -16,31 +16,18 @@ $(window).load(function () {
   });
 });
 
-const opendata = document.querySelector(".btn-nav");
-const transformitem = document.querySelector(".transform_itemas");
-opendata.addEventListener("click", openitem);
-function openitem(e) {
-  e.preventDefault();
-  transformitem.classList.toggle("active");
-}
-
-// var acc = document.getElementsByClassName("accordion");
-// var i;
-// for (i = 0; i < acc.length; i++) {
-//   acc[i].addEventListener("click", function () {
-//     this.classList.toggle("active");
-//     var panel = this.nextElementSibling;
-//     if (panel.style.display === "block") {
-//       panel.style.display = "none";
-//     } else {
-//       panel.style.display = "block";
-//     }
-//   });
+// const opendata = document.querySelector(".btn-nav");
+// const transformitem = document.querySelector(".transform_itemas");
+// opendata.addEventListener("click", openitem);
+// function openitem(e) {
+//   e.preventDefault();
+//   transformitem.classList.toggle("active");
 // }
 
-const Openaccardion = document.querySelector(".accordion");
-Openaccardion.addEventListener("click", () => {
-  const accardionitem = document.querySelector(".row");
-  console.log(true);
-  accardionitem.classList.toggle("active2");
+let accordion = document.getElementsByClassName("accordion");
+let array = [...accordion];
+array.forEach((element) => {
+  element.addEventListener("click", function () {
+    element.nextElementSibling.classList.toggle("panel_row");
+  });
 });

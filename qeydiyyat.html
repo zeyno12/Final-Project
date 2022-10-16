@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Covid-19/Saglam Aile</title>
+    <title>Onlayn Qeydiyyat/Saglam Aile</title>
     <link rel="stylesheet" href="assets/scss/style.css" />
     <link
       rel="stylesheet"
@@ -137,7 +137,7 @@
             <div class="comeback">
               <a href="index.html"><i class="bi bi-arrow-left"></i> Geri</a>
             </div>
-            <div class="col-lg-9">
+            <div class="col-lg-8">
               <div class="onlayn_item">
                 <div class="header_text">
                   <h1>Onlayn qeydiyyat</h1>
@@ -145,19 +145,20 @@
                 <div class="form_item">
                   <div class="row form_text">
                     <div class="col-lg-4">
-                      <input type="text" />
+                      <input type="text" placeholder="Ad" />
                     </div>
                     <div class="col-lg-4">
-                      <input type="text" />
+                      <input type="text" placeholder="Soyad" />
                     </div>
                     <div class="col-lg-4">
-                      <input type="text" />
+                      <input type="text" placeholder="Ata adı" />
                     </div>
                   </div>
-                  <div class="row select">
+                  <div class="row select mt-4 justify-content-center">
                     <label for="Doğum_tarixi">Doğum tarixi</label>
-                    <div class="col-lg-4">
-                      <select name="gün" id="gün" aria-placeholder="Gün">
+                    <div class="col-lg-4 mt-2">
+                      <select name="gün" id="gün">
+                        <option value="">Gün</option>
                         <option value="">1</option>
                         <option value="">2</option>
                         <option value="">3</option>
@@ -174,7 +175,8 @@
                       </select>
                     </div>
                     <div class="col-lg-4">
-                      <select name="ay" id="ay" aria-placeholder="Ay">
+                      <select name="ay" id="ay">
+                        <option value="">Ay</option>
                         <option value="">Yanvar</option>
                         <option value="">Fevral</option>
                         <option value="">Mart</option>
@@ -186,17 +188,159 @@
                       </select>
                     </div>
                     <div class="col-lg-4">
-                      <select name="il" id="il" aria-placeholder="İl">
+                      <select name="il" id="il">
+                        <option value="">İl</option>
                         <option value="">2006</option>
                         <option value="">2005</option>
                         <option value="">2004</option>
                         <option value="">2003</option>
                         <option value="">2002</option>
-                        <option value="">2002</option>
-                        <option value="">2002</option>
-                        <option value="">2002</option>
-                        <option value="">2002</option>
+                        <option value="">2001</option>
+                        <option value="">2000</option>
+                        <option value="">1999</option>
+                        <option value="">1998</option>
+                        <option value="">1997</option>
+                        <option value="">1996</option>
                       </select>
+                    </div>
+                  </div>
+                  <div class="row email_tel">
+                    <div class="col-lg-12">
+                      <input
+                        type="email"
+                        name="email"
+                        id="email"
+                        placeholder="Email"
+                      />
+                      <br />
+                      <input
+                        type="tel"
+                        name="tel"
+                        id="tel"
+                        placeholder="Mobil nömrə"
+                      />
+                    </div>
+                  </div>
+                  <div class="row radio">
+                    <div class="col-lg-6">
+                      <input type="radio" id="Kişi" name="kişi" value="Kişi" />
+                      <label for="html">Kişi</label><br />
+                      <input
+                        type="radio"
+                        id="qadın"
+                        name="qadın"
+                        value="Qadın"
+                      />
+                      <label for="css">Qadın</label><br />
+                    </div>
+                    <div class="col-lg-6">
+                      <input type="file" placeholder="Yüklə" />
+                      <button type="submit">Yüklə</button>
+                    </div>
+                  </div>
+                  <div class="row radio2">
+                    <div class="col-lg-4">
+                      <div>
+                        <p>Təyinata məsul həkim:</p>
+                        <label for="var">Var</label> <br />
+                        <input type="radio" id="var" name="var" value="var" />
+                        <label for="yoxdur">Yoxdur</label> <br />
+                        <input
+                          type="radio"
+                          id="yoxdur"
+                          name="yoxdur"
+                          value="yoxdur"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row text2">
+                    <div class="col-lg-12">
+                      <input type="text" placeholder="Həkimin adı və iş yeri" />
+                    </div>
+                  </div>
+                  <div class="row file2">
+                    <div class="col-lg-12">
+                      <div>
+                        <p>
+                          Analizləri daxil edin və ya həkimin qeyd etdiyi
+                          təyinat vərəqinin şəklini yükləyin:
+                        </p>
+                        <input type="file" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row qeyd">
+                    <div class="col-lg-12">
+                      <textarea
+                        name=""
+                        id=""
+                        cols="30"
+                        rows="10"
+                        placeholder="Qeyd"
+                      ></textarea>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-12">
+                      <div>
+                        <p>Müraciət edəcəyiniz filiali seçin:</p>
+                        <input
+                          type="radio"
+                          id="radio"
+                          name="radio"
+                          value="radio"
+                        />
+                        <label for="radio">
+                          Nərimanov filialı Bakı şəhəri, Əhməd Rəcəbli küçəsi
+                          3,10 (Şəki restoranının yaxınlığı), AZ1075</label
+                        ><br />
+                        <input
+                          type="radio"
+                          id="radio"
+                          name="radio"
+                          value="radio"
+                        />
+                        <label for="radio">
+                          28 May Bakı şəhəri, Rəşid Behbudov küçəsi 56, AZ1014
+                          (“OVİR”in yanı)</label
+                        ><br />
+                        <input
+                          type="radio"
+                          id="radio"
+                          name="radio"
+                          value="radio"
+                        />
+                        <label for="radio">
+                          Sumqayıt Sumqayıt şəhəri, Cəfər Cabbarlı küç.,
+                          46</label
+                        ><br />
+                        <input
+                          type="radio"
+                          id="radio"
+                          name="radio"
+                          value="radio"
+                        />
+                        <label for="radio">
+                          Mikrorayon "Ultralab" Bakı şəhəri, Asif Məhərrəmov
+                          küçəsi 156C, AZ1102</label
+                        ><br />
+                        <input
+                          type="radio"
+                          id="radio"
+                          name="radio"
+                          value="radio"
+                        />
+                        <label for="radio">
+                          Gəncə "Ultralab" Gəncə şəhəri, Azərbaycan bayrağı
+                          küçəsi (İmperial şadlıq sarayının yanı)</label
+                        ><br />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-4">
+                      <button type="submit">Qeydiyyat</button>
                     </div>
                   </div>
                 </div>
