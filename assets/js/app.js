@@ -31,3 +31,4 @@ array.forEach((element) => {
     element.nextElementSibling.classList.toggle("panel_row");
   });
 });
+////

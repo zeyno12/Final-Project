@@ -1002,13 +1002,226 @@ footer .end_text .connection_items .scale_phone {
 #Onlayn_qeydiyyat .form_item .select label {
   font-size: 15px;
   color: #c2c2c2;
-  font-weight: 500;
+  font-weight: 300;
 }
 
 #Onlayn_qeydiyyat .form_item .select select {
-  padding: 14px 50px;
+  padding: 13px 15px;
+  width: 100%;
   border-radius: 5px;
   border: 1px solid darkgray;
+}
+
+#Onlayn_qeydiyyat .form_item .email_tel input,
+#Onlayn_qeydiyyat .form_item .text2 input {
+  width: 100%;
+  margin-top: 1rem;
+  padding: 13px 3px;
+  border-radius: 5px;
+  border: 1px solid darkgray;
+}
+
+#Onlayn_qeydiyyat .form_item .radio label,
+#Onlayn_qeydiyyat .form_item .file2 label {
+  color: #c2c2c2;
+  font-weight: 300;
+}
+
+#Onlayn_qeydiyyat .form_item .radio span,
+#Onlayn_qeydiyyat .form_item .file2 span {
+  color: #c2c2c2;
+  font-weight: 400;
+}
+
+#Onlayn_qeydiyyat .form_item .radio button,
+#Onlayn_qeydiyyat .form_item .file2 button {
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  background-color: #10a8e4;
+  border-radius: 5px;
+}
+
+#Onlayn_qeydiyyat .form_item .radio2 label {
+  color: #c2c2c2;
+  font-weight: 300;
+}
+
+#Onlayn_qeydiyyat .form_item .radio2 p {
+  color: #c2c2c2;
+  font-weight: 400;
+}
+
+#Onlayn_qeydiyyat .form_item .qeyd textarea {
+  width: 100%;
+  height: 150px;
+  border-radius: 5px;
+}
+
+#Onlayn_qeydiyyat .form_item .end_label label {
+  font-size: 14px;
+  font-weight: 300;
+  color: #737373;
+}
+
+#Onlayn_qeydiyyat .form_item .end_button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+#Onlayn_qeydiyyat .form_item .end_button button {
+  color: #fff;
+  padding: 15px 50px;
+  border: none;
+  background-color: #10a8e4;
+  border-radius: 5px;
+}
+
+#Check_up {
+  margin-top: 7rem;
+  position: relative;
+  z-index: +999;
+}
+
+#Check_up .comeback {
+  margin-top: 2rem;
+  margin-left: 4rem;
+}
+
+#Check_up .comeback a {
+  font-size: 17px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #0077b3;
+}
+
+#Check_up .header_text {
+  text-align: center;
+  font-size: 36px;
+  color: #159ee3;
+  font-weight: bold;
+  padding: 0 0 60px;
+}
+
+#Check_up .h_text {
+  color: #404040;
+  padding: 0 0 5px;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+#Check_up .check_items a {
+  text-decoration: none;
+}
+
+#Check_up .check_items a .check_cards .card_img img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 5px;
+  border: 1px solid lightgray;
+}
+
+#Check_up .check_items a .check_cards .card_text {
+  margin-top: 1rem;
+}
+
+#Check_up .check_items a .check_cards .card_text p {
+  font-size: 24px;
+  font-weight: bold;
+  color: #0077b3;
+}
+
+#Filiallar {
+  margin-top: 7rem;
+  position: relative;
+  z-index: +999;
+}
+
+#Filiallar .comeback {
+  margin-top: 2rem;
+  margin-left: 4rem;
+}
+
+#Filiallar .comeback a {
+  font-size: 17px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #0077b3;
+}
+
+#Filiallar .header_text {
+  text-align: center;
+  font-size: 36px;
+  color: #159ee3;
+  font-weight: bold;
+  padding: 0 0 60px;
+}
+
+#Filiallar .header_text img {
+  width: 15px;
+  padding: 6px;
+  cursor: pointer;
+  background-color: #159ee3;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+#Filiallar .filial_items a {
+  text-decoration: none;
+}
+
+#Filiallar .filial_items a .card_filial .card_img_filial img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 5px;
+  border: 1px solid lightgray;
+}
+
+#Filiallar .filial_items a .card_filial .card_img_filial:hover {
+  opacity: 0.8;
+}
+
+#Filiallar .filial_items a .card_filial .card_text_filial {
+  margin-top: 1rem;
+}
+
+#Filiallar .filial_items a .card_filial .card_text_filial p {
+  font-size: 24px;
+  font-weight: bold;
+  color: #0077b3;
+}
+
+#exTab1 .tab-content {
+  color: white;
+  background-color: #428bca;
+  padding: 5px 15px;
+}
+
+#exTab2 h3 {
+  color: white;
+  background-color: #428bca;
+  padding: 5px 15px;
+}
+
+#exTab1 .nav-pills > li > a {
+  border-radius: 0;
+}
+
+#exTab3 .nav-pills > li > a {
+  border-radius: 4px 4px 0 0;
+}
+
+#exTab3 .tab-content {
+  color: white;
+  background-color: #428bca;
+  padding: 5px 15px;
 }
 
 *,

@@ -1,0 +1,51 @@
+#Check_up {
+  margin-top: 7rem;
+  position: relative;
+  z-index: +999;
+  .comeback {
+    margin-top: 2rem;
+    margin-left: 4rem;
+    a {
+      font-size: 17px;
+      font-weight: 500;
+      text-decoration: none;
+      color: #0077b3;
+    }
+  }
+  .header_text {
+    text-align: center;
+    font-size: 36px;
+    color: #159ee3;
+    font-weight: bold;
+    padding: 0 0 60px;
+  }
+  .h_text {
+    color: #404040;
+    padding: 0 0 5px;
+    font-size: 14px;
+    font-weight: 300;
+  }
+  .check_items {
+    a {
+      text-decoration: none;
+      .check_cards {
+        .card_img {
+          img {
+            width: 100%;
+            object-fit: cover;
+            border-radius: 5px;
+            border: 1px solid lightgray;
+          }
+        }
+        .card_text {
+          margin-top: 1rem;
+          p {
+            font-size: 24px;
+            font-weight: bold;
+            color: #0077b3;
+          }
+        }
+      }
+    }
+  }
+}

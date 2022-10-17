@@ -31,13 +31,77 @@
       label {
         font-size: 15px;
         color: #c2c2c2;
-        font-weight: 500;
+        font-weight: 300;
       }
       select {
-        padding: 14px 50px;
+        padding: 13px 15px;
+        width: 100%;
         border-radius: 5px;
         border: 1px solid darkgray;
       }
+    }
+    .email_tel,
+    .text2 {
+      input {
+        width: 100%;
+        margin-top: 1rem;
+        padding: 13px 3px;
+        border-radius: 5px;
+        border: 1px solid darkgray;
+      }
+    }
+    .radio,
+    .file2 {
+      label {
+        color: #c2c2c2;
+        font-weight: 300;
+      }
+      span {
+        color: #c2c2c2;
+        font-weight: 400;
+      }
+      button {
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        background-color: #10a8e4;
+        border-radius: 5px;
+      }
+    }
+    .radio2 {
+      label {
+        color: #c2c2c2;
+        font-weight: 300;
+      }
+      p {
+        color: #c2c2c2;
+        font-weight: 400;
+      }
+    }
+    .qeyd {
+      textarea {
+        width: 100%;
+        height: 150px;
+        border-radius: 5px;
+      }
+    }
+    .end_label {
+      label {
+        font-size: 14px;
+        font-weight: 300;
+        color: #737373;
+      }
+    }
+    .end_button {
+      button {
+        color: #fff;
+        padding: 15px 50px;
+        border: none;
+        background-color: #10a8e4;
+        border-radius: 5px;
+      }
+      display: flex;
+      justify-content: flex-end;
     }
   }
 }
