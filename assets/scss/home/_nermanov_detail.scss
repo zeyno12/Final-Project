@@ -1,25 +1,43 @@
-#exTab1 .tab-content {
-  color: white;
-  background-color: #428bca;
-  padding: 5px 15px;
+.mapouter {
+  position: relative;
+  text-align: right;
+  height: 500px;
+  width: 600px;
+}
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  height: 500px;
+  width: 600px;
 }
 
-#exTab2 h3 {
-  color: white;
-  background-color: #428bca;
-  padding: 5px 15px;
-}
+.tab {
+  .tab_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    cursor: pointer;
+    border: 1px solid rgb(201, 201, 201);
+    padding: 25px;
+    border-radius: 6px;
+    color: white;
+    background: #d6f1ff;
+    p {
+      margin: 0;
+    }
+    .active {
+      color: #159ee3;
+    }
+  }
 
-#exTab1 .nav-pills > li > a {
-  border-radius: 0;
-}
+  .tab_body {
+    margin-top: 3rem;
+    position: relative;
+    height: calc(100% - 60px);
 
-#exTab3 .nav-pills > li > a {
-  border-radius: 4px 4px 0 0;
-}
-
-#exTab3 .tab-content {
-  color: white;
-  background-color: #428bca;
-  padding: 5px 15px;
+    div {
+      top: -200%;
+    }
+  }
 }

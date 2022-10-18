@@ -1198,30 +1198,55 @@ footer .end_text .connection_items .scale_phone {
   color: #0077b3;
 }
 
-#exTab1 .tab-content {
+.mapouter {
+  position: relative;
+  text-align: right;
+  height: 500px;
+  width: 600px;
+}
+
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  height: 500px;
+  width: 600px;
+}
+
+.tab .tab_header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 60px;
+  cursor: pointer;
+  border: 1px solid #c9c9c9;
+  padding: 25px;
+  border-radius: 6px;
   color: white;
-  background-color: #428bca;
-  padding: 5px 15px;
+  background: #d6f1ff;
 }
 
-#exTab2 h3 {
-  color: white;
-  background-color: #428bca;
-  padding: 5px 15px;
+.tab .tab_header p {
+  margin: 0;
 }
 
-#exTab1 .nav-pills > li > a {
-  border-radius: 0;
+.tab .tab_header .active {
+  color: #159ee3;
 }
 
-#exTab3 .nav-pills > li > a {
-  border-radius: 4px 4px 0 0;
+.tab .tab_body {
+  margin-top: 3rem;
+  position: relative;
+  height: calc(100% - 60px);
 }
 
-#exTab3 .tab-content {
-  color: white;
-  background-color: #428bca;
-  padding: 5px 15px;
+.tab .tab_body div {
+  top: -200%;
 }
 
 *,
