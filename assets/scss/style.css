@@ -355,19 +355,13 @@ nav .nav_items .nav .transform_itemas {
   position: absolute;
   top: 90px;
   right: 0;
-  z-index: +999;
+  z-index: +99999;
   padding: 40px 20px;
-  -webkit-transform: translateX(0px);
-          transform: translateX(0px);
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
+  display: none;
+  -webkit-transition: all 3s ease-in-out !important;
+  transition: all 3s ease-in-out !important;
   overflow-y: scroll;
   background-color: #e24775;
-}
-
-nav .nav_items .nav .transform_itemas .rightside_nav,
-nav .nav_items .nav .transform_itemas .leftside_nav {
-  overflow: hidden;
 }
 
 nav .nav_items .nav .transform_itemas .rightside_nav ul,
@@ -483,7 +477,7 @@ footer .end_text .left_side p {
 
 footer .end_text .left_side p a {
   display: inline-block;
-  color: #dcdcdc;
+  color: rgba(175, 175, 175, 0.6);
   font-size: 13px;
   font-weight: 500;
   text-decoration: none;
@@ -509,7 +503,7 @@ footer .end_text .right_side p {
   font-size: 14px;
   line-height: 24px;
   font-weight: 500;
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(175, 175, 175, 0.6);
   margin: 0;
   width: 100%;
 }
@@ -535,7 +529,7 @@ footer .end_text .right_side ul li {
 
 footer .end_text .right_side ul li a {
   text-decoration: none;
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(175, 175, 175, 0.6);
 }
 
 footer .end_text .right_side ul li a:hover {
@@ -602,8 +596,9 @@ footer .end_text .connection_items .scale_phone {
 }
 
 .active {
-  -webkit-transform: translatesX(0px) !important;
-          transform: translatesX(0px) !important;
+  display: block !important;
+  -webkit-transition: all 3s ease-in-out !important;
+  transition: all 3s ease-in-out !important;
 }
 
 @-webkit-keyframes slider1 {
@@ -1198,55 +1193,111 @@ footer .end_text .connection_items .scale_phone {
   color: #0077b3;
 }
 
-.mapouter {
-  position: relative;
-  text-align: right;
-  height: 500px;
-  width: 600px;
+#Filiallar .nav-tabs {
+  padding: 0;
+  margin-top: 5rem;
 }
 
-.gmap_canvas {
-  overflow: hidden;
-  background: none !important;
-  height: 500px;
-  width: 600px;
+#Filiallar .nav-tabs .nav-item {
+  padding: 0;
+  margin: 0;
 }
 
-.tab .tab_header {
+#Filiallar .nav-tabs .nav-item .nav-link {
+  color: white;
+  background-color: #159ee3;
+  width: 283px;
+  padding: 20px 30px;
+  text-align: center;
+}
+
+#Filiallar .adress_items h2 {
+  padding: 0 0 30px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #159ee3;
+}
+
+#Filiallar .adress_items p {
+  color: #5a5a5a;
+  font-size: 14px;
+}
+
+#Filiallar .adress_items .cursor {
+  cursor: pointer;
+}
+
+#Filiallar .mapouter .gmap_canvas iframe {
+  width: 100%;
+  height: 835px;
+}
+
+#Filiallar .mapouter .gmap_canvas a {
+  text-decoration: none;
+  color: gray;
+}
+
+#Filiallar .tab_items {
+  width: 200px;
+  height: 142px;
+  background-color: #159ee3;
+  border-radius: 8px;
+}
+
+#Filiallar .tab_items .tab_img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  height: 60px;
-  cursor: pointer;
-  border: 1px solid #c9c9c9;
-  padding: 25px;
-  border-radius: 6px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 2rem;
+}
+
+#Filiallar .tab_items .tab_img img {
+  margin-top: 1rem;
+}
+
+#Filiallar .tab_items .tab_text p {
+  margin-top: 1rem;
+  font-size: 17px;
   color: white;
-  background: #d6f1ff;
+  text-align: center;
+  font-weight: bold;
 }
 
-.tab .tab_header p {
+#Filiallar .tab_items:hover {
+  -webkit-box-shadow: 0 14px 20px 0 gray;
+          box-shadow: 0 14px 20px 0 gray;
+  -webkit-transition: 2s ease;
+  transition: 2s ease;
+  background: #159ee3;
+  background: linear-gradient(267deg, #159ee3 31%, #2fcdf3 91%);
+}
+
+#Filiallar .panel .card_photo {
+  margin-top: 1rem;
+}
+
+#Filiallar .panel .card_photo img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+#Filiallar .panel .card_text .blue {
+  padding: 0 0 8px;
+  font-size: 13px;
+  font-weight: 500;
   margin: 0;
-}
-
-.tab .tab_header .active {
   color: #159ee3;
 }
 
-.tab .tab_body {
-  margin-top: 3rem;
-  position: relative;
-  height: calc(100% - 60px);
-}
-
-.tab .tab_body div {
-  top: -200%;
+#Filiallar .panel .card_text .gray {
+  color: #7c7c7c;
+  font-size: 13px;
 }
 
 *,
