@@ -1,0 +1,64 @@
+#İnfolab {
+  margin-top: 6rem;
+  position: relative;
+  z-index: +999;
+  .comeback {
+    margin-top: 2rem;
+    margin-left: 4rem;
+    a {
+      font-size: 17px;
+      font-weight: 500;
+      text-decoration: none;
+      color: #0077b3;
+    }
+  }
+  .header_text {
+    text-align: center;
+    font-size: 36px;
+    color: #159ee3;
+    font-weight: bold;
+    padding: 0 0 60px;
+  }
+  .lab_card {
+    padding: 8px;
+    .lab_image {
+      img {
+        width: 100%;
+        object-fit: cover;
+        border-radius: 8px;
+      }
+    }
+    .lab_items {
+      h4 {
+        padding: 0 0 12px;
+        font-size: 17px;
+        font-weight: 500;
+        line-height: 1.41;
+        color: #404040;
+      }
+      p {
+        padding: 0 0 15px;
+        font-size: 14px;
+        line-height: 1.33;
+        color: rgba(39, 39, 39, 0.8);
+      }
+      .lab_data {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .month {
+          p {
+            font-size: 15px;
+            color: #7c7c7c;
+          }
+        }
+        .view {
+          p {
+            font-size: 12px;
+            color: #7c7c7c;
+          }
+        }
+      }
+    }
+  }
+}

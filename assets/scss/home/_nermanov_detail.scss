@@ -1,103 +1,127 @@
-#Filiallar {
-  .nav-tabs {
-    padding: 0;
-    margin-top: 5rem;
-    .nav-item {
-      padding: 0;
-
-      margin: 0;
-      .nav-link {
-        color: white;
-        background-color: #159ee3;
-        width: 283px;
-        padding: 20px 30px;
-        text-align: center;
-      }
-    }
-  }
-
-  .adress_items {
-    h2 {
-      padding: 0 0 30px;
-      font-size: 24px;
-      font-weight: bold;
-      color: #159ee3;
-    }
-    p {
-      color: #5a5a5a;
-      font-size: 14px;
-    }
-    .cursor {
+.accordion {
+  .accordion-tabs {
+    display: flex;
+    background: #159ee3;
+    .accordion-tab {
+      background: #159ee3;
+      padding: 1rem 2rem;
+      color: white;
+      flex: 1;
+      border: none;
       cursor: pointer;
-    }
-  }
-  .mapouter {
-    .gmap_canvas {
-      iframe {
-        width: 100%;
-        height: 835px;
+      &:hover {
+        background: #159ee3;
       }
-      a {
-        text-decoration: none;
-        color: gray;
-      }
-    }
-  }
-  .tab_items {
-    width: 200px;
-    height: 142px;
-    background-color: #159ee3;
-    border-radius: 8px;
-    .tab_img {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-top: 2rem;
-      img {
-        margin-top: 1rem;
-      }
-    }
 
-    .tab_text {
-      p {
-        margin-top: 1rem;
-        font-size: 17px;
-        color: white;
-        text-align: center;
-        font-weight: bold;
+      &.accordion-active {
+        background: #a9e2ff;
       }
-    }
-
-    &:hover {
-      box-shadow: 0 14px 20px 0 gray;
-      transition: 2s ease;
-      background: rgb(21, 158, 227);
-      background: linear-gradient(
-        267deg,
-        rgba(21, 158, 227, 1) 31%,
-        rgba(47, 205, 243, 1) 91%
-      );
     }
   }
-  .panel {
-    .card_photo {
-      margin-top: 1rem;
-      img {
-        width: 100%;
-        border-radius: 5px;
+  &-item {
+    &__label {
+      position: relative;
+    }
+    &__container {
+      height: 0;
+      overflow: hidden;
+      opacity: 0;
+      transition: padding 0.2s ease, opacity 0.5s 0.15s ease;
+      .adress_items {
+        padding: 5px 0px;
+        h2 {
+          padding: 0 0 30px;
+          font-size: 24px;
+          font-weight: bold;
+          color: #159ee3;
+        }
+        p {
+          color: #5a5a5a;
+          font-size: 14px;
+        }
+        .cursor {
+          cursor: pointer;
+        }
+      }
+      .mapouter {
+        .gmap_canvas {
+          iframe {
+            width: 100%;
+            height: 835px;
+          }
+          a {
+            text-decoration: none;
+            color: gray;
+          }
+        }
+      }
+      .tab_items {
+        width: 200px;
+        height: 142px;
+        background-color: #159ee3;
+        border-radius: 8px;
+        .tab_img {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-top: 2rem;
+          img {
+            margin-top: 1rem;
+          }
+        }
+
+        .tab_text {
+          p {
+            margin-top: 1rem;
+            font-size: 17px;
+            color: white;
+            text-align: center;
+            font-weight: bold;
+          }
+        }
+
+        &:hover {
+          box-shadow: 0 14px 20px 0 gray;
+          transition: 2s ease;
+          background: rgb(21, 158, 227);
+          background: linear-gradient(
+            267deg,
+            rgba(21, 158, 227, 1) 31%,
+            rgba(47, 205, 243, 1) 91%
+          );
+        }
+      }
+      .panel {
+        cursor: pointer;
+        .card_photo {
+          margin-top: 1rem;
+          img {
+            width: 100%;
+            border-radius: 5px;
+          }
+        }
+        .card_text {
+          .blue {
+            padding: 0 0 8px;
+            font-size: 13px;
+            font-weight: 500;
+            margin: 0;
+            color: #159ee3;
+          }
+          .gray {
+            color: #7c7c7c;
+            font-size: 13px;
+          }
+        }
       }
     }
-    .card_text {
-      .blue {
-        padding: 0 0 8px;
-        font-size: 13px;
-        font-weight: 500;
-        margin: 0;
-        color: #159ee3;
-      }
-      .gray {
-        color: #7c7c7c;
-        font-size: 13px;
+  }
+  &-active {
+    background: #159ee3;
+    .accordion-item {
+      &__container {
+        height: auto;
+        opacity: 1;
       }
     }
   }

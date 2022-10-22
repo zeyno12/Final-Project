@@ -41,12 +41,13 @@
         border-radius: 5px;
       }
       .panel_row {
-        // display: none;
-        // height: 0px;
-        // display: flex !important;
+        height: 0px;
+        display: flex !important;
+        visibility: hidden;
         .panel {
           .card_photo {
             margin-top: 1rem;
+            cursor: pointer;
             img {
               width: 100%;
               border-radius: 5px;
@@ -69,4 +70,8 @@
       }
     }
   }
+}
+.active2 {
+  height: auto !important;
+  visibility: visible !important;
 }
