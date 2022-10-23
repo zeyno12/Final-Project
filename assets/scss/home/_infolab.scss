@@ -19,6 +19,10 @@
     font-weight: bold;
     padding: 0 0 60px;
   }
+  .tabs {
+    display: flex !important;
+    flex-direction: row !important;
+  }
   .lab_card {
     padding: 8px;
     .lab_image {

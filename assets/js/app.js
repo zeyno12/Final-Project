@@ -74,35 +74,3 @@ labels.forEach(function (label) {
 tabs.forEach(function (tab) {
   tab.addEventListener("click", toggleShow);
 });
-
-///////
-fetch("/assets/Mock/infolab.js")
-  .then((res) => res.json())
-  .then((data) => {
-    console.log(data);
-    let output = "";
-    data.forEach((data) => {
-      output += `
-    <div class="lab_card">
-    <div class="lab_image">
-      <img src=${data.image} alt=${data.name} />
-    </div>
-    <div class="lab_items">
-      <h4>${data.name}</h4>
-      <p>${data.content}</p>
-      <div class="lab_data">
-        <div class="month">
-          <p>${data.month}</p>
-        </div>
-        <div class="view">
-          <p>${data.view}</p>
-        </div>
-      </div>
-    </div>
-  </div>
-    `;
-    });
-
-    document.querySelector(".col-lg-4").innerHTML = output;
-  })
-  .catch((err) => console.log(err));

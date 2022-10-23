@@ -1377,6 +1377,16 @@ footer .end_text .connection_items .scale_phone {
   padding: 0 0 60px;
 }
 
+#İnfolab .tabs {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-orient: horizontal !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: row !important;
+          flex-direction: row !important;
+}
+
 #İnfolab .lab_card {
   padding: 8px;
 }
