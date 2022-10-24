@@ -1435,6 +1435,203 @@ footer .end_text .connection_items .scale_phone {
   color: #7c7c7c;
 }
 
+#Müayinələr {
+  margin-top: 6rem;
+  position: relative;
+  z-index: +999;
+  width: 99%;
+}
+
+#Müayinələr .comeback {
+  margin-top: 2rem;
+  margin-left: 4rem;
+}
+
+#Müayinələr .comeback a {
+  font-size: 17px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #0077b3;
+}
+
+#Müayinələr .header_text {
+  text-align: center;
+  font-size: 36px;
+  color: #159ee3;
+  font-weight: bold;
+  padding: 0 0 60px;
+}
+
+#Müayinələr .muayine_search {
+  position: relative;
+}
+
+#Müayinələr .muayine_search input {
+  width: 80%;
+  padding: 17px;
+  border: 1px solid lightgray;
+  border-radius: 4px;
+}
+
+#Müayinələr .muayine_search .abs {
+  position: absolute;
+  top: 16px;
+  right: 25%;
+}
+
+#Müayinələr .muayine_search .abs i {
+  font-size: 16px;
+  color: gray;
+}
+
+#Müayinələr .but_payment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+#Müayinələr .but_payment button {
+  width: 40%;
+  padding: 18px;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  background: #159ee3;
+  background: linear-gradient(267deg, #159ee3 31%, #2fcdf3 91%);
+}
+
+#Müayinələr .miayine_items {
+  border: 1px solid #9f9f9f;
+  border-radius: 5px;
+}
+
+#Müayinələr .miayine_items .accordion {
+  border-bottom: 1px solid #dcdcdc;
+}
+
+#Müayinələr .miayine_items .accordion .container {
+  position: relative;
+  margin: 10px 10px;
+}
+
+#Müayinələr .miayine_items .accordion .container .itemss_acc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 10px;
+}
+
+#Müayinələr .miayine_items .accordion .container .itemss_acc .label {
+  position: relative;
+  padding: 10px 0;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #0077b3;
+  cursor: pointer;
+}
+
+#Müayinələr .miayine_items .accordion .container .itemss_acc .label::before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 6px 5.5px 0 5.5px;
+  border-color: #0077b3 transparent transparent transparent;
+  position: absolute;
+  top: calc(50% - 2px);
+  right: -12%;
+}
+
+#Müayinələr .miayine_items .accordion .container .content {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#Müayinələr .miayine_items .accordion .container .content .gif {
+  width: 10%;
+  height: 10%;
+}
+
+#Müayinələr .miayine_items .accordion .container .content .first {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 10px;
+}
+
+#Müayinələr .miayine_items .accordion .container .content .first .artc_icons img {
+  width: 24px;
+  height: 24px;
+}
+
+#Müayinələr .miayine_items .accordion .container .content .first .artc_text p {
+  margin: 0;
+  color: #0077b3;
+  font-size: 1.2rem;
+}
+
+#Müayinələr .miayine_items .accordion .container .content .vertical_tab_deep ul li {
+  padding: 15px 10px 10px 20px;
+}
+
+#Müayinələr .miayine_items .accordion .container .content .vertical_tab_deep ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  font-weight: 400;
+  padding-left: 10px;
+}
+
+#Müayinələr .miayine_items .accordion .container .content .vertical_tab_deep ul li a:hover {
+  color: #0077b3;
+}
+
+#Müayinələr .miayine_items .accordion .container .content .vertical_tab_deep ul li img {
+  height: 28px;
+  width: 28px;
+}
+
+#Müayinələr .miayine_items .accordion .container .different_item .detals_tab img {
+  width: 24px;
+  height: 24px;
+}
+
+#Müayinələr .miayine_items .accordion .container .different_item .label_deep span {
+  color: #0077b3;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+#Müayinələr .accordion .container.active .content {
+  height: auto;
+}
+
+#Müayinələr .accordion .container.active .label::before {
+  content: "-";
+}
+
 *,
 *::after,
 *::before {

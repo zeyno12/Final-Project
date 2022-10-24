@@ -1,0 +1,170 @@
+#Müayinələr {
+  margin-top: 6rem;
+  position: relative;
+  z-index: +999;
+  width: 99%;
+  .comeback {
+    margin-top: 2rem;
+    margin-left: 4rem;
+    a {
+      font-size: 17px;
+      font-weight: 500;
+      text-decoration: none;
+      color: #0077b3;
+    }
+  }
+  .header_text {
+    text-align: center;
+    font-size: 36px;
+    color: #159ee3;
+    font-weight: bold;
+    padding: 0 0 60px;
+  }
+  .muayine_search {
+    position: relative;
+    input {
+      width: 80%;
+      padding: 17px;
+      border: 1px solid lightgray;
+      border-radius: 4px;
+    }
+    .abs {
+      position: absolute;
+      top: 16px;
+      right: 25%;
+      i {
+        font-size: 16px;
+        color: gray;
+      }
+    }
+  }
+  .but_payment {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    button {
+      width: 40%;
+      padding: 18px;
+      border-radius: 5px;
+      border: none;
+      color: white;
+      background: rgb(21, 158, 227);
+      background: linear-gradient(
+        267deg,
+        rgba(21, 158, 227, 1) 31%,
+        rgba(47, 205, 243, 1) 91%
+      );
+    }
+  }
+
+  .miayine_items {
+    border: 1px solid rgb(159, 159, 159);
+    border-radius: 5px;
+    .accordion {
+      border-bottom: 1px solid #dcdcdc;
+      .container {
+        position: relative;
+        margin: 10px 10px;
+        .itemss_acc {
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          gap: 10px;
+          .label {
+            position: relative;
+            padding: 10px 0;
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: #0077b3;
+            cursor: pointer;
+            &::before {
+              content: "";
+              display: block;
+              width: 0;
+              height: 0;
+              border-style: solid;
+              border-width: 6px 5.5px 0 5.5px;
+              border-color: #0077b3 transparent transparent transparent;
+              position: absolute;
+              top: calc(50% - 2px);
+              right: -12%;
+            }
+          }
+        }
+
+        .content {
+          .gif {
+            width: 10%;
+            height: 10%;
+          }
+          .first {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 10px;
+            .artc_icons {
+              img {
+                width: 24px;
+                height: 24px;
+              }
+            }
+            .artc_text {
+              p {
+                margin: 0;
+                color: #0077b3;
+                font-size: 1.2rem;
+              }
+            }
+          }
+          position: relative;
+          height: 0;
+          overflow: hidden;
+          transition: 0.5s;
+          .vertical_tab_deep {
+            ul {
+              li {
+                padding: 15px 10px 10px 20px;
+                a {
+                  text-decoration: none;
+                  color: black;
+                  font-size: 16px;
+                  font-weight: 400;
+                  padding-left: 10px;
+                  &:hover {
+                    color: #0077b3;
+                  }
+                }
+                img {
+                  height: 28px;
+                  width: 28px;
+                }
+              }
+            }
+          }
+        }
+        .different_item {
+          .detals_tab {
+            img {
+              width: 24px;
+              height: 24px;
+            }
+          }
+          .label_deep {
+            span {
+              color: #0077b3;
+              font-size: 16px;
+              font-weight: 400;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .accordion .container.active .content {
+    height: auto;
+  }
+  .accordion .container.active .label::before {
+    content: "-";
+  }
+}
