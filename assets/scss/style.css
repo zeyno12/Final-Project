@@ -1506,21 +1506,25 @@ footer .end_text .connection_items .scale_phone {
   background: linear-gradient(267deg, #159ee3 31%, #2fcdf3 91%);
 }
 
-#Müayinələr .miayine_items {
+#Müayinələr .muaiyine_content {
   border: 1px solid #9f9f9f;
   border-radius: 5px;
 }
 
-#Müayinələr .miayine_items .accordion {
+#Müayinələr .muaiyine_content .miayine_items {
+  border-right: 1px solid #dcdcdc;
+}
+
+#Müayinələr .muaiyine_content .miayine_items .accordion {
   border-bottom: 1px solid #dcdcdc;
 }
 
-#Müayinələr .miayine_items .accordion .container {
+#Müayinələr .muaiyine_content .miayine_items .accordion .container {
   position: relative;
   margin: 10px 10px;
 }
 
-#Müayinələr .miayine_items .accordion .container .itemss_acc {
+#Müayinələr .muaiyine_content .miayine_items .accordion .container .itemss_acc {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1533,7 +1537,7 @@ footer .end_text .connection_items .scale_phone {
   gap: 10px;
 }
 
-#Müayinələr .miayine_items .accordion .container .itemss_acc .label {
+#Müayinələr .muaiyine_content .miayine_items .accordion .container .itemss_acc .label {
   position: relative;
   padding: 10px 0;
   font-size: 1.4rem;
@@ -1542,7 +1546,7 @@ footer .end_text .connection_items .scale_phone {
   cursor: pointer;
 }
 
-#Müayinələr .miayine_items .accordion .container .itemss_acc .label::before {
+#Müayinələr .muaiyine_content .miayine_items .accordion .container .itemss_acc .label::before {
   content: "";
   display: block;
   width: 0;
@@ -1555,7 +1559,7 @@ footer .end_text .connection_items .scale_phone {
   right: -12%;
 }
 
-#Müayinələr .miayine_items .accordion .container .content {
+#Müayinələr .muaiyine_content .miayine_items .accordion .container .content {
   position: relative;
   height: 0;
   overflow: hidden;
@@ -1563,12 +1567,12 @@ footer .end_text .connection_items .scale_phone {
   transition: 0.5s;
 }
 
-#Müayinələr .miayine_items .accordion .container .content .gif {
+#Müayinələr .muaiyine_content .miayine_items .accordion .container .content .gif {
   width: 10%;
   height: 10%;
 }
 
-#Müayinələr .miayine_items .accordion .container .content .first {
+#Müayinələr .muaiyine_content .miayine_items .accordion .container .content .first {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1581,22 +1585,22 @@ footer .end_text .connection_items .scale_phone {
   gap: 10px;
 }
 
-#Müayinələr .miayine_items .accordion .container .content .first .artc_icons img {
+#Müayinələr .muaiyine_content .miayine_items .accordion .container .content .first .artc_icons img {
   width: 24px;
   height: 24px;
 }
 
-#Müayinələr .miayine_items .accordion .container .content .first .artc_text p {
+#Müayinələr .muaiyine_content .miayine_items .accordion .container .content .first .artc_text p {
   margin: 0;
   color: #0077b3;
   font-size: 1.2rem;
 }
 
-#Müayinələr .miayine_items .accordion .container .content .vertical_tab_deep ul li {
+#Müayinələr .muaiyine_content .miayine_items .accordion .container .content .vertical_tab_deep ul li {
   padding: 15px 10px 10px 20px;
 }
 
-#Müayinələr .miayine_items .accordion .container .content .vertical_tab_deep ul li a {
+#Müayinələr .muaiyine_content .miayine_items .accordion .container .content .vertical_tab_deep ul li a {
   text-decoration: none;
   color: black;
   font-size: 16px;
@@ -1604,32 +1608,75 @@ footer .end_text .connection_items .scale_phone {
   padding-left: 10px;
 }
 
-#Müayinələr .miayine_items .accordion .container .content .vertical_tab_deep ul li a:hover {
+#Müayinələr .muaiyine_content .miayine_items .accordion .container .content .vertical_tab_deep ul li a:hover {
   color: #0077b3;
 }
 
-#Müayinələr .miayine_items .accordion .container .content .vertical_tab_deep ul li img {
+#Müayinələr .muaiyine_content .miayine_items .accordion .container .content .vertical_tab_deep ul li img {
   height: 28px;
   width: 28px;
 }
 
-#Müayinələr .miayine_items .accordion .container .different_item .detals_tab img {
+#Müayinələr .muaiyine_content .miayine_items .accordion .container .different_item .detals_tab img {
   width: 24px;
   height: 24px;
 }
 
-#Müayinələr .miayine_items .accordion .container .different_item .label_deep span {
+#Müayinələr .muaiyine_content .miayine_items .accordion .container .different_item .label_deep span {
   color: #0077b3;
   font-size: 16px;
   font-weight: 400;
 }
 
-#Müayinələr .accordion .container.active .content {
+#Müayinələr .muaiyine_content .accordion .container.active .content {
   height: auto;
 }
 
-#Müayinələr .accordion .container.active .label::before {
-  content: "-";
+#Müayinələr .muaiyine_content #vertical_tab_nav .flexable {
+  border-bottom: 1px solid #dcdcdc;
+  padding: 25px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#Müayinələr .muaiyine_content #vertical_tab_nav .flexable .leftside h4 {
+  color: #0077b3;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+#Müayinələr .muaiyine_content #vertical_tab_nav .flexable .leftside p {
+  color: #737373;
+  font-size: 1rem;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+#Müayinələr .muaiyine_content #vertical_tab_nav .flexable .leftside p:hover {
+  text-decoration: underline;
+}
+
+#Müayinələr .muaiyine_content #vertical_tab_nav .flexable .rightside span {
+  color: #0077b3;
+}
+
+#Müayinələr .muaiyine_content #vertical_tab_nav .flexable .rightside button {
+  border: 2px solid #0077b3;
+  background-color: inherit;
+  color: #0077b3;
+  border-radius: 30px;
+  padding: 10px 15px;
+}
+
+#Müayinələr .muaiyine_content #vertical_tab_nav .flexable .rightside i {
+  color: #0077b3;
 }
 
 *,

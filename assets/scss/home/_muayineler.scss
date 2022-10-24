@@ -3,6 +3,7 @@
   position: relative;
   z-index: +999;
   width: 99%;
+
   .comeback {
     margin-top: 2rem;
     margin-left: 4rem;
@@ -56,115 +57,154 @@
       );
     }
   }
-
-  .miayine_items {
+  .muaiyine_content {
     border: 1px solid rgb(159, 159, 159);
     border-radius: 5px;
-    .accordion {
-      border-bottom: 1px solid #dcdcdc;
-      .container {
-        position: relative;
-        margin: 10px 10px;
-        .itemss_acc {
-          display: flex;
-          align-items: center;
-          justify-content: flex-start;
-          gap: 10px;
-          .label {
-            position: relative;
-            padding: 10px 0;
-            font-size: 1.4rem;
-            font-weight: 600;
-            color: #0077b3;
-            cursor: pointer;
-            &::before {
-              content: "";
-              display: block;
-              width: 0;
-              height: 0;
-              border-style: solid;
-              border-width: 6px 5.5px 0 5.5px;
-              border-color: #0077b3 transparent transparent transparent;
-              position: absolute;
-              top: calc(50% - 2px);
-              right: -12%;
-            }
-          }
-        }
-
-        .content {
-          .gif {
-            width: 10%;
-            height: 10%;
-          }
-          .first {
+    .miayine_items {
+      border-right: 1px solid #dcdcdc;
+      .accordion {
+        border-bottom: 1px solid #dcdcdc;
+        .container {
+          position: relative;
+          margin: 10px 10px;
+          .itemss_acc {
             display: flex;
             align-items: center;
             justify-content: flex-start;
             gap: 10px;
-            .artc_icons {
+            .label {
+              position: relative;
+              padding: 10px 0;
+              font-size: 1.4rem;
+              font-weight: 600;
+              color: #0077b3;
+              cursor: pointer;
+              &::before {
+                content: "";
+                display: block;
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: 6px 5.5px 0 5.5px;
+                border-color: #0077b3 transparent transparent transparent;
+                position: absolute;
+                top: calc(50% - 2px);
+                right: -12%;
+              }
+            }
+          }
+
+          .content {
+            .gif {
+              width: 10%;
+              height: 10%;
+            }
+            .first {
+              display: flex;
+              align-items: center;
+              justify-content: flex-start;
+              gap: 10px;
+              .artc_icons {
+                img {
+                  width: 24px;
+                  height: 24px;
+                }
+              }
+              .artc_text {
+                p {
+                  margin: 0;
+                  color: #0077b3;
+                  font-size: 1.2rem;
+                }
+              }
+            }
+            position: relative;
+            height: 0;
+            overflow: hidden;
+            transition: 0.5s;
+            .vertical_tab_deep {
+              ul {
+                li {
+                  padding: 15px 10px 10px 20px;
+                  a {
+                    text-decoration: none;
+                    color: black;
+                    font-size: 16px;
+                    font-weight: 400;
+                    padding-left: 10px;
+                    &:hover {
+                      color: #0077b3;
+                    }
+                  }
+                  img {
+                    height: 28px;
+                    width: 28px;
+                  }
+                }
+              }
+            }
+          }
+          .different_item {
+            .detals_tab {
               img {
                 width: 24px;
                 height: 24px;
               }
             }
-            .artc_text {
-              p {
-                margin: 0;
+            .label_deep {
+              span {
                 color: #0077b3;
-                font-size: 1.2rem;
+                font-size: 16px;
+                font-weight: 400;
               }
-            }
-          }
-          position: relative;
-          height: 0;
-          overflow: hidden;
-          transition: 0.5s;
-          .vertical_tab_deep {
-            ul {
-              li {
-                padding: 15px 10px 10px 20px;
-                a {
-                  text-decoration: none;
-                  color: black;
-                  font-size: 16px;
-                  font-weight: 400;
-                  padding-left: 10px;
-                  &:hover {
-                    color: #0077b3;
-                  }
-                }
-                img {
-                  height: 28px;
-                  width: 28px;
-                }
-              }
-            }
-          }
-        }
-        .different_item {
-          .detals_tab {
-            img {
-              width: 24px;
-              height: 24px;
-            }
-          }
-          .label_deep {
-            span {
-              color: #0077b3;
-              font-size: 16px;
-              font-weight: 400;
             }
           }
         }
       }
     }
-  }
 
-  .accordion .container.active .content {
-    height: auto;
-  }
-  .accordion .container.active .label::before {
-    content: "-";
+    .accordion .container.active .content {
+      height: auto;
+    }
+    #vertical_tab_nav {
+      .flexable {
+        border-bottom: 1px solid #dcdcdc;
+        padding: 25px 0px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .leftside {
+          h4 {
+            color: #0077b3;
+            font-weight: 600;
+            font-size: 1.2rem;
+          }
+          p {
+            color: rgb(115, 115, 115);
+            font-size: 1rem;
+            font-weight: 400;
+            cursor: pointer;
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+        .rightside {
+          span {
+            color: #0077b3;
+          }
+          button {
+            border: 2px solid #0077b3;
+            background-color: inherit;
+            color: #0077b3;
+            border-radius: 30px;
+            padding: 10px 15px;
+          }
+          i {
+            color: #0077b3;
+          }
+        }
+      }
+    }
   }
 }
