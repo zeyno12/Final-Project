@@ -30,6 +30,9 @@
     }
   }
 }
+.block {
+  display: block !important;
+}
 
 .Page_Logo {
   position: absolute;
@@ -211,6 +214,7 @@ nav {
     align-items: flex-end;
     gap: 30px;
     .search {
+      cursor: pointer;
       position: absolute;
       top: 20px;
       font-size: 20px;
@@ -226,6 +230,7 @@ nav {
       border-radius: 50%;
     }
     .phone {
+      cursor: pointer;
       position: absolute;
       top: 20px;
       font-size: 20px;
@@ -236,14 +241,14 @@ nav {
           padding: 0 17px 5px;
           font-size: 13px;
           font-weight: 500;
-          color: #fff;
+          color: #f176a7;
           margin: 0;
         }
       }
       .number {
         a {
           text-decoration: none;
-          color: white;
+          color: #f176a7;
           display: inline-block;
           font-size: 22px;
           font-weight: 700;
@@ -315,7 +320,6 @@ nav {
     .nav {
       position: relative;
       width: auto;
-      display: inline-block;
       border: none;
       .transform_itemas {
         width: 665px;
@@ -359,12 +363,12 @@ nav {
       }
     }
     .btn-nav {
-      position: absolute;
+      position: fixed;
       width: 50px;
       height: 50px;
       border-radius: 50%;
       top: 20px;
-      right: 75px;
+      right: 9%;
       background-color: white;
       border: none;
       padding: 11px;
