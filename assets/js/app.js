@@ -35,7 +35,6 @@ array.forEach((element) => {
 //tab_items
 const labels = document.querySelectorAll(".accordion-item__label");
 const tabs = document.querySelectorAll(".accordion-tab");
-
 function toggleShow() {
   const target = this;
   const item = target.classList.contains("accordion-tab")
@@ -53,10 +52,8 @@ function toggleShow() {
       }
     }
   });
-
   labels.forEach(function (label) {
     const tabItem = label.parentElement;
-
     if (tabItem.dataset.actabGroup === group) {
       if (tabItem.dataset.actabId === id) {
         tabItem.classList.add("accordion-active");
@@ -75,7 +72,7 @@ tabs.forEach(function (tab) {
   tab.addEventListener("click", toggleShow);
 });
 
-////
+////vertical_tab
 $(document).ready(function () {
   $("#vertical_tab_nav > ul > li > a").eq(0).addClass("selected");
   $("#vertical_tab_nav > div > article").eq(0).css("display", "block");
@@ -92,10 +89,32 @@ $(document).ready(function () {
   });
 });
 
-///
+///accordion_muyineler
 const accordion_i = document.getElementsByClassName("container");
 for (i = 0; i < accordion_i.length; i++) {
   accordion_i[i].addEventListener("click", function () {
     this.classList.toggle("active");
   });
 }
+
+////serch_muyineler
+document.getElementById("search").addEventListener("input", filterList);
+function filterList() {
+  const searchInput = document.getElementById("search");
+  const filter = searchInput.value.toLowerCase();
+  const listItems = document.querySelectorAll(".flexable");
+  listItems.forEach((item) => {
+    let text = item.textContent;
+    if (text.toLowerCase().includes(filter.toLowerCase())) {
+      item.style.display = "";
+    } else {
+      item.style.display = "none";
+    }
+  });
+}
+///search_mainnn
+const opensearch = document.querySelectorAll(".bi-search");
+opensearch.addEventListener("click", () => {
+  console.log(true);
+  document.getElementById("Main_serch").style.display = "block";
+});

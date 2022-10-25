@@ -1,5 +1,41 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;500&display=swap");
+#Main_serch {
+  width: 100%;
+  height: 160px;
+  padding: 40px 10px;
+  background: #fff;
+  position: relative;
+  left: 0;
+  top: 0;
+  z-index: +9999;
+  display: none;
+}
+
+#Main_serch .main_serch {
+  display: block;
+  width: 100%;
+  height: 72px;
+  padding: 0 0 0 56px;
+  border: none;
+  border-bottom: 2px solid #4eade0;
+  font-family: "Gilroy";
+  font-size: 24px;
+  line-height: 1.67;
+  color: #4eade0;
+}
+
+#Main_serch a {
+  position: absolute;
+  right: 0;
+  top: 40px;
+}
+
+#Main_serch a i {
+  color: #4eade0;
+  font-size: 3rem;
+}
+
 .Page_Logo {
   position: absolute;
   top: 24px;
@@ -1677,6 +1713,57 @@ footer .end_text .connection_items .scale_phone {
 
 #Müayinələr .muaiyine_content #vertical_tab_nav .flexable .rightside i {
   color: #0077b3;
+}
+
+#E-nəticə {
+  margin-top: 6rem;
+  position: relative;
+  z-index: +999;
+  width: 99%;
+}
+
+#E-nəticə .comeback {
+  margin-top: 2rem;
+  margin-left: 4rem;
+}
+
+#E-nəticə .comeback a {
+  font-size: 17px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #0077b3;
+}
+
+#E-nəticə .netice form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#E-nəticə .netice form input {
+  margin: 10px;
+  width: 50%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid gray;
+}
+
+#E-nəticə .netice form button {
+  border: none;
+  padding: 12px 40px;
+  border-radius: 10px;
+  background: #ffcc00;
+  font-size: 15px;
 }
 
 *,
