@@ -385,7 +385,6 @@ nav .nav_items .language .az:hover + .ru {
 }
 
 nav .nav_items .nav {
-  position: relative;
   width: auto;
   border: none;
 }
@@ -441,7 +440,7 @@ nav .nav_items .nav .transform_itemas .leftside_nav ul li:hover {
 }
 
 nav .nav_items .btn-nav {
-  position: fixed;
+  position: absolute;
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -1257,7 +1256,7 @@ footer .end_text .connection_items .scale_phone {
 
 .accordion .accordion-tabs .accordion-tab {
   background: #159ee3;
-  padding: 1rem 2rem;
+  padding: 1rem 1.3rem;
   color: white;
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -1838,6 +1837,216 @@ footer .end_text .connection_items .scale_phone {
 #Axtarış .axtaris_items h3 a {
   color: #000;
   text-decoration: none;
+}
+
+#Haqqımızda {
+  margin-top: 6rem;
+  position: relative;
+  z-index: +999;
+}
+
+#Haqqımızda .comeback {
+  margin-top: 2rem;
+  margin-left: 4rem;
+}
+
+#Haqqımızda .comeback a {
+  font-size: 17px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #0077b3;
+}
+
+#Haqqımızda .header_text {
+  text-align: center;
+  font-size: 36px;
+  color: #159ee3;
+  font-weight: bold;
+  padding: 0 0 60px;
+}
+
+#Haqqımızda .accordion-item__container {
+  padding: 10px;
+}
+
+#Haqqımızda .accordion-item__container .rehberlik .rehber_image img {
+  max-width: 240px;
+  border-radius: 8px;
+}
+
+#Haqqımızda .accordion-item__container .rehberlik .rehber_text {
+  font-size: 15px;
+  line-height: 1.75;
+  color: #404040;
+  font-weight: 300;
+}
+
+#Haqqımızda .accordion-item__container .rehberlik .rehber_text p {
+  padding: 0 0 25px;
+}
+
+#Haqqımızda .accordion-item__container .rehberlik .rehber_text .end {
+  text-align: right;
+}
+
+#Haqqımızda .accordion-item__container .karyeras .kayyeratext {
+  font-size: 15px;
+  line-height: 1.75;
+  color: #404040;
+  font-weight: 300;
+}
+
+#Haqqımızda .accordion-item__container .karyeras .karyeraimg h3 {
+  padding: 0 0 50px;
+  font-size: 26px;
+  font-weight: bold;
+  color: #159ee3;
+  text-align: center;
+}
+
+#Haqqımızda .accordion-item__container .karyeras .karyeimg {
+  padding: 10px;
+}
+
+#Haqqımızda .accordion-item__container .karyeras .karyeimg img {
+  cursor: pointer;
+  width: 270px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 16px;
+}
+
+#Haqqımızda .accordion-item__container .lisenziya .card_lisenziya .lisenziya_img img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#Haqqımızda .accordion-item__container .lisenziya .card_lisenziya .lisenziya_text p {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.44;
+  text-align: center;
+  color: #404040;
+}
+
+#Haqqımızda .accordion-item__container .history p {
+  font-size: 15px;
+  line-height: 1.75;
+  color: #404040;
+  font-weight: 300;
+}
+
+#Haqqımızda .accordion-item__container .history img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#Laboratoriya {
+  margin-top: 6rem;
+  position: relative;
+  z-index: +999;
+}
+
+#Laboratoriya .comeback {
+  margin-top: 2rem;
+  margin-left: 4rem;
+}
+
+#Laboratoriya .comeback a {
+  font-size: 17px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #0077b3;
+}
+
+#Laboratoriya .header_text {
+  text-align: center;
+  font-size: 36px;
+  color: #159ee3;
+  font-weight: bold;
+  padding: 0 0 60px;
+}
+
+#Laboratoriya .lab_haqqinda,
+#Laboratoriya .nezaret,
+#Laboratoriya .huquq {
+  padding: 10px;
+}
+
+#Laboratoriya .lab_haqqinda .lab_imagr,
+#Laboratoriya .nezaret .lab_imagr,
+#Laboratoriya .huquq .lab_imagr {
+  margin-top: 2rem;
+}
+
+#Laboratoriya .lab_haqqinda .lab_imagr img,
+#Laboratoriya .nezaret .lab_imagr img,
+#Laboratoriya .huquq .lab_imagr img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#Laboratoriya .lab_haqqinda p,
+#Laboratoriya .nezaret p,
+#Laboratoriya .huquq p {
+  margin-top: 2rem;
+  font-size: 16px;
+  font-family: "Gilroy";
+  font-weight: 400;
+  line-height: 1.75;
+  color: #404040;
+}
+
+#Laboratoriya .lab_haqqinda .nezaret_img,
+#Laboratoriya .lab_haqqinda .huquq_img,
+#Laboratoriya .nezaret .nezaret_img,
+#Laboratoriya .nezaret .huquq_img,
+#Laboratoriya .huquq .nezaret_img,
+#Laboratoriya .huquq .huquq_img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#Laboratoriya .lab_haqqinda .nezaret_img img,
+#Laboratoriya .lab_haqqinda .huquq_img img,
+#Laboratoriya .nezaret .nezaret_img img,
+#Laboratoriya .nezaret .huquq_img img,
+#Laboratoriya .huquq .nezaret_img img,
+#Laboratoriya .huquq .huquq_img img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#Laboratoriya .lab_haqqinda .blue,
+#Laboratoriya .nezaret .blue,
+#Laboratoriya .huquq .blue {
+  color: #159ee3;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+#Laboratoriya .lab_haqqinda .lists_p,
+#Laboratoriya .nezaret .lists_p,
+#Laboratoriya .huquq .lists_p {
+  padding: 0 0 10px 25px;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Gilroy";
+}
+
+#Laboratoriya .lab_haqqinda .lists_p i,
+#Laboratoriya .nezaret .lists_p i,
+#Laboratoriya .huquq .lists_p i {
+  color: #0077b3;
+  font-size: 16px;
 }
 
 *,
