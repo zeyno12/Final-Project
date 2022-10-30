@@ -2,19 +2,23 @@
   .accordion-tabs {
     display: flex;
     background: #159ee3;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
     .accordion-tab {
-      background: #159ee3;
+      background: white;
       padding: 1rem 1.3rem;
-      color: white;
+      color: #159ee3;
       flex: 1;
       border: none;
       cursor: pointer;
+      border-left: 1px solid #cccccc;
       &:hover {
-        background: #159ee3;
+        background: #b0e5ff;
       }
 
       &.accordion-active {
-        background: #a9e2ff;
+        background: #159ee3;
+        color: white;
       }
     }
   }

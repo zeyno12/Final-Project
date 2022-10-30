@@ -133,8 +133,9 @@ let xeber = [
 ];
 
 xeber.forEach((xeber) => {
-  let output_xeber = "";
-  output_xeber += `
+  if (xeber != null) {
+    let output_xeber = "";
+    output_xeber += `
   <div class="lab_card">
   <div class="lab_image">
     <img src=${xeber.image} alt=${xeber.name} />
@@ -153,9 +154,10 @@ xeber.forEach((xeber) => {
   </div>
   </div>
   `;
-  let element = document.querySelector(".tabxeber");
-  let new_element = document.createElement("div");
-  new_element.classList.add("col-lg-4");
-  new_element.innerHTML = output_xeber;
-  element.append(new_element);
+    let element = document.querySelector(".tabxeber");
+    let new_element = document.createElement("div");
+    new_element.classList.add("col-lg-4");
+    new_element.innerHTML = output_xeber;
+    element.append(new_element);
+  }
 });

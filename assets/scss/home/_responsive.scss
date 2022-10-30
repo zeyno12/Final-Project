@@ -1,0 +1,202 @@
+@media (max-width: 768px) {
+  #slider {
+    display: none;
+  }
+  header {
+    .xidmet_box {
+      width: calc(50% - 12px);
+      height: 90px;
+      margin: 6px;
+    }
+  }
+  .Page_Logo {
+    img {
+      width: 60px;
+      object-fit: cover;
+    }
+    .second_logo {
+      width: 100px;
+      object-fit: cover;
+    }
+  }
+  nav {
+    .nav_items {
+      .nav {
+        .transform_itemas {
+          width: auto;
+          height: 100%;
+        }
+      }
+      .language {
+        display: none;
+      }
+      .search {
+        display: none;
+      }
+      .phone {
+        top: 30px;
+        right: 17%;
+      }
+      .btn-nav {
+        background-color: #e24775;
+        top: 30px;
+        right: 18px;
+      }
+      .icon-bar {
+        margin: 5px 3px;
+        width: 21px;
+        background-color: white;
+      }
+      .animated .icon-bar {
+        background-color: white;
+      }
+    }
+  }
+  footer {
+    .end_text {
+      .left_side {
+        top: 677px;
+        text-align: center;
+        left: 50px;
+        a {
+          display: block;
+        }
+      }
+      .right_side {
+        top: 733px;
+        right: 55px;
+      }
+      .connection_items {
+        position: absolute;
+        top: 600px;
+        right: 20px;
+        .f_phone,
+        .f_anket,
+        .f_sual,
+        .f_connect {
+          box-shadow: 7px 8px 9px -4px grey;
+        }
+        .f_search {
+          display: block;
+          cursor: pointer;
+          position: absolute;
+          font-size: 20px;
+          z-index: 999;
+          color: #fff;
+          background-color: #e24775;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 50%;
+          left: -73px;
+          width: 57px;
+          height: 57px;
+          box-shadow: 7px 8px 9px -4px grey;
+        }
+      }
+    }
+  }
+  #Hekimler {
+    .panel {
+      .card_text {
+        text-align: center;
+        margin-top: 10px;
+      }
+    }
+  }
+  #Onlayn_qeydiyyat {
+    .onlayn_item {
+      .form_item {
+        .form_text {
+          input {
+            width: 100%;
+            margin: 12px 0px;
+          }
+        }
+        .end_label {
+          label {
+            display: inline;
+          }
+        }
+      }
+    }
+  }
+  #E-nəticə {
+    .netice {
+      form {
+        input {
+          width: 100%;
+        }
+      }
+    }
+  }
+  #Check_up {
+    .check_items {
+      .check_cards {
+        .card_text {
+          p {
+            font-size: 18px !important;
+          }
+        }
+      }
+    }
+  }
+  #Filiallar {
+    .accordion {
+      .accordion-tabs {
+        display: flex;
+        flex-direction: column;
+      }
+      .accordion-content {
+        .accordion-item__container {
+          .flex_center {
+            display: flex;
+            justify-content: center;
+            margin: 16px 0px;
+          }
+        }
+      }
+    }
+  }
+  #İnfolab,
+  #Haqqımızda,
+  #Laboratoriya {
+    .accordion {
+      .accordion-tabs {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+  #Müayinələr {
+    .muayine_search {
+      input {
+        width: 100%;
+      }
+    }
+    .but_payment {
+      button {
+        width: 100%;
+      }
+    }
+    .muaiyine_content {
+      margin: initial;
+      .miayine_items {
+        border: none;
+      }
+      #vertical_tab_nav {
+        .flexable {
+          display: flex;
+          flex-direction: column;
+          .rightside {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            gap: 25px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -12,17 +12,3 @@ input.addEventListener("keypress", function (event) {
     location.href = "http://127.0.0.1:5500/axtariw.html";
   }
 });
-// document.getElementById("search").addEventListener("input", filterList);
-// function filterList() {
-//   const searchInput = document.getElementById("search");
-//   const filter = searchInput.value.toLowerCase();
-//   const listItems = document.querySelectorAll("axtaris_items");
-//   listItems.forEach((item) => {
-//     let text = item.textContent;
-//     if (text.toLowerCase().includes(filter.toLowerCase())) {
-//       item.style.display = "";
-//     } else {
-//       item.style.display = "none";
-//     }
-//   });
-// }

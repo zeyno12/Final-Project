@@ -184,25 +184,26 @@ let data = [
     view: "Baxış sayı: 2727",
   },
 ];
-window.onload = function () {
-  data.forEach((data) => {
+
+data.forEach((data) => {
+  if (data != null) {
     let output = "";
     output += `
 <div class="lab_card">
 <div class="lab_image">
-  <img src=${data.image} alt=${data.name} />
+<img src=${data.image} alt=${data.name} />
 </div>
 <div class="lab_items">
-  <h4>${data.name}</h4>
-  <p>${data.content}</p>
-  <div class="lab_data">
-    <div class="month">
-      <p>${data.month}</p>
-    </div>
-    <div class="view">
-      <p>${data.view}</p>
-    </div>
+<h4>${data.name}</h4>
+<p>${data.content}</p>
+<div class="lab_data">
+  <div class="month">
+    <p>${data.month}</p>
   </div>
+  <div class="view">
+    <p>${data.view}</p>
+  </div>
+</div>
 </div>
 </div>
 `;
@@ -211,5 +212,5 @@ window.onload = function () {
     new_el.classList.add("col-lg-4");
     new_el.innerHTML = output;
     ell.append(new_el);
-  });
-};
+  }
+});

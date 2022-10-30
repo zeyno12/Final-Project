@@ -108,8 +108,9 @@ let cavab = [
 ];
 
 cavab.forEach((cavab) => {
-  let output_cavab = "";
-  output_cavab += `
+  if (cavab != null) {
+    let output_cavab = "";
+    output_cavab += `
     <div class="lab_card">
     <div class="lab_image">
       <img src=${cavab.image} alt=${cavab.name} />
@@ -128,9 +129,10 @@ cavab.forEach((cavab) => {
     </div>
     </div>
     `;
-  let elem = document.querySelector(".tabcavab");
-  let new_elem = document.createElement("div");
-  new_elem.classList.add("col-lg-4");
-  new_elem.innerHTML = output_cavab;
-  elem.append(new_elem);
+    let elem = document.querySelector(".tabcavab");
+    let new_elem = document.createElement("div");
+    new_elem.classList.add("col-lg-4");
+    new_elem.innerHTML = output_cavab;
+    elem.append(new_elem);
+  }
 });

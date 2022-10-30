@@ -108,8 +108,9 @@ let vitamin = [
 ];
 
 vitamin.forEach((vitamin) => {
-  let output_vitamin = "";
-  output_vitamin += `
+  if (vitamin != null) {
+    let output_vitamin = "";
+    output_vitamin += `
       <div class="lab_card">
       <div class="lab_image">
         <img src=${vitamin.image} alt=${vitamin.name} />
@@ -128,9 +129,10 @@ vitamin.forEach((vitamin) => {
       </div>
       </div>
       `;
-  let mikro = document.querySelector(".tabvitamin");
-  let new_mikro = document.createElement("div");
-  new_mikro.classList.add("col-lg-4");
-  new_mikro.innerHTML = output_vitamin;
-  mikro.append(new_mikro);
+    let mikro = document.querySelector(".tabvitamin");
+    let new_mikro = document.createElement("div");
+    new_mikro.classList.add("col-lg-4");
+    new_mikro.innerHTML = output_vitamin;
+    mikro.append(new_mikro);
+  }
 });

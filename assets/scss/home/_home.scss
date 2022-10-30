@@ -33,7 +33,6 @@
 .block {
   display: block !important;
 }
-
 .Page_Logo {
   position: absolute;
   top: 24px;
@@ -63,8 +62,8 @@ header {
         }
         cursor: pointer;
         overflow: hidden;
-        width: 210px !important;
-        height: 100px;
+        max-width: 210px !important;
+        max-height: 100px;
         text-decoration: none;
         background: rgb(206, 41, 84);
         background: linear-gradient(
@@ -374,21 +373,11 @@ nav {
       cursor: pointer;
       z-index: 999;
     }
-    .btn-nav:focus {
-      outline: 0;
-    }
     .icon-bar {
       display: block;
       margin: 6px 0;
       width: 26px;
       height: 2px;
-      background-color: #e24775;
-    }
-    .btn-nav:hover .icon-bar {
-      background-color: #e24775;
-    }
-    .animated:hover .icon-bar,
-    .animated:focus .icon-bar {
       background-color: #e24775;
     }
     .icon-bar {
@@ -404,11 +393,11 @@ nav {
       background-color: #e24775;
     }
     .animated .top {
-      -webkit-transform: translateY(8px) rotateZ(45deg);
-      -moz-transform: translateY(8px) rotateZ(45deg);
-      -ms-transform: translateY(8px) rotateZ(45deg);
-      -o-transform: translateY(8px) rotateZ(45deg);
-      transform: translateY(8px) rotateZ(45deg);
+      -webkit-transform: translateY(6px) rotateZ(45deg);
+      -moz-transform: translateY(6px) rotateZ(45deg);
+      -ms-transform: translateY(6px) rotateZ(45deg);
+      -o-transform: translateY(6px) rotateZ(45deg);
+      transform: translateY(6px) rotateZ(45deg);
     }
     .animated .bottom {
       -webkit-transform: translateY(-8px) rotateZ(-45deg);
@@ -427,7 +416,7 @@ footer {
     position: relative;
     .left_side {
       position: absolute;
-      top: 550px;
+      top: 570px;
       left: 22px;
       p {
         color: rgba(0, 0, 0, 0.3);
@@ -448,7 +437,7 @@ footer {
     }
     .right_side {
       position: absolute;
-      top: 550px;
+      top: 570px;
       right: 25px;
       display: flex;
       gap: 20px;
@@ -504,6 +493,9 @@ footer {
         i {
           color: #ed307d;
         }
+      }
+      .f_search {
+        display: none;
       }
       .lemon_connect {
         background-color: #ed307d;

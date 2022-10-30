@@ -74,8 +74,8 @@ header .absolut_item {
 header .absolut_item .xidmet_box .main_a {
   cursor: pointer;
   overflow: hidden;
-  width: 210px !important;
-  height: 100px;
+  max-width: 210px !important;
+  max-height: 100px;
   text-decoration: none;
   background: #ce2954;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #ce2954), color-stop(75%, #d4296f));
@@ -453,24 +453,11 @@ nav .nav_items .btn-nav {
   z-index: 999;
 }
 
-nav .nav_items .btn-nav:focus {
-  outline: 0;
-}
-
 nav .nav_items .icon-bar {
   display: block;
   margin: 6px 0;
   width: 26px;
   height: 2px;
-  background-color: #e24775;
-}
-
-nav .nav_items .btn-nav:hover .icon-bar {
-  background-color: #e24775;
-}
-
-nav .nav_items .animated:hover .icon-bar,
-nav .nav_items .animated:focus .icon-bar {
   background-color: #e24775;
 }
 
@@ -486,8 +473,8 @@ nav .nav_items .animated .icon-bar {
 }
 
 nav .nav_items .animated .top {
-  -webkit-transform: translateY(8px) rotateZ(45deg);
-  transform: translateY(8px) rotateZ(45deg);
+  -webkit-transform: translateY(6px) rotateZ(45deg);
+  transform: translateY(6px) rotateZ(45deg);
 }
 
 nav .nav_items .animated .bottom {
@@ -505,7 +492,7 @@ footer .end_text {
 
 footer .end_text .left_side {
   position: absolute;
-  top: 550px;
+  top: 570px;
   left: 22px;
 }
 
@@ -531,7 +518,7 @@ footer .end_text .left_side p a:hover {
 
 footer .end_text .right_side {
   position: absolute;
-  top: 550px;
+  top: 570px;
   right: 25px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -620,6 +607,10 @@ footer .end_text .connection_items .f_anket i,
 footer .end_text .connection_items .f_sual i,
 footer .end_text .connection_items .f_connect i {
   color: #ed307d;
+}
+
+footer .end_text .connection_items .f_search {
+  display: none;
 }
 
 footer .end_text .connection_items .lemon_connect {
@@ -1045,7 +1036,7 @@ footer .end_text .connection_items .scale_phone {
 #Onlayn_qeydiyyat .form_item .form_text input {
   padding: 14px;
   border-radius: 5px;
-  border: 1px solid darkgray;
+  border: 1px solid #a9a9a978;
 }
 
 #Onlayn_qeydiyyat .form_item .select label {
@@ -1058,7 +1049,7 @@ footer .end_text .connection_items .scale_phone {
   padding: 13px 15px;
   width: 100%;
   border-radius: 5px;
-  border: 1px solid darkgray;
+  border: 1px solid #a9a9a978;
 }
 
 #Onlayn_qeydiyyat .form_item .email_tel input,
@@ -1067,7 +1058,7 @@ footer .end_text .connection_items .scale_phone {
   margin-top: 1rem;
   padding: 13px 3px;
   border-radius: 5px;
-  border: 1px solid darkgray;
+  border: 1px solid #a9a9a978;
 }
 
 #Onlayn_qeydiyyat .form_item .radio label,
@@ -1252,25 +1243,29 @@ footer .end_text .connection_items .scale_phone {
   display: -ms-flexbox;
   display: flex;
   background: #159ee3;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
 }
 
 .accordion .accordion-tabs .accordion-tab {
-  background: #159ee3;
+  background: white;
   padding: 1rem 1.3rem;
-  color: white;
+  color: #159ee3;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
   border: none;
   cursor: pointer;
+  border-left: 1px solid #cccccc;
 }
 
 .accordion .accordion-tabs .accordion-tab:hover {
-  background: #159ee3;
+  background: #b0e5ff;
 }
 
 .accordion .accordion-tabs .accordion-tab.accordion-active {
-  background: #a9e2ff;
+  background: #159ee3;
+  color: white;
 }
 
 .accordion-item__label {
@@ -1547,6 +1542,7 @@ footer .end_text .connection_items .scale_phone {
 }
 
 #Müayinələr .muaiyine_content {
+  background-color: white;
   border: 1px solid #9f9f9f;
   border-radius: 5px;
 }
@@ -2047,6 +2043,182 @@ footer .end_text .connection_items .scale_phone {
 #Laboratoriya .huquq .lists_p i {
   color: #0077b3;
   font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  #slider {
+    display: none;
+  }
+  header .xidmet_box {
+    width: calc(50% - 12px);
+    height: 90px;
+    margin: 6px;
+  }
+  .Page_Logo img {
+    width: 60px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .Page_Logo .second_logo {
+    width: 100px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  nav .nav_items .nav .transform_itemas {
+    width: auto;
+    height: 100%;
+  }
+  nav .nav_items .language {
+    display: none;
+  }
+  nav .nav_items .search {
+    display: none;
+  }
+  nav .nav_items .phone {
+    top: 30px;
+    right: 17%;
+  }
+  nav .nav_items .btn-nav {
+    background-color: #e24775;
+    top: 30px;
+    right: 18px;
+  }
+  nav .nav_items .icon-bar {
+    margin: 5px 3px;
+    width: 21px;
+    background-color: white;
+  }
+  nav .nav_items .animated .icon-bar {
+    background-color: white;
+  }
+  footer .end_text .left_side {
+    top: 677px;
+    text-align: center;
+    left: 50px;
+  }
+  footer .end_text .left_side a {
+    display: block;
+  }
+  footer .end_text .right_side {
+    top: 733px;
+    right: 55px;
+  }
+  footer .end_text .connection_items {
+    position: absolute;
+    top: 600px;
+    right: 20px;
+  }
+  footer .end_text .connection_items .f_phone,
+  footer .end_text .connection_items .f_anket,
+  footer .end_text .connection_items .f_sual,
+  footer .end_text .connection_items .f_connect {
+    -webkit-box-shadow: 7px 8px 9px -4px grey;
+            box-shadow: 7px 8px 9px -4px grey;
+  }
+  footer .end_text .connection_items .f_search {
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    font-size: 20px;
+    z-index: 999;
+    color: #fff;
+    background-color: #e24775;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-radius: 50%;
+    left: -73px;
+    width: 57px;
+    height: 57px;
+    -webkit-box-shadow: 7px 8px 9px -4px grey;
+            box-shadow: 7px 8px 9px -4px grey;
+  }
+  #Hekimler .panel .card_text {
+    text-align: center;
+    margin-top: 10px;
+  }
+  #Onlayn_qeydiyyat .onlayn_item .form_item .form_text input {
+    width: 100%;
+    margin: 12px 0px;
+  }
+  #Onlayn_qeydiyyat .onlayn_item .form_item .end_label label {
+    display: inline;
+  }
+  #E-nəticə .netice form input {
+    width: 100%;
+  }
+  #Check_up .check_items .check_cards .card_text p {
+    font-size: 18px !important;
+  }
+  #Filiallar .accordion .accordion-tabs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #Filiallar .accordion .accordion-content .accordion-item__container .flex_center {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 16px 0px;
+  }
+  #İnfolab .accordion .accordion-tabs,
+  #Haqqımızda .accordion .accordion-tabs,
+  #Laboratoriya .accordion .accordion-tabs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #Müayinələr .muayine_search input {
+    width: 100%;
+  }
+  #Müayinələr .but_payment button {
+    width: 100%;
+  }
+  #Müayinələr .muaiyine_content {
+    margin: initial;
+  }
+  #Müayinələr .muaiyine_content .miayine_items {
+    border: none;
+  }
+  #Müayinələr .muaiyine_content #vertical_tab_nav .flexable {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #Müayinələr .muaiyine_content #vertical_tab_nav .flexable .rightside {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    gap: 25px;
+  }
 }
 
 *,
