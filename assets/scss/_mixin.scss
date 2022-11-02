@@ -1,0 +1,125 @@
+@mixin main_search(
+  $widht,
+  $height,
+  $pading,
+  $bg,
+  $position,
+  $left,
+  $top,
+  $zindex,
+  $display
+) {
+  width: $widht;
+  height: $height;
+  padding: $pading;
+  background: $bg;
+  position: $position;
+  left: $left;
+  top: $top;
+  z-index: $zindex;
+  display: $display;
+}
+@mixin main_search_item(
+  $display,
+  $width,
+  $height,
+  $pading,
+  $border,
+  $borderbot,
+  $f_famly,
+  $f_size,
+  $lineheight,
+  $color
+) {
+  display: $display;
+  width: $width;
+  height: $height;
+  padding: $pading;
+  border: $border;
+  border-bottom: $borderbot;
+  font-family: $f_famly;
+  font-size: $f_size;
+  line-height: $lineheight;
+  color: $color;
+}
+@mixin search_a_icon($position, $right, $top) {
+  position: $position;
+  right: $right;
+  top: $top;
+}
+@mixin search_i_icon($color, $f_size) {
+  color: $color;
+  font-size: $f_size;
+}
+@mixin page_logo($position, $top, $left, $right, $zindex) {
+  position: $position;
+  top: $top;
+  left: $left;
+  right: $right;
+  z-index: $zindex;
+}
+@mixin absolut_item($position, $top, $left, $right) {
+  position: $position;
+  top: $top;
+  left: $left;
+  right: $right;
+}
+@mixin image_logo($objectfit, $widht) {
+  object-fit: $objectfit;
+  width: $widht;
+}
+@mixin xidmet_box(
+  $curcor,
+  $overflow,
+  $maxwidht,
+  $maxheigt,
+  $texdec,
+  $bg,
+  $bg_liner,
+  $padding,
+  $boxshadow,
+  $borderrad
+) {
+  cursor: $curcor;
+  overflow: $overflow;
+  max-width: $maxwidht;
+  max-height: $maxheigt;
+  text-decoration: $texdec;
+  background: $bg;
+  background: $bg_liner;
+  padding: $padding;
+  box-shadow: $boxshadow;
+  border-radius: $borderrad;
+}
+@mixin xidmet_item($content, $items, $color, $position) {
+  display: flex;
+  justify-content: $content;
+  align-items: $items;
+  color: $color;
+  position: $position;
+}
+@mixin circile(
+  $widht,
+  $top,
+  $right,
+  $height,
+  $bg,
+  $position,
+  $borderrad,
+  $opacity
+) {
+  width: $widht;
+  top: $top;
+  right: $right;
+  height: $height;
+  background: $bg;
+  position: $position;
+  border-radius: $borderrad;
+  opacity: $opacity;
+}
+@mixin circ_before($opacity, $top, $right, $transition) {
+  opacity: $opacity;
+  top: $top;
+  right: $right;
+  transition: $transition;
+}

@@ -1,4 +1,5 @@
 #slider_page {
+  z-index: -1;
   width: 330px;
   height: 120%;
   background: #f8fcfe;
@@ -78,6 +79,132 @@
       i {
         color: #0077b3;
         font-size: 16px;
+      }
+    }
+  }
+}
+#footer {
+  .end_text {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.2rem;
+    .left_side {
+      p {
+        color: rgba(0, 0, 0, 0.3);
+        font-size: 14px;
+        font-weight: 500;
+        a {
+          display: inline-block;
+          color: rgba(175, 175, 175, 0.6);
+          font-size: 13px;
+          font-weight: 500;
+          text-decoration: none;
+          &:hover {
+            color: white;
+            transition: 0.3s ease-in-out;
+          }
+        }
+      }
+    }
+    .right_side {
+      display: flex;
+      gap: 20px;
+      p {
+        font-size: 14px;
+        line-height: 24px;
+        font-weight: 500;
+        color: rgba(175, 175, 175, 0.6);
+        margin: 0;
+        width: 100%;
+      }
+      ul {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        align-items: center;
+        width: 100%;
+        padding: 0;
+        li {
+          list-style: none;
+          a {
+            text-decoration: none;
+            color: rgba(175, 175, 175, 0.6);
+            &:hover {
+              color: white;
+              transition: 0.3s ease-in-out;
+            }
+          }
+        }
+      }
+    }
+  }
+  .connection_items {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+    padding: 10px;
+    .f_phone,
+    .f_anket,
+    .f_sual,
+    .f_connect {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.5rem;
+      box-shadow: 7px 8px 9px -4px grey;
+      i {
+        color: #159ee3;
+      }
+    }
+    .f_search {
+      display: none;
+    }
+    .lemon_connect {
+      background-color: #159ee3;
+      i {
+        color: white;
+      }
+    }
+    .scale_phone {
+      animation: phonescale 1s ease-in-out infinite;
+    }
+  }
+}
+.phone_second {
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  font-size: 20px;
+  right: 15%;
+  z-index: 999;
+  .phone_text {
+    p {
+      padding: 0 17px 5px;
+      font-size: 13px;
+      font-weight: 500;
+      color: #159ee3 !important;
+      margin: 0;
+    }
+  }
+  .number {
+    a {
+      text-decoration: none;
+      color: #159ee3 !important;
+      display: inline-block;
+      font-size: 22px;
+      font-weight: 700;
+      sub {
+        display: inline-block;
+        vertical-align: baseline;
+        font-size: 16px;
+      }
+      i {
+        font-size: 20px;
       }
     }
   }

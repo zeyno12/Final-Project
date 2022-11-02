@@ -1,32 +1,33 @@
 #Main_serch {
-  width: 100%;
-  height: 160px;
-  padding: 40px 10px;
-  background: #fff;
-  position: relative;
-  left: 0;
-  top: 0;
-  z-index: +9999;
-  display: none;
+  @include main_search(
+    100%,
+    160px,
+    40px 10px,
+    white,
+    relative,
+    0,
+    0,
+    +99999,
+    none
+  );
   .main_serch {
-    display: block;
-    width: 100%;
-    height: 72px;
-    padding: 0 0 0 56px;
-    border: none;
-    border-bottom: 2px solid #4eade0;
-    font-family: "Gilroy";
-    font-size: 24px;
-    line-height: 1.67;
-    color: #4eade0;
+    @include main_search_item(
+      block,
+      100%,
+      72px,
+      0 0 0 56px,
+      none,
+      2px solid $mainblue,
+      "Gilroy",
+      24px,
+      1.67,
+      $mainblue
+    );
   }
   a {
-    position: absolute;
-    right: 0;
-    top: 40px;
+    @include search_a_icon(absolute, 0, 40px);
     i {
-      color: #4eade0;
-      font-size: 3rem;
+      @include search_i_icon($mainblue, 3rem);
     }
   }
 }
@@ -34,63 +35,55 @@
   display: block !important;
 }
 .Page_Logo {
-  position: absolute;
-  top: 24px;
-  left: 36px;
-  right: 0;
-  z-index: 666;
+  @include page_logo(absolute, 24px, 36px, 0, 666);
   img {
-    object-fit: cover;
-    width: 77px;
+    @include image_logo(cover, 77px);
   }
   .second_logo {
-    object-fit: cover;
-    width: 150px;
+    @include image_logo(cover, 70px);
   }
 }
 header {
   position: relative;
   .absolut_item {
-    position: absolute;
-    left: 0;
-    top: 16px;
-    right: 0;
+    @include absolut_item(absolute, 16px, 0, 0);
     .xidmet_box {
       .main_a {
+        transition: 0.5s ease-in-out;
         a {
           text-decoration: none;
         }
-        cursor: pointer;
-        overflow: hidden;
-        max-width: 210px !important;
-        max-height: 100px;
-        text-decoration: none;
-        background: rgb(206, 41, 84);
-        background: linear-gradient(
-          180deg,
-          rgba(206, 41, 84, 1) 10%,
-          rgba(212, 41, 111, 1) 75%
+        @include xidmet_box(
+          pointer,
+          hidden,
+          210px !important,
+          100px,
+          none,
+          rgb(15, 200, 240),
+          linear-gradient(
+            180deg,
+            rgba(15, 200, 240, 1) 27%,
+            rgba(20, 157, 226, 1) 86%
+          ),
+          25px 10px,
+          3px 11px 41px 0px lightslategrey,
+          16px
         );
-        padding: 25px 10px;
-        box-shadow: 3px 11px 41px 0px lightslategrey;
-        border-radius: 16px;
         .xidmet_item {
-          display: flex;
-          justify-content: space-around;
-          align-items: center;
-          color: white;
-          position: relative;
+          @include xidmet_item(space-around, center, white, relative);
           .circle {
             &::before {
               content: "";
-              width: 94px;
-              top: -53px;
-              right: -46px;
-              height: 98px;
-              background: #ed307d;
-              position: absolute;
-              border-radius: 50%;
-              opacity: 0.6;
+              @include circile(
+                94px,
+                -53px,
+                -46px,
+                98px,
+                #0fc8f0,
+                absolute,
+                50%,
+                0.6
+              );
             }
           }
           .xidmet_word {
@@ -102,20 +95,16 @@ header {
           }
           .xidmet_icon {
             img {
-              object-fit: cover;
-              width: 80%;
+              @include image_logo(cover, 80%);
             }
           }
         }
         &:hover {
-          margin-top: -10px;
-          transition: 0.3s ease-in-out;
+          transform: translateY(-5px);
+
           .circle {
             &::before {
-              opacity: 0.4;
-              top: -70px;
-              right: -60px;
-              transition: 0.3s ease-in-out;
+              @include circ_before(0.4, -70px, -60px, 0.3 ease-in-out);
             }
           }
         }
@@ -127,14 +116,14 @@ header {
   float: right;
   width: 84%;
   height: 100vh;
-  background-color: #fff2f7;
+  background-color: #ecf9ff;
   clip-path: circle(61.6% at 63% 51%);
   position: relative;
   #slider2 {
     float: right;
     width: 86%;
     height: 100vh;
-    background-color: #ffe2ee;
+    background-color: #0fc8f021;
     clip-path: circle(61.6% at 63% 51%);
     position: absolute;
     right: 0%;
@@ -143,7 +132,7 @@ header {
     float: right;
     width: 82%;
     height: 100vh;
-    background-color: #e24775;
+    background-color: #0077b3;
     clip-path: circle(61.6% at 63% 51%);
     position: absolute;
     right: 0%;
@@ -162,15 +151,9 @@ header {
       .swiper-slide {
         text-align: center;
         font-size: 18px;
-        background: #f176a7;
+        background: #0077b3;
         display: flex;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        -webkit-justify-content: center;
         justify-content: center;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        -webkit-align-items: center;
         align-items: center;
         animation: imgscale 5s linear 2s infinite alternate;
 
@@ -220,7 +203,7 @@ nav {
       right: 27%;
       z-index: 999;
       color: #fff;
-      background-color: #e24775;
+      background-color: #3d99de;
       width: 50px;
       height: 50px;
       display: flex;
@@ -240,14 +223,14 @@ nav {
           padding: 0 17px 5px;
           font-size: 13px;
           font-weight: 500;
-          color: #f176a7;
+          color: white;
           margin: 0;
         }
       }
       .number {
         a {
           text-decoration: none;
-          color: #f176a7;
+          color: white;
           display: inline-block;
           font-size: 22px;
           font-weight: 700;
@@ -283,7 +266,7 @@ nav {
           font-size: 15px;
           font-weight: 500;
           i {
-            color: #e24775;
+            color: #159ee3;
           }
         }
       }
@@ -312,7 +295,7 @@ nav {
       }
       .az:hover + .ru {
         visibility: visible;
-        background-color: #e24775;
+        background-color: #159ee3;
         color: white;
       }
     }
@@ -322,15 +305,14 @@ nav {
       .transform_itemas {
         width: 665px;
         height: 100vh;
-        position: absolute;
+        position: fixed;
         top: 90px;
         right: 0;
         z-index: +99999;
         padding: 40px 20px;
         display: none;
-        transition: all 3s ease-in-out !important;
         overflow-y: scroll;
-        background-color: #e24775;
+        background-color: #159ee3;
         .rightside_nav,
         .leftside_nav {
           ul {
@@ -378,33 +360,21 @@ nav {
       margin: 6px 0;
       width: 26px;
       height: 2px;
-      background-color: #e24775;
+      background-color: #159ee3;
     }
     .icon-bar {
-      -webkit-transition: all 0.7s ease;
-      -moz-transition: all 0.7s ease;
-      -ms-transition: all 0.7s ease;
-      -o-transition: all 0.7s ease;
       transition: all 0.7s ease;
       z-index: 999999;
     }
     .animated .icon-bar {
       z-index: 999999;
-      background-color: #e24775;
+      background-color: #159ee3;
     }
     .animated .top {
-      -webkit-transform: translateY(6px) rotateZ(45deg);
-      -moz-transform: translateY(6px) rotateZ(45deg);
-      -ms-transform: translateY(6px) rotateZ(45deg);
-      -o-transform: translateY(6px) rotateZ(45deg);
       transform: translateY(6px) rotateZ(45deg);
     }
     .animated .bottom {
-      -webkit-transform: translateY(-8px) rotateZ(-45deg);
-      -moz-transform: translateY(-8px) rotateZ(-45deg);
-      -ms-transform: translateY(-8px) rotateZ(-45deg);
-      -o-transform: translateY(-8px) rotateZ(-45deg);
-      transform: translateY(-8px) rotateZ(-45deg);
+      transform: translateY(-9px) rotateZ(-45deg);
     }
     .animated .middle {
       width: 0;
@@ -437,7 +407,7 @@ footer {
     }
     .right_side {
       position: absolute;
-      top: 570px;
+      top: 567px;
       right: 25px;
       display: flex;
       gap: 20px;
@@ -491,14 +461,14 @@ footer {
         align-items: center;
         font-size: 1.5rem;
         i {
-          color: #ed307d;
+          color: #159ee3;
         }
       }
       .f_search {
         display: none;
       }
       .lemon_connect {
-        background-color: #ed307d;
+        background-color: #159ee3;
         i {
           color: white;
         }
