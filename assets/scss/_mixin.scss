@@ -123,3 +123,254 @@
   right: $right;
   transition: $transition;
 }
+@mixin slider_first($float, $widht, $height, $bg, $clip, $position) {
+  float: $float;
+  width: $widht;
+  height: $height;
+  background-color: $bg;
+  clip-path: $clip;
+  position: $position;
+}
+@mixin slider_second($float, $widht, $height, $bg, $clip, $position, $right) {
+  float: $float;
+  width: $widht;
+  height: $height;
+  background-color: $bg;
+  clip-path: $clip;
+  position: $position;
+  right: $right;
+}
+@mixin slider3_after($display, $widht, $heigt, $position, $top, $left) {
+  display: $display;
+  width: $widht;
+  height: $heigt;
+  position: $position;
+  top: $top;
+  left: $left;
+}
+@mixin swiper-slide($textaling, $fsize, $bg, $content, $items, $animation) {
+  text-align: $textaling;
+  font-size: $fsize;
+  background: $bg;
+  display: flex;
+  justify-content: $content;
+  align-items: $items;
+  animation: $animation;
+}
+@mixin swiper_img($widht, $height, $obfit, $opacty) {
+  width: $widht;
+  height: $height;
+  object-fit: $obfit;
+  opacity: $opacty;
+}
+@mixin swiper_position_text(
+  $position,
+  $zindex,
+  $top,
+  $left,
+  $textaling,
+  $animation
+) {
+  position: $position;
+  z-index: $zindex;
+  top: $top;
+  left: $left;
+  text-align: $textaling;
+  animation: $animation;
+}
+@mixin swiper_position_text_p(
+  $fsize,
+  $lineheight,
+  $fweight,
+  $color,
+  $pading,
+  $minheight
+) {
+  font-size: $fsize;
+  line-height: $lineheight;
+  font-weight: $fweight;
+  color: $color;
+  padding: $pading;
+  min-height: $minheight;
+}
+@mixin swiper_position_text_a($texdec, $color, $fsize, $cursor) {
+  text-decoration: $texdec;
+  color: $color;
+  font-size: $fsize;
+  cursor: $cursor;
+}
+@mixin Flex_item($content, $items, $gap) {
+  display: flex;
+  justify-content: $content;
+  align-items: $items;
+  gap: $gap;
+}
+@mixin nav_item_search(
+  $cursor,
+  $position,
+  $top,
+  $fsze,
+  $right,
+  $zindex,
+  $color,
+  $bg,
+  $widht,
+  $height,
+  $content,
+  $items,
+  $borradius
+) {
+  cursor: $cursor;
+  position: $position;
+  top: $top;
+  font-size: $fsze;
+  right: $right;
+  z-index: $zindex;
+  color: $color;
+  background-color: $bg;
+  width: $widht;
+  height: $height;
+  display: flex;
+  justify-content: $content;
+  align-items: $items;
+  border-radius: $borradius;
+}
+@mixin nav_item_phone($curcor, $position, $top, $fsize, $right, $zindex) {
+  cursor: $curcor;
+  position: $position;
+  top: $top;
+  font-size: $fsize;
+  right: $right;
+  z-index: $zindex;
+}
+@mixin nav_item_phone_p($pading, $fsize, $fweight, $color, $margin) {
+  padding: $pading;
+  font-size: $fsize;
+  font-weight: $fweight;
+  color: $color;
+  margin: $margin;
+}
+@mixin nav_item_phone_a($texdec, $color, $display, $fsize, $fweight) {
+  text-decoration: $texdec;
+  color: $color;
+  display: $display;
+  font-size: $fsize;
+  font-weight: $fweight;
+}
+@mixin nav_item_phone_sub($display, $vertical, $fsize) {
+  display: $display;
+  vertical-align: $vertical;
+  font-size: $fsize;
+}
+@mixin language_p($margin, $fsize, $fweight) {
+  margin: $margin;
+  font-size: $fsize;
+  font-weight: $fweight;
+}
+@mixin language_ru(
+  $cursor,
+  $position,
+  $top,
+  $right,
+  $zindex,
+  $widht,
+  $height,
+  $borderrad,
+  $color,
+  $bg,
+  $visiblity,
+  $transition
+) {
+  cursor: $cursor;
+  position: $position;
+  top: $top;
+  right: $right;
+  z-index: $zindex;
+  width: $widht;
+  height: $height;
+  border-radius: $borderrad;
+  color: $color;
+  background-color: $bg;
+  visibility: $visiblity;
+  transition: $transition;
+}
+@mixin language_ru_p($content, $fsize, $fweight, $items, $margin, $pading) {
+  display: flex;
+  justify-content: $content;
+  font-size: $fsize;
+  font-weight: $fweight;
+  align-items: $items;
+  margin: $margin;
+  padding: $pading;
+}
+@mixin transform_itemas(
+  $widht,
+  $height,
+  $position,
+  $top,
+  $right,
+  $zindex,
+  $pading,
+  $display,
+  $overflow,
+  $bg
+) {
+  width: $widht;
+  height: $height;
+  position: $position;
+  top: $top;
+  right: $right;
+  z-index: $zindex;
+  padding: $pading;
+  display: $display;
+  overflow-y: $overflow;
+  background-color: $bg;
+}
+@mixin leftside_nav_a($textdec, $color, $pading, $fsize) {
+  text-decoration: $textdec;
+  color: $color;
+  padding: $pading;
+  font-size: $fsize;
+}
+@mixin leftside_nav_li($margin, $liststyle, $padding) {
+  margin: $margin;
+  list-style: $liststyle;
+  padding: $padding;
+}
+@mixin leftside_nav_bold_text($fsize, $fweight, $color) {
+  font-size: $fsize;
+  font-weight: $fweight;
+  color: $color;
+}
+@mixin btn-nav(
+  $position,
+  $widht,
+  $height,
+  $borderrad,
+  $top,
+  $right,
+  $bg,
+  $border,
+  $pading,
+  $cursor,
+  $zindex
+) {
+  position: $position;
+  width: $widht;
+  height: $height;
+  border-radius: $borderrad;
+  top: $top;
+  right: $right;
+  background-color: $bg;
+  border: $border;
+  padding: $pading;
+  cursor: $cursor;
+  z-index: $zindex;
+}
+@mixin icon-bar($display, $margin, $widht, $height, $bg) {
+  display: $display;
+  margin: $margin;
+  width: $widht;
+  height: $height;
+  background-color: $bg;
+}

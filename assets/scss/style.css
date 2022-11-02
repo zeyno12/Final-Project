@@ -231,14 +231,14 @@ header .absolut_item .xidmet_box .main_a:hover .circle::before {
   font-size: 40px;
   line-height: 60px;
   font-weight: 800;
-  color: #fff;
-  padding: 40px 0 0px;
+  color: white;
+  padding: 40px 0px 0px;
   min-height: 140px;
 }
 
 #slider #slider3 .swiper .position_text a {
   text-decoration: none;
-  color: #fff;
+  color: white;
   font-size: 1.2rem;
   cursor: pointer;
 }
@@ -263,7 +263,7 @@ nav .nav_items .search {
   font-size: 20px;
   right: 27%;
   z-index: 999;
-  color: #fff;
+  color: white;
   background-color: #3d99de;
   width: 50px;
   height: 50px;
@@ -315,11 +315,16 @@ nav .nav_items .phone .number a i {
 }
 
 nav .nav_items .language .az {
+  cursor: pointer;
   position: absolute;
   top: 20px;
   font-size: 20px;
   right: 30px;
   z-index: 999;
+  color: black;
+  background-color: white;
+  width: 50px;
+  height: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -329,12 +334,7 @@ nav .nav_items .language .az {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 50px;
-  height: 50px;
   border-radius: 50%;
-  color: black;
-  background-color: #fff;
-  cursor: pointer;
 }
 
 nav .nav_items .language .az p {
@@ -357,7 +357,7 @@ nav .nav_items .language .ru {
   height: 50px;
   border-radius: 50%;
   color: black;
-  background-color: #fff;
+  background-color: white;
   visibility: hidden;
   -webkit-transition: 0.7s ease-in-out;
   transition: 0.7s ease-in-out;
@@ -396,7 +396,7 @@ nav .nav_items .nav .transform_itemas {
   position: fixed;
   top: 90px;
   right: 0;
-  z-index: +99999;
+  z-index: 99999;
   padding: 40px 20px;
   display: none;
   overflow-y: scroll;
@@ -419,7 +419,7 @@ nav .nav_items .nav .transform_itemas .leftside_nav ul li {
 nav .nav_items .nav .transform_itemas .rightside_nav ul li a,
 nav .nav_items .nav .transform_itemas .leftside_nav ul li a {
   text-decoration: none;
-  color: #fff;
+  color: white;
   padding: 0 0 18px;
   font-size: 17px;
 }
@@ -428,7 +428,7 @@ nav .nav_items .nav .transform_itemas .rightside_nav ul li .bold_text,
 nav .nav_items .nav .transform_itemas .leftside_nav ul li .bold_text {
   font-size: 24px;
   font-weight: bold;
-  color: #fff;
+  color: white;
 }
 
 nav .nav_items .nav .transform_itemas .rightside_nav ul li:hover,
