@@ -57,7 +57,7 @@
 .Page_Logo .second_logo {
   -o-object-fit: cover;
      object-fit: cover;
-  width: 70px;
+  width: 60px;
 }
 
 header {
@@ -576,7 +576,7 @@ footer .end_text .connection_items {
           justify-content: center;
   gap: 15px;
   position: fixed;
-  z-index: +999;
+  z-index: 999;
   top: 490px;
   right: 25px;
 }
@@ -588,7 +588,7 @@ footer .end_text .connection_items .f_connect {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background-color: #fff;
+  background-color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2231,7 +2231,7 @@ footer .end_text .connection_items .scale_phone {
        object-fit: cover;
   }
   .Page_Logo .second_logo {
-    width: 100px;
+    width: 60px;
     -o-object-fit: cover;
        object-fit: cover;
   }

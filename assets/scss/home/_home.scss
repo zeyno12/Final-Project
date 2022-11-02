@@ -40,7 +40,7 @@
     @include image_logo(cover, 77px);
   }
   .second_logo {
-    @include image_logo(cover, 70px);
+    @include image_logo(cover, 60px);
   }
 }
 header {
@@ -355,81 +355,57 @@ footer {
   .end_text {
     position: relative;
     .left_side {
-      position: absolute;
-      top: 570px;
-      left: 22px;
+      @include left_side(absolute, 570px, 22px);
       p {
-        color: rgba(0, 0, 0, 0.3);
-        font-size: 14px;
-        font-weight: 500;
+        @include left_side_p(rgba(0, 0, 0, 0.3), 14px, 500);
         a {
-          display: inline-block;
-          color: rgba(175, 175, 175, 0.6);
-          font-size: 13px;
-          font-weight: 500;
-          text-decoration: none;
-          &:hover {
-            color: white;
-            transition: 0.3s ease-in-out;
-          }
+          @include left_side_a(
+            inline-block,
+            rgba(175, 175, 175, 0.6),
+            13px,
+            500,
+            none
+          );
         }
       }
     }
     .right_side {
-      position: absolute;
-      top: 567px;
-      right: 25px;
-      display: flex;
-      gap: 20px;
+      @include right_side(absolute, 567px, 25px, 20px);
       p {
-        font-size: 14px;
-        line-height: 24px;
-        font-weight: 500;
-        color: rgba(175, 175, 175, 0.6);
-        margin: 0;
-        width: 100%;
+        @include right_side_p(
+          14px,
+          24px,
+          500,
+          rgba(175, 175, 175, 0.6),
+          0,
+          100%
+        );
       }
       ul {
-        display: flex;
-        justify-content: center;
-        gap: 20px;
-        align-items: center;
-        width: 100%;
-        padding: 0;
+        @include right_side_ul(center, 20px, center, 100%, 0);
         li {
           list-style: none;
           a {
-            text-decoration: none;
-            color: rgba(175, 175, 175, 0.6);
-            &:hover {
-              color: white;
-              transition: 0.3s ease-in-out;
-            }
+            @include right_side_a(none, rgba(175, 175, 175, 0.6));
           }
         }
       }
     }
     .connection_items {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 15px;
-      position: fixed;
-      z-index: +999;
-      top: 490px;
-      right: 25px;
+      @include connection_items(center, center, 15px, fixed, +999, 490px, 25px);
       .f_phone,
       .f_anket,
       .f_sual,
       .f_connect {
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        background-color: #fff;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 1.5rem;
+        @include connection_items_f(
+          50px,
+          50px,
+          50%,
+          white,
+          center,
+          center,
+          1.5rem
+        );
         i {
           color: #159ee3;
         }

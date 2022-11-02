@@ -374,3 +374,93 @@
   height: $height;
   background-color: $bg;
 }
+@mixin left_side($position, $top, $left) {
+  position: $position;
+  top: $top;
+  left: $left;
+}
+@mixin left_side_p($color, $fsize, $fweight) {
+  color: $color;
+  font-size: $fsize;
+  font-weight: $fweight;
+}
+@mixin left_side_a($display, $color, $fsize, $fweight, $texdec) {
+  display: $display;
+  color: $color;
+  font-size: $fsize;
+  font-weight: $fweight;
+  text-decoration: $texdec;
+  &:hover {
+    color: white;
+    transition: 0.3s ease-in-out;
+  }
+}
+@mixin right_side($position, $top, $right, $gap) {
+  position: $position;
+  top: $top;
+  right: $right;
+  display: flex;
+  gap: $gap;
+}
+@mixin right_side_p($fsize, $lineheight, $fweight, $color, $margin, $widht) {
+  font-size: $fsize;
+  line-height: $lineheight;
+  font-weight: $fweight;
+  color: $color;
+  margin: $margin;
+  width: $widht;
+}
+@mixin right_side_ul($content, $gap, $items, $widht, $pading) {
+  display: flex;
+  justify-content: $content;
+  gap: $gap;
+  align-items: $items;
+  width: $widht;
+  padding: $pading;
+}
+@mixin right_side_a($texdec, $color) {
+  text-decoration: $texdec;
+  color: $color;
+  &:hover {
+    color: white;
+    transition: 0.3s ease-in-out;
+  }
+}
+@mixin connection_items(
+  $items,
+  $content,
+  $gap,
+  $position,
+  $zindex,
+  $top,
+  $right
+) {
+  display: flex;
+  align-items: $items;
+  justify-content: $content;
+  gap: $gap;
+  position: $position;
+  z-index: $zindex;
+  top: $top;
+  right: $right;
+}
+@mixin connection_items_f(
+  $widht,
+  $height,
+  $borderrad,
+  $bg,
+  $content,
+  $items,
+  $fsize
+) {
+  width: $widht;
+  height: $height;
+  border-radius: $borderrad;
+  background-color: $bg;
+  display: flex;
+  justify-content: $content;
+  align-items: $items;
+  font-size: $fsize;
+}
+@mixin name {
+}
