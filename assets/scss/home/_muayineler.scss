@@ -1,66 +1,47 @@
 #Müayinələr {
-  margin-top: 6rem;
-  position: relative;
-  z-index: +999;
-  width: 99%;
-
+  @include netice(6rem, relative, +999, 99%);
   .comeback {
     margin-top: 2rem;
     margin-left: 4rem;
     a {
-      font-size: 17px;
-      font-weight: 500;
-      text-decoration: none;
-      color: #0077b3;
+      @include comeback__a(17px, 500, none, #0077b3);
     }
   }
   .header_text {
-    text-align: center;
-    font-size: 36px;
-    color: #159ee3;
-    font-weight: bold;
-    padding: 0 0 60px;
+    @include header_text(center, 36px, #159ee3, bold, 0 0 60px);
   }
   .muayine_search {
     position: relative;
     input {
-      width: 80%;
-      padding: 17px;
-      border: 1px solid lightgray;
-      border-radius: 4px;
+      @include muayine_search_Input(80%, 17px, 1px solid lightgray, 4px);
     }
     .abs {
-      position: absolute;
-      top: 16px;
-      right: 25%;
+      @include muayine_search_abs(absolute, 16px, 25%);
       i {
-        font-size: 16px;
-        color: gray;
+        @include search_i_icon(gray, 16px);
       }
     }
   }
   .but_payment {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
+    @include main_flex(flex-end, center);
     button {
-      width: 40%;
-      padding: 18px;
-      border-radius: 5px;
-      border: none;
-      color: white;
-      background: rgb(21, 158, 227);
-      background: linear-gradient(
-        267deg,
-        rgba(21, 158, 227, 1) 31%,
-        rgba(47, 205, 243, 1) 91%
+      @include but_payment(
+        40%,
+        18px,
+        5px,
+        none,
+        white,
+        rgb(21, 158, 227),
+        linear-gradient(
+          267deg,
+          rgba(21, 158, 227, 1) 31%,
+          rgba(47, 205, 243, 1) 91%
+        )
       );
     }
   }
   .muaiyine_content {
-    background-color: white;
-    border: 1px solid rgb(159, 159, 159);
-    border-radius: 5px;
+    @include muaiyine_content(white, 1px solid rgb(159, 159, 159), 5px);
     .miayine_items {
       border-right: 1px solid #dcdcdc;
       .accordion {
@@ -69,42 +50,39 @@
           position: relative;
           margin: 10px 10px;
           .itemss_acc {
-            display: flex;
-            align-items: center;
-            justify-content: flex-start;
-            gap: 10px;
+            @include Flex_item(flex-start, center, 10px);
             .label {
-              position: relative;
-              padding: 10px 0;
-              font-size: 1.4rem;
-              font-weight: 600;
-              color: #0077b3;
-              cursor: pointer;
+              @include muaiyine_content_label(
+                relative,
+                10px 0,
+                1.4rem,
+                600,
+                #0077b3,
+                pointer
+              );
               &::before {
                 content: "";
-                display: block;
-                width: 0;
-                height: 0;
-                border-style: solid;
-                border-width: 6px 5.5px 0 5.5px;
-                border-color: #0077b3 transparent transparent transparent;
-                position: absolute;
-                top: calc(50% - 2px);
-                right: -12%;
+                @include muaiyine_label_befor(
+                  block,
+                  0,
+                  0,
+                  solid,
+                  6px 5.5px 0 5.5px,
+                  #0077b3 transparent,
+                  absolute,
+                  calc(50% - 2px),
+                  -12%
+                );
               }
             }
           }
-
           .content {
             .gif {
               width: 10%;
               height: 10%;
             }
             .first {
-              display: flex;
-              align-items: center;
-              justify-content: flex-start;
-              gap: 10px;
+              @include Flex_item(flex-start, center, 10px);
               .artc_icons {
                 img {
                   width: 24px;
@@ -113,29 +91,17 @@
               }
               .artc_text {
                 p {
-                  margin: 0;
-                  color: #0077b3;
-                  font-size: 1.2rem;
+                  @include artc_text(0, #0077b3, 1.2rem);
                 }
               }
             }
-            position: relative;
-            height: 0;
-            overflow: hidden;
-            transition: 0.5s;
+            @include content(relative, 0, hidden, 0.5s);
             .vertical_tab_deep {
               ul {
                 li {
                   padding: 15px 10px 10px 20px;
                   a {
-                    text-decoration: none;
-                    color: black;
-                    font-size: 16px;
-                    font-weight: 400;
-                    padding-left: 10px;
-                    &:hover {
-                      color: #0077b3;
-                    }
+                    @include vertical_tab_deep_a(none, black, 16px, 400, 10px);
                   }
                   img {
                     height: 28px;
@@ -154,9 +120,7 @@
             }
             .label_deep {
               span {
-                color: #0077b3;
-                font-size: 16px;
-                font-weight: 400;
+                @include left_side_p(#0077b3, 16px, 400);
               }
             }
           }
@@ -169,25 +133,18 @@
     }
     #vertical_tab_nav {
       .flexable {
-        border-bottom: 1px solid #dcdcdc;
-        padding: 25px 0px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+        @include flexable_tab(
+          1px solid #dcdcdc,
+          25px 0px,
+          center,
+          space-between
+        );
         .leftside {
           h4 {
-            color: #0077b3;
-            font-weight: 600;
-            font-size: 1.2rem;
+            @include left_side_p(#0077b3, 1.2rem, 600);
           }
           p {
-            color: rgb(115, 115, 115);
-            font-size: 1rem;
-            font-weight: 400;
-            cursor: pointer;
-            &:hover {
-              text-decoration: underline;
-            }
+            @include flexable_leftside(rgb(115, 115, 115), 1rem, 400, pointer);
           }
         }
         .rightside {
@@ -195,11 +152,13 @@
             color: #0077b3;
           }
           button {
-            border: 2px solid #0077b3;
-            background-color: inherit;
-            color: #0077b3;
-            border-radius: 30px;
-            padding: 10px 15px;
+            @include flexable_button(
+              2px solid #0077b3,
+              inherit,
+              #0077b3,
+              30px,
+              10px 15px
+            );
           }
           i {
             color: #0077b3;

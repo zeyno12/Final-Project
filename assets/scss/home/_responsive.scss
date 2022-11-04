@@ -4,19 +4,15 @@
   }
   header {
     .xidmet_box {
-      width: calc(50% - 12px);
-      height: 90px;
-      margin: 6px;
+      @include xidmet_box_res(calc(50% - 12px), 90px, 6px);
     }
   }
   .Page_Logo {
     img {
-      width: 60px;
-      object-fit: cover;
+      @include image_logo(cover, 60px);
     }
     .second_logo {
-      width: 60px;
-      object-fit: cover;
+      @include image_logo(cover, 50px);
     }
   }
   nav {
@@ -38,14 +34,10 @@
         right: 17%;
       }
       .btn-nav {
-        background-color: #e24775;
-        top: 30px;
-        right: 18px;
+        @include btn_nav_res(#159ee3, 30px, 18px);
       }
       .icon-bar {
-        margin: 5px 3px;
-        width: 21px;
-        background-color: white;
+        @include icon_bar_res(5px 3px, 21px, white);
       }
       .animated .icon-bar {
         background-color: white;
@@ -55,9 +47,7 @@
   footer {
     .end_text {
       .left_side {
-        top: 677px;
-        text-align: center;
-        left: 50px;
+        @include left_side_res(677px, center, 50px);
         a {
           display: block;
         }
@@ -67,9 +57,7 @@
         right: 55px;
       }
       .connection_items {
-        position: absolute;
-        top: 600px;
-        right: 20px;
+        @include muayine_search_abs(absolute, 600px, 20px);
         .f_phone,
         .f_anket,
         .f_sual,
@@ -77,21 +65,22 @@
           box-shadow: 7px 8px 9px -4px grey;
         }
         .f_search {
-          display: block;
-          cursor: pointer;
-          position: absolute;
-          font-size: 20px;
-          z-index: 999;
-          color: #fff;
-          background-color: #e24775;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          border-radius: 50%;
-          left: -73px;
-          width: 57px;
-          height: 57px;
-          box-shadow: 7px 8px 9px -4px grey;
+          @include f_search_res(
+            block,
+            pointer,
+            absolute,
+            20px,
+            999,
+            white,
+            #159ee3,
+            center,
+            center,
+            50%,
+            -73px,
+            57px,
+            57px,
+            7px 8px 9px -4px grey
+          );
         }
       }
     }
@@ -189,11 +178,8 @@
           display: flex;
           flex-direction: column;
           .rightside {
-            display: flex;
-            justify-content: center;
-            align-items: center;
             width: 100%;
-            gap: 25px;
+            @include Flex_item(center, center, 25px);
           }
         }
       }

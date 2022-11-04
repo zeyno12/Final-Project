@@ -1,21 +1,16 @@
 .accordion {
   .accordion-tabs {
-    display: flex;
-    background: #159ee3;
-    border: 1px solid #cccccc;
-    border-radius: 5px;
+    @include accordion-tabs(#159ee3, 1px solid #cccccc, 5px);
     .accordion-tab {
-      background: white;
-      padding: 1rem 1.3rem;
-      color: #159ee3;
-      flex: 1;
-      border: none;
-      cursor: pointer;
-      border-left: 1px solid #cccccc;
-      &:hover {
-        background: #b0e5ff;
-      }
-
+      @include acc_tab_second(
+        white,
+        1rem 1.3rem,
+        #159ee3,
+        1,
+        none,
+        pointer,
+        1px solid #cccccc
+      );
       &.accordion-active {
         background: #159ee3;
         color: white;
@@ -27,21 +22,14 @@
       position: relative;
     }
     &__container {
-      height: 0;
-      overflow: hidden;
-      opacity: 0;
-      transition: padding 0.2s ease, opacity 0.5s 0.15s ease;
+      @include acc_container;
       .adress_items {
         padding: 5px 0px;
         h2 {
-          padding: 0 0 30px;
-          font-size: 24px;
-          font-weight: bold;
-          color: #159ee3;
+          @include h_text(#159ee3, 0 0 30px, 24px, bold);
         }
         p {
-          color: #5a5a5a;
-          font-size: 14px;
+          @include search_i_icon(#5a5a5a, 14px);
         }
         .cursor {
           cursor: pointer;
@@ -54,16 +42,12 @@
             height: 835px;
           }
           a {
-            text-decoration: none;
-            color: gray;
+            @include right_side_a(none, gray);
           }
         }
       }
       .tab_items {
-        width: 200px;
-        height: 142px;
-        background-color: #159ee3;
-        border-radius: 8px;
+        @include tab_items(200px, 142px, #159ee3, 8px);
         .tab_img {
           display: flex;
           align-items: center;
@@ -73,26 +57,10 @@
             margin-top: 1rem;
           }
         }
-
         .tab_text {
           p {
-            margin-top: 1rem;
-            font-size: 17px;
-            color: white;
-            text-align: center;
-            font-weight: bold;
+            @include tab_text_p(1rem, 17px, white, center, bold);
           }
-        }
-
-        &:hover {
-          box-shadow: 0 14px 20px 0 gray;
-          transition: 2s ease;
-          background: rgb(21, 158, 227);
-          background: linear-gradient(
-            267deg,
-            rgba(21, 158, 227, 1) 31%,
-            rgba(47, 205, 243, 1) 91%
-          );
         }
       }
       .panel {
@@ -106,15 +74,10 @@
         }
         .card_text {
           .blue {
-            padding: 0 0 8px;
-            font-size: 13px;
-            font-weight: 500;
-            margin: 0;
-            color: #159ee3;
+            @include nav_item_phone_p(0 0 8px, 13px, 500, #159ee3, 0);
           }
           .gray {
-            color: #7c7c7c;
-            font-size: 13px;
+            @include search_i_icon(#7c7c7c, 13px);
           }
         }
       }

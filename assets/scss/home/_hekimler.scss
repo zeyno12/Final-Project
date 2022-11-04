@@ -45,8 +45,7 @@
               @include nav_item_phone_p(0 0 8px, 13px, 500, #159ee3, 0);
             }
             .gray {
-              color: #7c7c7c;
-              font-size: 13px;
+              @include search_i_icon(#7c7c7c, 13px);
             }
           }
         }

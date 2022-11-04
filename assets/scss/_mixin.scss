@@ -619,3 +619,254 @@
   display: flex !important;
   visibility: $visiblity;
 }
+@mixin main_flex($content, $items) {
+  display: flex;
+  justify-content: $content;
+  align-items: $items;
+}
+@mixin p_mix_items($mt, $fsize, $ffamly, $fweight, $lineheight, $color) {
+  margin-top: $mt;
+  font-size: $fsize;
+  font-family: $ffamly;
+  font-weight: $fweight;
+  line-height: $lineheight;
+  color: $color;
+}
+@mixin list_p($pading, $fsize, $fweight, $ffamly) {
+  padding: $pading;
+  font-size: $fsize;
+  font-weight: $fweight;
+  font-family: $ffamly;
+}
+@mixin muayine_search_abs($position, $top, $right) {
+  position: $position;
+  top: $top;
+  right: $right;
+}
+@mixin muayine_search_Input($widht, $pading, $border, $borderrad) {
+  width: $widht;
+  padding: $pading;
+  border: $border;
+  border-radius: $borderrad;
+}
+@mixin but_payment(
+  $widht,
+  $pading,
+  $borderrad,
+  $border,
+  $color,
+  $bg,
+  $bg_liner
+) {
+  width: $widht;
+  padding: $pading;
+  border-radius: $borderrad;
+  border: $border;
+  color: $color;
+  background: $bg;
+  background: $bg_liner;
+}
+@mixin muaiyine_content($bg, $border, $borderrad) {
+  background-color: $bg;
+  border: $border;
+  border-radius: $borderrad;
+}
+@mixin muaiyine_content_label(
+  $position,
+  $pading,
+  $fsize,
+  $fweight,
+  $color,
+  $cursor
+) {
+  position: $position;
+  padding: $pading;
+  font-size: $fsize;
+  font-weight: $fweight;
+  color: $color;
+  cursor: $cursor;
+}
+@mixin muaiyine_label_befor(
+  $display,
+  $widht,
+  $height,
+  $borderstyle,
+  $borderwidht,
+  $bordercolor,
+  $position,
+  $top,
+  $right
+) {
+  display: $display;
+  width: $widht;
+  height: $height;
+  border-style: $borderstyle;
+  border-width: $borderwidht;
+  border-color: $bordercolor;
+  position: $position;
+  top: $top;
+  right: $right;
+}
+@mixin artc_text($margin, $color, $fsize) {
+  margin: $margin;
+  color: $color;
+  font-size: $fsize;
+}
+@mixin content($position, $height, $overflow, $transition) {
+  position: $position;
+  height: $height;
+  overflow: $overflow;
+  transition: $transition;
+}
+@mixin vertical_tab_deep_a($texdec, $color, $fsize, $fweight, $padingleft) {
+  text-decoration: $texdec;
+  color: $color;
+  font-size: $fsize;
+  font-weight: $fweight;
+  padding-left: $padingleft;
+  &:hover {
+    color: #0077b3;
+  }
+}
+@mixin flexable_tab($bb, $pading, $items, $content) {
+  border-bottom: $bb;
+  padding: $pading;
+  display: flex;
+  align-items: $items;
+  justify-content: $content;
+}
+@mixin flexable_leftside($color, $fsize, $fweight, $cursor) {
+  color: $color;
+  font-size: $fsize;
+  font-weight: $fweight;
+  cursor: $cursor;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+@mixin flexable_button($border, $bg, $color, $borderrad, $pading) {
+  border: $border;
+  background-color: $bg;
+  color: $color;
+  border-radius: $borderrad;
+  padding: $pading;
+}
+@mixin tab_items($widht, $height, $bg, $borderad) {
+  width: $widht;
+  height: $height;
+  background-color: $bg;
+  border-radius: $borderad;
+  &:hover {
+    box-shadow: 0 14px 20px 0 gray;
+    transition: 2s ease;
+    background: rgb(21, 158, 227);
+    background: linear-gradient(
+      267deg,
+      rgba(21, 158, 227, 1) 31%,
+      rgba(47, 205, 243, 1) 91%
+    );
+  }
+}
+@mixin tab_text_p($mt, $fsize, $color, $aling, $fweight) {
+  margin-top: $mt;
+  font-size: $fsize;
+  color: $color;
+  text-align: $aling;
+  font-weight: $fweight;
+}
+@mixin acc_container {
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: padding 0.2s ease, opacity 0.5s 0.15s ease;
+}
+@mixin accordion-tabs($bg, $border, $borrad) {
+  display: flex;
+  background: $bg;
+  border: $border;
+  border-radius: $borrad;
+}
+@mixin acc_tab_second($bg, $pading, $color, $flex, $border, $cursor, $borleft) {
+  background: $bg;
+  padding: $pading;
+  color: $color;
+  flex: $flex;
+  border: $border;
+  cursor: $cursor;
+  border-left: $borleft;
+  &:hover {
+    background: #b0e5ff;
+  }
+}
+@mixin form_text_input($pading, $borderrad, $border) {
+  padding: $pading;
+  border-radius: $borderrad;
+  border: $border;
+}
+@mixin label_span($color, $fweight) {
+  color: $color;
+  font-weight: $fweight;
+}
+@mixin select($pading, $widht, $borderrad, $border) {
+  padding: $pading;
+  width: $widht;
+  border-radius: $borderrad;
+  border: $border;
+}
+@mixin textarea($widht, $height, $borrad) {
+  width: $widht;
+  height: $height;
+  border-radius: $borrad;
+}
+@mixin btn_nav_res($bg, $top, $right) {
+  background-color: $bg;
+  top: $top;
+  right: $right;
+}
+@mixin xidmet_box_res($widht, $height, $margin) {
+  width: $widht;
+  height: $height;
+  margin: $margin;
+}
+@mixin icon_bar_res($margin, $widht, $bg) {
+  margin: $margin;
+  width: $widht;
+  background-color: $bg;
+}
+@mixin left_side_res($top, $aling, $left) {
+  top: $top;
+  text-align: $aling;
+  left: $left;
+}
+@mixin f_search_res(
+  $display,
+  $cursor,
+  $positio,
+  $fsize,
+  $zindex,
+  $color,
+  $bg,
+  $content,
+  $items,
+  $borrad,
+  $left,
+  $widht,
+  $height,
+  $shadow
+) {
+  display: $display;
+  cursor: $cursor;
+  position: $positio;
+  font-size: $fsize;
+  z-index: $zindex;
+  color: $color;
+  background-color: $bg;
+  display: flex;
+  justify-content: $content;
+  align-items: $items;
+  border-radius: $borrad;
+  left: $left;
+  width: $widht;
+  height: $height;
+  box-shadow: $shadow;
+}

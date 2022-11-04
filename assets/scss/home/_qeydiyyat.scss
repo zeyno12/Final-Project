@@ -1,104 +1,69 @@
 #Onlayn_qeydiyyat {
-  margin-top: 5rem;
-  position: relative;
-  z-index: +999;
+  @include netice(5rem, relative, +999, auto);
   .comeback {
     margin-top: 3rem;
     margin-left: 4rem;
     a {
-      font-size: 17px;
-      font-weight: 500;
-      text-decoration: none;
-      color: #0077b3;
+      @include comeback__a(17px, 500, none, #0077b3);
     }
   }
   .header_text {
-    text-align: center;
-    font-size: 33px;
-    color: #159ee3;
-    font-weight: bold;
-    padding: 0 0 60px;
+    @include header_text(center, 33px, #159ee3, bold, 0 0 60px);
   }
   .form_item {
     .form_text {
       input {
-        padding: 14px;
-        border-radius: 5px;
-        border: 1px solid #a9a9a978;
+        @include form_text_input(14px, 5px, 1px solid #a9a9a978);
       }
     }
     .select {
       label {
-        font-size: 15px;
-        color: #c2c2c2;
-        font-weight: 300;
+        @include leftside_nav_bold_text(15px, 300, #c2c2c2);
       }
       select {
-        padding: 13px 15px;
-        width: 100%;
-        border-radius: 5px;
-        border: 1px solid #a9a9a978;
+        @include select(13px 15px, 100%, 5px, 1px solid #a9a9a978);
       }
     }
     .email_tel,
     .text2 {
       input {
-        width: 100%;
         margin-top: 1rem;
-        padding: 13px 3px;
-        border-radius: 5px;
-        border: 1px solid #a9a9a978;
+        @include muayine_search_Input(100%, 13px 3px, 1px solid #a9a9a978, 5px);
       }
     }
     .radio,
     .file2 {
       label {
-        color: #c2c2c2;
-        font-weight: 300;
+        @include label_span(#c2c2c2, 300);
       }
       span {
-        color: #c2c2c2;
-        font-weight: 400;
+        @include label_span(#c2c2c2, 400);
       }
       button {
-        color: #fff;
-        padding: 10px 20px;
-        border: none;
-        background-color: #10a8e4;
-        border-radius: 5px;
+        @include flexable_button(none, #10a8e4, white, 5px, 10px 20px);
       }
     }
     .radio2 {
       label {
-        color: #c2c2c2;
-        font-weight: 300;
+        @include label_span(#c2c2c2, 300);
       }
       p {
-        color: #c2c2c2;
-        font-weight: 400;
+        @include label_span(#c2c2c2, 400);
       }
     }
     .qeyd {
       textarea {
-        width: 100%;
-        height: 150px;
-        border-radius: 5px;
+        @include textarea(100%, 150px, 5px);
       }
     }
     .end_label {
       label {
-        font-size: 14px;
-        font-weight: 300;
-        color: #737373;
+        @include left_side_p(#737373, 14px, 300);
       }
     }
     .end_button {
       button {
-        color: #fff;
-        padding: 15px 50px;
-        border: none;
-        background-color: #10a8e4;
-        border-radius: 5px;
+        @include flexable_button(none, #10a8e4, white, 5px, 15px 50px);
       }
       display: flex;
       justify-content: flex-end;

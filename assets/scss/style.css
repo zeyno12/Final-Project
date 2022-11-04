@@ -1183,7 +1183,8 @@ footer .end_text .connection_items .scale_phone {
 #Onlayn_qeydiyyat {
   margin-top: 5rem;
   position: relative;
-  z-index: +999;
+  z-index: 999;
+  width: auto;
 }
 
 #Onlayn_qeydiyyat .comeback {
@@ -1214,8 +1215,8 @@ footer .end_text .connection_items .scale_phone {
 
 #Onlayn_qeydiyyat .form_item .select label {
   font-size: 15px;
-  color: #c2c2c2;
   font-weight: 300;
+  color: #c2c2c2;
 }
 
 #Onlayn_qeydiyyat .form_item .select select {
@@ -1227,11 +1228,11 @@ footer .end_text .connection_items .scale_phone {
 
 #Onlayn_qeydiyyat .form_item .email_tel input,
 #Onlayn_qeydiyyat .form_item .text2 input {
-  width: 100%;
   margin-top: 1rem;
+  width: 100%;
   padding: 13px 3px;
-  border-radius: 5px;
   border: 1px solid #a9a9a978;
+  border-radius: 5px;
 }
 
 #Onlayn_qeydiyyat .form_item .radio label,
@@ -1248,11 +1249,11 @@ footer .end_text .connection_items .scale_phone {
 
 #Onlayn_qeydiyyat .form_item .radio button,
 #Onlayn_qeydiyyat .form_item .file2 button {
-  color: #fff;
-  padding: 10px 20px;
   border: none;
   background-color: #10a8e4;
+  color: white;
   border-radius: 5px;
+  padding: 10px 20px;
 }
 
 #Onlayn_qeydiyyat .form_item .radio2 label {
@@ -1272,9 +1273,9 @@ footer .end_text .connection_items .scale_phone {
 }
 
 #Onlayn_qeydiyyat .form_item .end_label label {
+  color: #737373;
   font-size: 14px;
   font-weight: 300;
-  color: #737373;
 }
 
 #Onlayn_qeydiyyat .form_item .end_button {
@@ -1287,11 +1288,11 @@ footer .end_text .connection_items .scale_phone {
 }
 
 #Onlayn_qeydiyyat .form_item .end_button button {
-  color: #fff;
-  padding: 15px 50px;
   border: none;
   background-color: #10a8e4;
+  color: white;
   border-radius: 5px;
+  padding: 15px 50px;
 }
 
 #Check_up {
@@ -1458,10 +1459,10 @@ footer .end_text .connection_items .scale_phone {
 }
 
 .accordion-item__container .adress_items h2 {
+  color: #159ee3;
   padding: 0 0 30px;
   font-size: 24px;
   font-weight: bold;
-  color: #159ee3;
 }
 
 .accordion-item__container .adress_items p {
@@ -1483,11 +1484,26 @@ footer .end_text .connection_items .scale_phone {
   color: gray;
 }
 
+.accordion-item__container .mapouter .gmap_canvas a:hover {
+  color: white;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
 .accordion-item__container .tab_items {
   width: 200px;
   height: 142px;
   background-color: #159ee3;
   border-radius: 8px;
+}
+
+.accordion-item__container .tab_items:hover {
+  -webkit-box-shadow: 0 14px 20px 0 gray;
+          box-shadow: 0 14px 20px 0 gray;
+  -webkit-transition: 2s ease;
+  transition: 2s ease;
+  background: #159ee3;
+  background: linear-gradient(267deg, #159ee3 31%, #2fcdf3 91%);
 }
 
 .accordion-item__container .tab_items .tab_img {
@@ -1515,15 +1531,6 @@ footer .end_text .connection_items .scale_phone {
   font-weight: bold;
 }
 
-.accordion-item__container .tab_items:hover {
-  -webkit-box-shadow: 0 14px 20px 0 gray;
-          box-shadow: 0 14px 20px 0 gray;
-  -webkit-transition: 2s ease;
-  transition: 2s ease;
-  background: #159ee3;
-  background: linear-gradient(267deg, #159ee3 31%, #2fcdf3 91%);
-}
-
 .accordion-item__container .panel {
   cursor: pointer;
 }
@@ -1541,8 +1548,8 @@ footer .end_text .connection_items .scale_phone {
   padding: 0 0 8px;
   font-size: 13px;
   font-weight: 500;
-  margin: 0;
   color: #159ee3;
+  margin: 0;
 }
 
 .accordion-item__container .panel .card_text .gray {
@@ -1562,7 +1569,8 @@ footer .end_text .connection_items .scale_phone {
 #İnfolab {
   margin-top: 6rem;
   position: relative;
-  z-index: +999;
+  z-index: 999;
+  width: auto;
 }
 
 #İnfolab .comeback {
@@ -1604,18 +1612,20 @@ footer .end_text .connection_items .scale_phone {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 8px;
+  border: none;
 }
 
 #İnfolab .lab_card .lab_items h4 {
   padding: 0 0 12px;
-  font-size: 17px;
   font-weight: 500;
+  font-size: 17px;
   line-height: 1.41;
   color: #404040;
 }
 
 #İnfolab .lab_card .lab_items p {
   padding: 0 0 15px;
+  font-weight: 300;
   font-size: 14px;
   line-height: 1.33;
   color: rgba(39, 39, 39, 0.8);
@@ -1634,19 +1644,19 @@ footer .end_text .connection_items .scale_phone {
 }
 
 #İnfolab .lab_card .lab_items .lab_data .month p {
-  font-size: 15px;
   color: #7c7c7c;
+  font-size: 15px;
 }
 
 #İnfolab .lab_card .lab_items .lab_data .view p {
-  font-size: 12px;
   color: #7c7c7c;
+  font-size: 12px;
 }
 
 #Müayinələr {
   margin-top: 6rem;
   position: relative;
-  z-index: +999;
+  z-index: 999;
   width: 99%;
 }
 
@@ -1688,20 +1698,20 @@ footer .end_text .connection_items .scale_phone {
 }
 
 #Müayinələr .muayine_search .abs i {
-  font-size: 16px;
   color: gray;
+  font-size: 16px;
 }
 
 #Müayinələr .but_payment {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #Müayinələr .but_payment button {
@@ -1737,12 +1747,12 @@ footer .end_text .connection_items .scale_phone {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 10px;
 }
 
@@ -1762,7 +1772,7 @@ footer .end_text .connection_items .scale_phone {
   height: 0;
   border-style: solid;
   border-width: 6px 5.5px 0 5.5px;
-  border-color: #0077b3 transparent transparent transparent;
+  border-color: #0077b3 transparent;
   position: absolute;
   top: calc(50% - 2px);
   right: -12%;
@@ -1785,12 +1795,12 @@ footer .end_text .connection_items .scale_phone {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 10px;
 }
 
@@ -1857,8 +1867,8 @@ footer .end_text .connection_items .scale_phone {
 
 #Müayinələr .muaiyine_content #vertical_tab_nav .flexable .leftside h4 {
   color: #0077b3;
-  font-weight: 600;
   font-size: 1.2rem;
+  font-weight: 600;
 }
 
 #Müayinələr .muaiyine_content #vertical_tab_nav .flexable .leftside p {
@@ -2116,7 +2126,8 @@ footer .end_text .connection_items .scale_phone {
 #Laboratoriya {
   margin-top: 6rem;
   position: relative;
-  z-index: +999;
+  z-index: 999;
+  width: auto;
 }
 
 #Laboratoriya .comeback {
@@ -2154,9 +2165,9 @@ footer .end_text .connection_items .scale_phone {
 #Laboratoriya .lab_haqqinda .lab_imagr img,
 #Laboratoriya .nezaret .lab_imagr img,
 #Laboratoriya .huquq .lab_imagr img {
-  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  width: 100%;
 }
 
 #Laboratoriya .lab_haqqinda p,
@@ -2190,9 +2201,9 @@ footer .end_text .connection_items .scale_phone {
 #Laboratoriya .nezaret .huquq_img img,
 #Laboratoriya .huquq .nezaret_img img,
 #Laboratoriya .huquq .huquq_img img {
-  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  width: 100%;
 }
 
 #Laboratoriya .lab_haqqinda .blue,
@@ -2229,14 +2240,14 @@ footer .end_text .connection_items .scale_phone {
     margin: 6px;
   }
   .Page_Logo img {
-    width: 60px;
     -o-object-fit: cover;
        object-fit: cover;
+    width: 60px;
   }
   .Page_Logo .second_logo {
-    width: 60px;
     -o-object-fit: cover;
        object-fit: cover;
+    width: 50px;
   }
   nav .nav_items .nav .transform_itemas {
     width: auto;
@@ -2253,7 +2264,7 @@ footer .end_text .connection_items .scale_phone {
     right: 17%;
   }
   nav .nav_items .btn-nav {
-    background-color: #e24775;
+    background-color: #159ee3;
     top: 30px;
     right: 18px;
   }
@@ -2295,8 +2306,8 @@ footer .end_text .connection_items .scale_phone {
     position: absolute;
     font-size: 20px;
     z-index: 999;
-    color: #fff;
-    background-color: #e24775;
+    color: white;
+    background-color: #159ee3;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2381,6 +2392,7 @@ footer .end_text .connection_items .scale_phone {
             flex-direction: column;
   }
   #Müayinələr .muaiyine_content #vertical_tab_nav .flexable .rightside {
+    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2390,7 +2402,6 @@ footer .end_text .connection_items .scale_phone {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 100%;
     gap: 25px;
   }
 }
