@@ -462,5 +462,160 @@
   align-items: $items;
   font-size: $fsize;
 }
-@mixin name {
+@mixin comeback__a($fsize, $fweight, $texdec, $color) {
+  font-size: $fsize;
+  font-weight: $fweight;
+  text-decoration: $texdec;
+  color: $color;
+}
+@mixin header_text($aling, $fsize, $color, $fweight, $pading) {
+  text-align: $aling;
+  font-size: $fsize;
+  color: $color;
+  font-weight: $fweight;
+  padding: $pading;
+}
+@mixin axtaris_items_h4($pading, $fweight, $fsize, $lineheight, $color) {
+  padding: $pading;
+  font-weight: $fweight;
+  font-size: $fsize;
+  line-height: $lineheight;
+  color: $color;
+}
+@mixin axtaris_items_a($color, $texdec) {
+  color: $color;
+  text-decoration: $texdec;
+}
+@mixin axtaris_items($pading, $borderb) {
+  padding: $pading;
+  border-bottom: $borderb;
+}
+@mixin h_text($color, $pading, $fsize, $fweight) {
+  color: $color;
+  padding: $pading;
+  font-size: $fsize;
+  font-weight: $fweight;
+}
+@mixin card_img($widht, $obfit, $borderad, $border) {
+  width: $widht;
+  object-fit: $obfit;
+  border-radius: $borderad;
+  border: $border;
+}
+@mixin slider_page(
+  $widht,
+  $height,
+  $bg,
+  $position,
+  $top,
+  $clip,
+  $right,
+  $animation
+) {
+  width: $widht;
+  height: $height;
+  background: $bg;
+  position: $position;
+  top: $top;
+  clip-path: $clip;
+  right: $right;
+  animation: $animation;
+}
+@mixin tibb_img($zindex, $widht, $borrad) {
+  z-index: $zindex;
+  width: $widht;
+  border-radius: $borrad;
+}
+@mixin end_text($content, $mt) {
+  display: flex;
+  justify-content: $content;
+  margin-top: $mt;
+}
+@mixin flex_items($items, $content, $direction) {
+  display: flex;
+  align-items: $items;
+  justify-content: $content;
+  flex-direction: $direction;
+}
+@mixin netice($mt, $position, $zindex, $widht) {
+  margin-top: $mt;
+  position: $position;
+  z-index: $zindex;
+  width: $widht;
+}
+@mixin netice_input($margin, $widht, $pading, $borderrad, $border) {
+  margin: $margin;
+  width: $widht;
+  padding: $pading;
+  border-radius: $borderrad;
+  border: $border;
+}
+@mixin netice_button($border, $pading, $borderrad, $bg, $fsize) {
+  border: none;
+  padding: 12px 40px;
+  border-radius: 10px;
+  background: #ffcc00;
+  font-size: 15px;
+}
+@mixin header_text_img($widht, $padng, $cursor, $bg, $height, $borderrad) {
+  width: $widht;
+  padding: $padng;
+  cursor: $cursor;
+  background-color: $bg;
+  height: $height;
+  border-radius: $borderrad;
+}
+@mixin text_items($fsize, $lineh, $color, $fweight) {
+  font-size: $fsize;
+  line-height: $lineh;
+  color: $color;
+  font-weight: $fweight;
+}
+@mixin text_content($fsize, $lineh, $color, $fweight, $aling) {
+  font-size: $fsize;
+  line-height: $lineh;
+  color: $color;
+  font-weight: $fweight;
+  text-align: $aling;
+}
+@mixin image_item($cursor, $widht, $obfit, $borderrad) {
+  cursor: $cursor;
+  width: $widht;
+  object-fit: $obfit;
+  border-radius: $borderrad;
+}
+@mixin doctor_li($padng, $margn, $liststyle) {
+  padding: $padng;
+  margin: $margn;
+  list-style: $liststyle;
+}
+@mixin accordion_doctor(
+  $bg,
+  $color,
+  $cursor,
+  $paddng,
+  $fsize,
+  $fweight,
+  $widht,
+  $aling,
+  $border,
+  $outline,
+  $borderrad
+) {
+  background-color: $bg;
+  color: $color;
+  cursor: $cursor;
+  padding: $paddng;
+  font-size: $fsize;
+  font-weight: $fweight;
+  width: $widht;
+  text-align: $aling;
+  border: $border;
+  outline: $outline;
+  border-radius: $borderrad;
+}
+@mixin panel_row($height, $visiblity) {
+  height: $height;
+  display: flex !important;
+  visibility: $visiblity;
 }

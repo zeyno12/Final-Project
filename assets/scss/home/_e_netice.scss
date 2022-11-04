@@ -1,38 +1,20 @@
 #E-nəticə {
-  margin-top: 6rem;
-  position: relative;
-  z-index: +999;
-  width: 99%;
-
+  @include netice(6rem, relative, +999, 99%);
   .comeback {
     margin-top: 2rem;
     margin-left: 4rem;
     a {
-      font-size: 17px;
-      font-weight: 500;
-      text-decoration: none;
-      color: #0077b3;
+      @include comeback__a(17px, 500, none, #0077b3);
     }
   }
   .netice {
     form {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
+      @include flex_items(center, center, column);
       input {
-        margin: 10px;
-        width: 50%;
-        padding: 10px;
-        border-radius: 10px;
-        border: 1px solid gray;
+        @include netice_input(10px, 50%, 10px, 10px, 1px solid gray);
       }
       button {
-        border: none;
-        padding: 12px 40px;
-        border-radius: 10px;
-        background: #ffcc00;
-        font-size: 15px;
+        @include netice_button(none, 12px 40px, 10px, #ffcc00, 15px);
       }
     }
   }

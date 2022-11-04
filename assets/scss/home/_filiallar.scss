@@ -1,31 +1,16 @@
 #Filiallar {
-  margin-top: 7rem;
-  position: relative;
-  z-index: +999;
+  @include netice(7rem, relative, +999, auto);
   .comeback {
     margin-top: 2rem;
     margin-left: 4rem;
     a {
-      font-size: 17px;
-      font-weight: 500;
-      text-decoration: none;
-      color: #0077b3;
+      @include comeback__a(17px, 500, none, #0077b3);
     }
   }
   .header_text {
-    text-align: center;
-    font-size: 36px;
-    color: #159ee3;
-    font-weight: bold;
-    padding: 0 0 60px;
+    @include header_text(center, 36px, #159ee3, bold, 0 0 60px);
     img {
-      width: 15px;
-      padding: 6px;
-      cursor: pointer;
-      background-color: #159ee3;
-      width: 30px;
-      height: 30px;
-      border-radius: 50%;
+      @include header_text_img(30px, 6px, pointer, #159ee3, 30px, 50%);
     }
   }
   .filial_items {
@@ -34,10 +19,7 @@
       .card_filial {
         .card_img_filial {
           img {
-            width: 100%;
-            object-fit: cover;
-            border-radius: 5px;
-            border: 1px solid lightgray;
+            @include card_img(100%, cover, 5px, 1px solid lightgray);
           }
           &:hover {
             opacity: 0.8;
@@ -46,9 +28,7 @@
         .card_text_filial {
           margin-top: 1rem;
           p {
-            font-size: 24px;
-            font-weight: bold;
-            color: #0077b3;
+            @include leftside_nav_bold_text(24px, bold, #0077b3);
           }
         }
       }

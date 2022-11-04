@@ -1,31 +1,37 @@
 #slider_page {
   z-index: -1;
-  width: 330px;
-  height: 120%;
-  background: #f8fcfe;
-  position: fixed;
-  top: -10%;
-  clip-path: ellipse(100% 50% at 100% 50%);
-  right: 0;
-  animation: slider1 0.9s linear normal;
+  @include slider_page(
+    330px,
+    120%,
+    #f8fcfe,
+    fixed,
+    -10%,
+    ellipse(100% 50% at 100% 50%),
+    0,
+    slider1 0.9s linear normal
+  );
   #slider2_page {
-    width: 330px;
-    height: 110%;
-    background: #eaf6fd;
-    position: fixed;
-    top: -5%;
-    clip-path: ellipse(100% 50% at 100% 50%);
-    right: -110px;
-    animation: slider2 0.8s linear normal;
+    @include slider_page(
+      330px,
+      110%,
+      #eaf6fd,
+      fixed,
+      -5%,
+      ellipse(100% 50% at 100% 50%),
+      -110px,
+      slider2 0.8s linear normal
+    );
     #slider3_page {
-      width: 330px;
-      height: 100%;
-      background: #d5edfa;
-      position: fixed;
-      top: -0%;
-      clip-path: ellipse(100% 50% at 100% 50%);
-      right: -220px;
-      animation: slider3 0.7s linear normal;
+      @include slider_page(
+        330px,
+        100%,
+        #d5edfa,
+        fixed,
+        -0%,
+        ellipse(100% 50% at 100% 50%),
+        -220px,
+        slider3 0.7s linear normal
+      );
     }
   }
 }
@@ -36,46 +42,30 @@
     margin-top: 8rem;
     margin-left: 4rem;
     a {
-      font-size: 17px;
-      font-weight: 500;
-      text-decoration: none;
-      color: #0077b3;
+      @include comeback__a(17px, 500, none, #0077b3);
     }
   }
   .tibbi_melumat_photo {
     .header_text {
-      text-align: center;
-      font-size: 36px;
-      color: #159ee3;
-      font-weight: bold;
-      padding: 0 0 60px;
+      @include header_text(center, 36px, #159ee3, bold, 0 0 60px);
     }
 
     .photo_tibb {
       img {
-        z-index: 666;
-        width: 100%;
-        border-radius: 8px;
+        @include tibb_img(666, 100%, 8px);
       }
     }
   }
   .text_covid {
     margin-top: 5rem;
     h3 {
-      padding: 0 0 16px;
-      font-size: 24px;
-      font-weight: 500;
-      color: #404040;
+      @include h_text(#404040, 0 0 16px, 24px, 500);
     }
     p {
-      padding: 0 0 5px;
-      font-size: 13px;
-      color: #2e2e2ec4;
+      @include h_text(#2e2e2ec4, 0 0 5px, 13px, 400);
     }
     .lists_p {
-      padding: 0 0 10px 25px;
-      font-size: 15px;
-      font-weight: 500;
+      @include h_text(#2e2e2ec4, 0 0 10px 25px, 15px, 500);
       i {
         color: #0077b3;
         font-size: 16px;
@@ -85,24 +75,18 @@
 }
 #footer {
   .end_text {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 1.2rem;
+    @include end_text(space-between, 1.2rem);
     .left_side {
       p {
-        color: rgba(0, 0, 0, 0.3);
-        font-size: 14px;
-        font-weight: 500;
+        @include left_side_p(rgba(0, 0, 0, 0.3), 14px, 500);
         a {
-          display: inline-block;
-          color: rgba(175, 175, 175, 0.6);
-          font-size: 13px;
-          font-weight: 500;
-          text-decoration: none;
-          &:hover {
-            color: white;
-            transition: 0.3s ease-in-out;
-          }
+          @include left_side_a(
+            inline-block,
+            rgba(175, 175, 175, 0.6),
+            13px,
+            500,
+            none
+          );
         }
       }
     }
@@ -110,52 +94,42 @@
       display: flex;
       gap: 20px;
       p {
-        font-size: 14px;
-        line-height: 24px;
-        font-weight: 500;
-        color: rgba(175, 175, 175, 0.6);
-        margin: 0;
-        width: 100%;
+        @include right_side_p(
+          14px,
+          24px,
+          500,
+          rgba(175, 175, 175, 0.6),
+          0,
+          100%
+        );
       }
       ul {
-        display: flex;
-        justify-content: center;
-        gap: 20px;
-        align-items: center;
-        width: 100%;
-        padding: 0;
+        @include right_side_ul(center, 20px, center, 100%, 0);
         li {
           list-style: none;
           a {
-            text-decoration: none;
-            color: rgba(175, 175, 175, 0.6);
-            &:hover {
-              color: white;
-              transition: 0.3s ease-in-out;
-            }
+            @include right_side_a(none, rgba(175, 175, 175, 0.6));
           }
         }
       }
     }
   }
   .connection_items {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    gap: 20px;
+    @include Flex_item(flex-end, flex-end, 20px);
     padding: 10px;
     .f_phone,
     .f_anket,
     .f_sual,
     .f_connect {
-      width: 50px;
-      height: 50px;
-      border-radius: 50%;
-      background-color: #fff;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-size: 1.5rem;
+      @include connection_items_f(
+        50px,
+        50px,
+        50%,
+        white,
+        center,
+        center,
+        1.5rem
+      );
       box-shadow: 7px 8px 9px -4px grey;
       i {
         color: #159ee3;
@@ -176,32 +150,23 @@
   }
 }
 .phone_second {
-  cursor: pointer;
-  position: absolute;
-  top: 20px;
-  font-size: 20px;
-  right: 15%;
-  z-index: 999;
+  @include nav_item_phone(pointer, absolute, 20px, 20px, 15%, 999);
   .phone_text {
     p {
-      padding: 0 17px 5px;
-      font-size: 13px;
-      font-weight: 500;
-      color: #159ee3 !important;
-      margin: 0;
+      @include nav_item_phone_p(0 17px 5px, 13px, 500, #159ee3 !important, 0);
     }
   }
   .number {
     a {
-      text-decoration: none;
-      color: #159ee3 !important;
-      display: inline-block;
-      font-size: 22px;
-      font-weight: 700;
+      @include nav_item_phone_a(
+        none,
+        #159ee3 !important,
+        inline-block,
+        22px,
+        700
+      );
       sub {
-        display: inline-block;
-        vertical-align: baseline;
-        font-size: 16px;
+        @include nav_item_phone_sub(inline-block, baseline, 16px);
       }
       i {
         font-size: 20px;

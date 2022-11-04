@@ -853,7 +853,7 @@ footer .end_text .connection_items .scale_phone {
   height: 100%;
   background: #d5edfa;
   position: fixed;
-  top: -0%;
+  top: 0%;
   -webkit-clip-path: ellipse(100% 50% at 100% 50%);
           clip-path: ellipse(100% 50% at 100% 50%);
   right: -220px;
@@ -897,19 +897,21 @@ footer .end_text .connection_items .scale_phone {
 }
 
 #Tibbi_məlumatlar .text_covid h3 {
+  color: #404040;
   padding: 0 0 16px;
   font-size: 24px;
   font-weight: 500;
-  color: #404040;
 }
 
 #Tibbi_məlumatlar .text_covid p {
+  color: #2e2e2ec4;
   padding: 0 0 5px;
   font-size: 13px;
-  color: #2e2e2ec4;
+  font-weight: 400;
 }
 
 #Tibbi_məlumatlar .text_covid .lists_p {
+  color: #2e2e2ec4;
   padding: 0 0 10px 25px;
   font-size: 15px;
   font-weight: 500;
@@ -1000,12 +1002,12 @@ footer .end_text .connection_items .scale_phone {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   gap: 20px;
   padding: 10px;
 }
@@ -1017,7 +1019,7 @@ footer .end_text .connection_items .scale_phone {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background-color: #fff;
+  background-color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1094,7 +1096,8 @@ footer .end_text .connection_items .scale_phone {
 #Hekimler {
   margin-top: 7rem;
   position: relative;
-  z-index: +999;
+  z-index: 999;
+  width: auto;
 }
 
 #Hekimler .comeback {
@@ -1132,7 +1135,6 @@ footer .end_text .connection_items .scale_phone {
   color: white;
   cursor: pointer;
   padding: 21px 60px 21px 35px;
-  color: #fff;
   font-size: 18px;
   font-weight: 500;
   width: 100%;
@@ -1164,8 +1166,8 @@ footer .end_text .connection_items .scale_phone {
   padding: 0 0 8px;
   font-size: 13px;
   font-weight: 500;
-  margin: 0;
   color: #159ee3;
+  margin: 0;
 }
 
 #Hekimler ul li .panel_row .panel .card_text .gray {
@@ -1342,15 +1344,16 @@ footer .end_text .connection_items .scale_phone {
 }
 
 #Check_up .check_items a .check_cards .card_text p {
+  color: #0077b3;
   font-size: 24px;
   font-weight: bold;
-  color: #0077b3;
 }
 
 #Filiallar {
   margin-top: 7rem;
   position: relative;
-  z-index: +999;
+  z-index: 999;
+  width: auto;
 }
 
 #Filiallar .comeback {
@@ -1374,11 +1377,10 @@ footer .end_text .connection_items .scale_phone {
 }
 
 #Filiallar .header_text img {
-  width: 15px;
+  width: 30px;
   padding: 6px;
   cursor: pointer;
   background-color: #159ee3;
-  width: 30px;
   height: 30px;
   border-radius: 50%;
 }
@@ -1889,7 +1891,7 @@ footer .end_text .connection_items .scale_phone {
 #E-nəticə {
   margin-top: 6rem;
   position: relative;
-  z-index: +999;
+  z-index: 999;
   width: 99%;
 }
 
@@ -1985,7 +1987,7 @@ footer .end_text .connection_items .scale_phone {
   font-weight: bold;
   font-size: 18px;
   line-height: 1.67;
-  color: #000;
+  color: black;
 }
 
 #Axtarış .axtaris_items h4 a {
@@ -1994,22 +1996,23 @@ footer .end_text .connection_items .scale_phone {
 }
 
 #Axtarış .axtaris_items h3 {
-  padding: 0 0 0px;
+  padding: 0 0 8px;
   font-weight: bold;
   font-size: 24px;
   line-height: 1.67;
-  color: #000;
+  color: black;
 }
 
 #Axtarış .axtaris_items h3 a {
-  color: #000;
+  color: black;
   text-decoration: none;
 }
 
 #Haqqımızda {
   margin-top: 6rem;
   position: relative;
-  z-index: +999;
+  z-index: 999;
+  width: auto;
 }
 
 #Haqqımızda .comeback {
@@ -2064,11 +2067,11 @@ footer .end_text .connection_items .scale_phone {
 }
 
 #Haqqımızda .accordion-item__container .karyeras .karyeraimg h3 {
-  padding: 0 0 50px;
-  font-size: 26px;
-  font-weight: bold;
-  color: #159ee3;
   text-align: center;
+  font-size: 26px;
+  color: #159ee3;
+  font-weight: bold;
+  padding: 0 0 50px;
 }
 
 #Haqqımızda .accordion-item__container .karyeras .karyeimg {
@@ -2084,17 +2087,17 @@ footer .end_text .connection_items .scale_phone {
 }
 
 #Haqqımızda .accordion-item__container .lisenziya .card_lisenziya .lisenziya_img img {
-  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  width: 100%;
 }
 
 #Haqqımızda .accordion-item__container .lisenziya .card_lisenziya .lisenziya_text p {
   font-size: 18px;
-  font-weight: bold;
   line-height: 1.44;
-  text-align: center;
   color: #404040;
+  font-weight: bold;
+  text-align: center;
 }
 
 #Haqqımızda .accordion-item__container .history p {
@@ -2105,9 +2108,9 @@ footer .end_text .connection_items .scale_phone {
 }
 
 #Haqqımızda .accordion-item__container .history img {
-  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  width: 100%;
 }
 
 #Laboratoriya {
