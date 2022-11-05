@@ -4,7 +4,7 @@
     .accordion-tab {
       @include acc_tab_second(
         white,
-        1rem 1.3rem,
+        10px,
         #159ee3,
         1,
         none,
@@ -47,11 +47,9 @@
         }
       }
       .tab_items {
-        @include tab_items(200px, 142px, #159ee3, 8px);
+        @include tab_items(200px, 142px, #159ee3, 8px, pointer);
         .tab_img {
-          display: flex;
-          align-items: center;
-          justify-content: center;
+          @include main_flex(center, center);
           margin-top: 2rem;
           img {
             margin-top: 1rem;

@@ -751,11 +751,12 @@
   border-radius: $borderrad;
   padding: $pading;
 }
-@mixin tab_items($widht, $height, $bg, $borderad) {
+@mixin tab_items($widht, $height, $bg, $borderad, $cursor) {
   width: $widht;
   height: $height;
   background-color: $bg;
   border-radius: $borderad;
+  cursor: $cursor;
   &:hover {
     box-shadow: 0 14px 20px 0 gray;
     transition: 2s ease;
@@ -813,10 +814,11 @@
   border-radius: $borderrad;
   border: $border;
 }
-@mixin textarea($widht, $height, $borrad) {
+@mixin textarea($widht, $height, $borrad, $pading) {
   width: $widht;
   height: $height;
   border-radius: $borrad;
+  padding: $pading;
 }
 @mixin btn_nav_res($bg, $top, $right) {
   background-color: $bg;

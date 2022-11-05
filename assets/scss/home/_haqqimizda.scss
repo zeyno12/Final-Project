@@ -11,8 +11,8 @@
     @include header_text(center, 36px, #159ee3, bold, 0 0 60px);
   }
   .accordion-item__container {
-    padding: 10px;
     .rehberlik {
+      padding: 10px;
       .rehber_image {
         img {
           max-width: 240px;
@@ -30,6 +30,7 @@
       }
     }
     .karyeras {
+      padding: 10px;
       .kayyeratext {
         @include text_items(15px, 1.75, #404040, 300);
       }
@@ -47,6 +48,7 @@
       }
     }
     .lisenziya {
+      padding: 10px;
       .card_lisenziya {
         .lisenziya_img {
           img {
@@ -61,6 +63,7 @@
       }
     }
     .history {
+      padding: 10px;
       p {
         @include text_items(15px, 1.75, #404040, 300);
       }
