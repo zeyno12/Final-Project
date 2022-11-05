@@ -1,0 +1,28 @@
+#Poliklinika {
+  @include netice(7rem, relative, +999, auto);
+  .comeback {
+    margin-top: 2rem;
+    margin-left: 4rem;
+    a {
+      @include comeback__a(17px, 500, none, #0077b3);
+    }
+  }
+  .header_text {
+    @include header_text(center, 36px, #159ee3, bold, 0 0 60px);
+  }
+  .tab_items {
+    @include tab_items(200px, 142px, #159ee3, 8px, pointer);
+    .tab_img {
+      @include main_flex(center, center);
+      margin-top: 2rem;
+      img {
+        margin-top: 1rem;
+      }
+    }
+    .tab_text {
+      p {
+        @include tab_text_p(1rem, 17px, white, center, bold);
+      }
+    }
+  }
+}

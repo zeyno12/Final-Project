@@ -285,7 +285,7 @@ nav .nav_items .phone {
   top: 20px;
   font-size: 20px;
   right: 15%;
-  z-index: 999;
+  z-index: 999999;
 }
 
 nav .nav_items .phone .phone_text p {
@@ -320,7 +320,7 @@ nav .nav_items .language .az {
   top: 20px;
   font-size: 20px;
   right: 30px;
-  z-index: 999;
+  z-index: 999999;
   color: black;
   background-color: white;
   width: 50px;
@@ -352,7 +352,7 @@ nav .nav_items .language .ru {
   position: absolute;
   top: 14%;
   right: 30px;
-  z-index: 999;
+  z-index: 999999;
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -394,10 +394,10 @@ nav .nav_items .nav .transform_itemas {
   width: 665px;
   height: 100vh;
   position: fixed;
-  top: 90px;
+  top: 0;
   right: 0;
   z-index: 99999;
-  padding: 40px 20px;
+  padding: 65px 12px 0 12px;
   display: none;
   overflow-y: scroll;
   background-color: #159ee3;
@@ -449,7 +449,7 @@ nav .nav_items .btn-nav {
   border: none;
   padding: 11px;
   cursor: pointer;
-  z-index: 999;
+  z-index: 999999;
 }
 
 nav .nav_items .icon-bar {
@@ -472,13 +472,13 @@ nav .nav_items .animated .icon-bar {
 }
 
 nav .nav_items .animated .top {
-  -webkit-transform: translateY(6px) rotateZ(45deg);
-          transform: translateY(6px) rotateZ(45deg);
+  -webkit-transform: translateY(7px) rotateZ(45deg);
+          transform: translateY(7px) rotateZ(45deg);
 }
 
 nav .nav_items .animated .bottom {
-  -webkit-transform: translateY(-9px) rotateZ(-45deg);
-          transform: translateY(-9px) rotateZ(-45deg);
+  -webkit-transform: translateY(-8px) rotateZ(-45deg);
+          transform: translateY(-8px) rotateZ(-45deg);
 }
 
 nav .nav_items .animated .middle {
@@ -862,8 +862,10 @@ footer .end_text .connection_items .scale_phone {
 }
 
 #Tibbi_məlumatlar {
+  margin-top: 5rem;
   position: relative;
-  z-index: +666;
+  z-index: 999;
+  width: auto;
 }
 
 #Tibbi_məlumatlar .comeback {
@@ -1299,7 +1301,8 @@ footer .end_text .connection_items .scale_phone {
 #Check_up {
   margin-top: 7rem;
   position: relative;
-  z-index: +999;
+  z-index: 999;
+  width: auto;
 }
 
 #Check_up .comeback {
@@ -2248,6 +2251,9 @@ footer .end_text .connection_items .scale_phone {
   #slider {
     display: none;
   }
+  header .absolut_item .row {
+    margin-top: 3rem !important;
+  }
   header .xidmet_box {
     width: calc(50% - 12px);
     height: 90px;
@@ -2277,6 +2283,36 @@ footer .end_text .connection_items .scale_phone {
     top: 30px;
     right: 17%;
   }
+  nav .nav_items .phone_seconds {
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    font-size: 20px;
+    right: 15%;
+    z-index: 999;
+  }
+  nav .nav_items .phone_seconds .phone_text p {
+    padding: 0 17px 5px;
+    font-size: 13px;
+    font-weight: 500;
+    color: #159ee3 !important;
+    margin: 0;
+  }
+  nav .nav_items .phone_seconds .number a {
+    text-decoration: none;
+    color: #159ee3 !important;
+    display: inline-block;
+    font-size: 22px;
+    font-weight: 700;
+  }
+  nav .nav_items .phone_seconds .number a sub {
+    display: inline-block;
+    vertical-align: baseline;
+    font-size: 16px;
+  }
+  nav .nav_items .phone_seconds .number a i {
+    font-size: 20px;
+  }
   nav .nav_items .btn-nav {
     background-color: #159ee3;
     top: 30px;
@@ -2291,21 +2327,21 @@ footer .end_text .connection_items .scale_phone {
     background-color: white;
   }
   footer .end_text .left_side {
-    top: 677px;
+    top: 645px;
     text-align: center;
-    left: 50px;
+    left: 25%;
   }
   footer .end_text .left_side a {
-    display: block;
+    display: block !important;
   }
   footer .end_text .right_side {
-    top: 733px;
-    right: 55px;
+    top: 700px;
+    right: 20%;
   }
   footer .end_text .connection_items {
     position: absolute;
-    top: 600px;
-    right: 20px;
+    top: 580px;
+    right: 25px;
   }
   footer .end_text .connection_items .f_phone,
   footer .end_text .connection_items .f_anket,
@@ -2374,7 +2410,6 @@ footer .end_text .connection_items .scale_phone {
     margin: 16px 0px;
   }
   #İnfolab .accordion .accordion-tabs,
-  #Haqqımızda .accordion .accordion-tabs,
   #Laboratoriya .accordion .accordion-tabs {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2383,6 +2418,26 @@ footer .end_text .connection_items .scale_phone {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  #Haqqımızda .accordion .accordion-tabs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #Haqqımızda .accordion .karyeras .res_center {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   #Müayinələr .muayine_search input {
     width: 100%;
@@ -2421,6 +2476,167 @@ footer .end_text .connection_items .scale_phone {
   .comeback {
     margin-left: 0px !important;
   }
+  #footer .connection_items {
+    padding: 20px 10px;
+  }
+  #footer .end_text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #footer .end_text .left_side {
+    text-align: center;
+  }
+  #footer .end_text .left_side p a {
+    display: block;
+  }
+  #footer .end_text .right_side {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #footer .end_text .right_side p {
+    text-align: center;
+  }
+}
+
+#E-həkim {
+  margin-top: 7rem;
+  position: relative;
+  z-index: 999;
+  width: auto;
+}
+
+#E-həkim .comeback {
+  margin-top: 2rem;
+  margin-left: 4rem;
+}
+
+#E-həkim .comeback a {
+  font-size: 17px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #0077b3;
+}
+
+#E-həkim .header_text {
+  text-align: center;
+  font-size: 36px;
+  color: #159ee3;
+  font-weight: bold;
+  padding: 0 0 60px;
+}
+
+#E-həkim .h_text {
+  color: #404040;
+  padding: 0 0 5px;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+#E-həkim .check_items a {
+  text-decoration: none;
+}
+
+#E-həkim .check_items a .check_cards .card_img img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 5px;
+  border: 1px solid lightgray;
+}
+
+#E-həkim .check_items a .check_cards .card_text {
+  margin-top: 1rem;
+}
+
+#E-həkim .check_items a .check_cards .card_text p {
+  color: #0077b3;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+#Poliklinika {
+  margin-top: 7rem;
+  position: relative;
+  z-index: 999;
+  width: auto;
+}
+
+#Poliklinika .comeback {
+  margin-top: 2rem;
+  margin-left: 4rem;
+}
+
+#Poliklinika .comeback a {
+  font-size: 17px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #0077b3;
+}
+
+#Poliklinika .header_text {
+  text-align: center;
+  font-size: 36px;
+  color: #159ee3;
+  font-weight: bold;
+  padding: 0 0 60px;
+}
+
+#Poliklinika .tab_items {
+  width: 200px;
+  height: 142px;
+  background-color: #159ee3;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#Poliklinika .tab_items:hover {
+  -webkit-box-shadow: 0 14px 20px 0 gray;
+          box-shadow: 0 14px 20px 0 gray;
+  -webkit-transition: 2s ease;
+  transition: 2s ease;
+  background: #159ee3;
+  background: linear-gradient(267deg, #159ee3 31%, #2fcdf3 91%);
+}
+
+#Poliklinika .tab_items .tab_img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 2rem;
+}
+
+#Poliklinika .tab_items .tab_img img {
+  margin-top: 1rem;
+}
+
+#Poliklinika .tab_items .tab_text p {
+  margin-top: 1rem;
+  font-size: 17px;
+  color: white;
+  text-align: center;
+  font-weight: bold;
 }
 
 *,

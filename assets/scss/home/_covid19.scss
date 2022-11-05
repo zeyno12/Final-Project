@@ -36,8 +36,7 @@
   }
 }
 #Tibbi_məlumatlar {
-  position: relative;
-  z-index: +666;
+  @include netice(5rem, relative, +999, auto);
   .comeback {
     margin-top: 8rem;
     margin-left: 4rem;
