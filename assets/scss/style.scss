@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;500&display=swap");
 @import "mixin";
 @import "varaible";
+@import "home/webkitScroll";
 @import "home/home";
 @import "home/covid19";
 @import "home/hekimler";
@@ -29,4 +30,7 @@
   box-sizing: border-box;
   outline: none;
   font-family: "Poppins", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
 }

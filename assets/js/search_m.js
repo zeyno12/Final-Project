@@ -13,3 +13,17 @@ function filterList() {
     }
   });
 }
+
+// Animate scroll to page anchor
+$("#qan12").click(function (e) {
+  // e.preventDefault();
+  // var div = $(this).attr("href");
+  // $("html, body").animate(
+  //   {
+  //     scrollTop: $(div).position().top,
+  //   },
+  //   "slow",
+  //   "swing"
+  // );
+  alert("test");
+});
