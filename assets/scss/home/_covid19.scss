@@ -74,7 +74,7 @@
 }
 #footer {
   .end_text {
-    @include end_text(space-between, 1.2rem);
+    @include end_text(space-between, 1.2rem, 0px 10px);
     .left_side {
       p {
         @include left_side_p(rgba(0, 0, 0, 0.3), 14px, 500);

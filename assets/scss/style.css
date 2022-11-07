@@ -932,6 +932,7 @@ footer .end_text .connection_items .scale_phone {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-top: 1.2rem;
+  padding: 0px 10px;
 }
 
 #footer .end_text .left_side p {
@@ -2409,6 +2410,15 @@ footer .end_text .connection_items .scale_phone {
             justify-content: center;
     margin: 16px 0px;
   }
+  #Poliklinika .flex_center {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 12px 0px;
+  }
   #İnfolab .accordion .accordion-tabs,
   #Laboratoriya .accordion .accordion-tabs {
     display: -webkit-box;
@@ -2637,6 +2647,297 @@ footer .end_text .connection_items .scale_phone {
   color: white;
   text-align: center;
   font-weight: bold;
+}
+
+#Endirimlər {
+  margin-top: 7rem;
+  position: relative;
+  z-index: 999;
+  width: auto;
+}
+
+#Endirimlər .comeback {
+  margin-top: 2rem;
+  margin-left: 4rem;
+}
+
+#Endirimlər .comeback a {
+  font-size: 17px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #0077b3;
+}
+
+#Endirimlər .header_text {
+  text-align: center;
+  font-size: 36px;
+  color: #159ee3;
+  font-weight: bold;
+  padding: 0 0 60px;
+}
+
+#Endirimlər .lab_card {
+  padding: 8px;
+}
+
+#Endirimlər .lab_card .lab_image img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 8px;
+  border: none;
+}
+
+#Endirimlər .lab_card .lab_items h4 {
+  padding: 7px 0 12px;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 1.41;
+  color: #404040;
+}
+
+#Endirimlər .lab_card .lab_items p {
+  padding: 0 0 15px;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.33;
+  color: rgba(39, 39, 39, 0.8);
+}
+
+#Endirimlər .lab_card .lab_items .lab_data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#Endirimlər .lab_card .lab_items .lab_data .month p {
+  color: #7c7c7c;
+  font-size: 15px;
+}
+
+#Endirimlər .lab_card .lab_items .lab_data .view p {
+  color: #7c7c7c;
+  font-size: 12px;
+}
+
+#Kampaniyalar {
+  margin-top: 7rem;
+  position: relative;
+  z-index: 999;
+  width: auto;
+}
+
+#Kampaniyalar .comeback {
+  margin-top: 2rem;
+  margin-left: 4rem;
+}
+
+#Kampaniyalar .comeback a {
+  font-size: 17px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #0077b3;
+}
+
+#Kampaniyalar .header_text {
+  text-align: center;
+  font-size: 36px;
+  color: #159ee3;
+  font-weight: bold;
+  padding: 0 0 60px;
+}
+
+#Kampaniyalar .lab_card {
+  padding: 8px;
+}
+
+#Kampaniyalar .lab_card .lab_image img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 8px;
+  border: none;
+}
+
+#Kampaniyalar .lab_card .lab_items h4 {
+  padding: 7px 0 12px;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 1.41;
+  color: #404040;
+}
+
+#Kampaniyalar .lab_card .lab_items p {
+  padding: 0 0 15px;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.33;
+  color: rgba(39, 39, 39, 0.8);
+}
+
+#Kampaniyalar .lab_card .lab_items .lab_data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#Kampaniyalar .lab_card .lab_items .lab_data .month p {
+  color: #7c7c7c;
+  font-size: 15px;
+}
+
+#Loyallıq_kartları {
+  margin-top: 7rem;
+  position: relative;
+  z-index: 999;
+  width: auto;
+}
+
+#Loyallıq_kartları .comeback {
+  margin-top: 2rem;
+  margin-left: 4rem;
+}
+
+#Loyallıq_kartları .comeback a {
+  font-size: 17px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #0077b3;
+}
+
+#Loyallıq_kartları .header_text {
+  text-align: center;
+  font-size: 36px;
+  color: #159ee3;
+  font-weight: bold;
+  padding: 0 0 60px;
+}
+
+#Loyallıq_kartları .loyal_text p {
+  padding: 0 0 25px;
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 1.75;
+  color: #404040;
+}
+
+#Loyallıq_kartları .loyal_card {
+  cursor: pointer;
+}
+
+#Loyallıq_kartları .loyal_card .loyal_img {
+  padding: 0 0 30px;
+}
+
+#Loyallıq_kartları .loyal_card .loyal_img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 90%;
+}
+
+#Loyallıq_kartları .loyal_card .loyal_items h3 {
+  text-align: center;
+  font-size: 20px;
+  color: #0077b3;
+  font-weight: bold;
+  padding: 0 0 10px;
+}
+
+#Loyallıq_kartları .loyal_card .loyal_items h3:hover {
+  -webkit-text-decoration: underline #0077b3;
+          text-decoration: underline #0077b3;
+  -webkit-transition: 3s ease-in-out;
+  transition: 3s ease-in-out;
+}
+
+#Loyallıq_kartları .loyal_card .loyal_items p {
+  color: #7c7c7c;
+  font-size: 17px;
+  text-align: center;
+}
+
+#Simptomlar {
+  margin-top: 7rem;
+  position: relative;
+  z-index: 999;
+  width: auto;
+}
+
+#Simptomlar .comeback {
+  margin-top: 2rem;
+  margin-left: 4rem;
+}
+
+#Simptomlar .comeback a {
+  font-size: 17px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #0077b3;
+}
+
+#Simptomlar .header_text {
+  text-align: center;
+  font-size: 36px;
+  color: #159ee3;
+  font-weight: bold;
+  padding: 0 0 60px;
+}
+
+#Simptomlar .lab_card {
+  padding: 8px;
+}
+
+#Simptomlar .lab_card .lab_image img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 8px;
+  border: none;
+}
+
+#Simptomlar .lab_card .lab_items h4 {
+  padding: 7px 0 12px;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 1.41;
+  color: #404040;
+}
+
+#Simptomlar .lab_card .lab_items p {
+  padding: 0 0 15px;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.33;
+  color: rgba(39, 39, 39, 0.8);
+}
+
+#Simptomlar .lab_card .lab_items .lab_data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#Simptomlar .lab_card .lab_items .lab_data .month p {
+  color: #7c7c7c;
+  font-size: 15px;
 }
 
 *,

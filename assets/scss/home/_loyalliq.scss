@@ -1,0 +1,35 @@
+#Loyallıq_kartları {
+  @include netice(7rem, relative, +999, auto);
+  .comeback {
+    margin-top: 2rem;
+    margin-left: 4rem;
+    a {
+      @include comeback__a(17px, 500, none, #0077b3);
+    }
+  }
+  .header_text {
+    @include header_text(center, 36px, #159ee3, bold, 0 0 60px);
+  }
+  .loyal_text {
+    p {
+      @include axtaris_items_h4(0 0 25px, 300, 17px, 1.75, #404040);
+    }
+  }
+  .loyal_card {
+    cursor: pointer;
+    .loyal_img {
+      padding: 0 0 30px;
+      img {
+        @include image_logo(cover, 90%);
+      }
+    }
+    .loyal_items {
+      h3 {
+        @include loyal_items(center, 20px, #0077b3, bold, 0 0 10px);
+      }
+      p {
+        @include search_i(#7c7c7c, 17px, center);
+      }
+    }
+  }
+}

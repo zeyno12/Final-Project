@@ -183,6 +183,13 @@
       }
     }
   }
+  #Poliklinika {
+    .flex_center {
+      display: flex;
+      justify-content: center;
+      margin: 12px 0px;
+    }
+  }
   #İnfolab,
   #Laboratoriya {
     .accordion {

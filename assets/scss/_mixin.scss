@@ -51,6 +51,11 @@
   color: $color;
   font-size: $f_size;
 }
+@mixin search_i($color, $f_size, $align) {
+  color: $color;
+  font-size: $f_size;
+  text-align: $align;
+}
 @mixin page_logo($position, $top, $left, $right, $zindex) {
   position: $position;
   top: $top;
@@ -475,6 +480,17 @@
   font-weight: $fweight;
   padding: $pading;
 }
+@mixin loyal_items($aling, $fsize, $color, $fweight, $pading) {
+  text-align: $aling;
+  font-size: $fsize;
+  color: $color;
+  font-weight: $fweight;
+  padding: $pading;
+  &:hover {
+    text-decoration: underline #0077b3;
+    transition: 3s ease-in-out;
+  }
+}
 @mixin axtaris_items_h4($pading, $fweight, $fsize, $lineheight, $color) {
   padding: $pading;
   font-weight: $fweight;
@@ -526,10 +542,11 @@
   width: $widht;
   border-radius: $borrad;
 }
-@mixin end_text($content, $mt) {
+@mixin end_text($content, $mt, $pading) {
   display: flex;
   justify-content: $content;
   margin-top: $mt;
+  padding: $pading;
 }
 @mixin flex_items($items, $content, $direction) {
   display: flex;

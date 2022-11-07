@@ -183,6 +183,86 @@ let data = [
     month: "20 Noyabr 2021",
     view: "Baxış sayı: 2727",
   },
+  {
+    image:
+      "https://www.saglamaile.az/site/assets/files/11399/qida_doz.283x171.png",
+    name: "Qida dözülməzliyi(qida intoleransı) nədir?",
+    content:
+      "Qida dözümsüzlüyü, bəzi qidaları yedikdən sonra müəyyən simptomlara səbəb olan qidalara qarşı geniş...",
+    month: "13 Noyabr 2021",
+    view: "Baxış sayı: 1371",
+  },
+  {
+    image:
+      "https://www.saglamaile.az/site/assets/files/11345/vitamin_b12.283x171.jpg",
+    name: "Vitamin B12 nədir?",
+    content:
+      "B 12 vitamini orqanizm tərəfindən sintez olunmayan, ancaq qida vasitəsi ilə orqanizmə daxil olan vitamindir....",
+    month: "5 Noyabr 2021",
+    view: "Baxış sayı: 8533",
+  },
+  {
+    image:
+      "https://www.saglamaile.az/site/assets/files/11344/cinsi_infeksiyalar.283x171.png",
+    name: "Cinsi yolla keçən infeksiyaların əlamətləri nələrdir?",
+    content:
+      "Cinsi yolla keçən infeksiyalar cinsi əlaqə zamanı insandan insana ötürülən infeksiyalara deyilir....",
+    month: "2 Noyabr 2021",
+    view: "Baxış sayı: 19289",
+  },
+  {
+    image:
+      "https://www.saglamaile.az/site/assets/files/11340/burun_axmasi.283x171.png",
+    name: "Burun axmasının səbəbi nədir?",
+    content:
+      "Burun axması burun dəliklərindən selik (mucus) axmasıdır. Mucus burun boşluğundakı hüceyrələr...",
+    month: "28 Oktyabr 2021",
+    view: "Baxış sayı: 7370",
+  },
+  {
+    image:
+      "https://www.saglamaile.az/site/assets/files/11320/estradiol.283x171.png",
+    name: "Estradiol nədir?",
+    content:
+      "Estradiol (E2) steroid quruluşlu  estrogen hormonudur. Normal hormon səviyyəsi olan qadınlarda rast gəlinən...",
+    month: "26 Oktyabr 2021",
+    view: "Baxış sayı: 6905",
+  },
+  {
+    image:
+      "https://www.saglamaile.az/site/assets/files/11307/epilepsiya.283x171.png",
+    name: "Epilepsiya nədir? Epilepsiya zamanı ilk yardım necə olmalıdır?",
+    content:
+      "Beynin bir bölgəsindəki hüceyrələr anormal elektrik siqnalı göndərdikdə epilepsiya meydana...",
+    month: "23 Oktyabr 2021",
+    view: "Baxış sayı: 1489",
+  },
+  {
+    image: "https://www.saglamaile.az/site/assets/files/11306/ast.283x171.png",
+    name: "AST (aspartat aminotransferaza) nədir?",
+    content:
+      "Qaraciyərdə zədə olub olmadığını araşdırmaq üçün ən çox verilən analizlər ALT(alanin...",
+    month: "22 Oktyabr 2021",
+    view: "Baxış sayı: 8768",
+  },
+  {
+    image:
+      "https://www.saglamaile.az/site/assets/files/11305/covid-zamani-dad-ve-qoxu.283x171.png",
+    name: "COVİD-19 xəstəliyi zamanı qoxu və dad itkisi",
+    content:
+      "  2019-cu ilin dekabr ayında aşkar edilmiş Koronavirus, COVID-19 (CoronaVirus Disease 2019) SARS-CoV-2 virusu...",
+    month: "20 Oktyabr 2021",
+    view: "Baxış sayı: 3075",
+  },
+  {
+    image:
+      "https://www.saglamaile.az/site/assets/files/11172/trombosit-nedir.283x171.png",
+    name: "Trombosit nədir? Azlığı və çoxluğu nə mənaya gəlir?",
+    content:
+      "Trombositlər, qan laxtalanmasından cavabdeh olan qan hüceyrələridir. Damar divarı zədələnərsə, trombositlər...",
+    month: "11 Oktyabr 2021",
+    view: "Baxış sayı: 27501",
+  },
 ];
 
 data.forEach((data) => {

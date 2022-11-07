@@ -130,6 +130,59 @@ let xeber = [
     month: "28 İyul 2020",
     view: "Baxış sayı: 952",
   },
+  {
+    image:
+      "https://www.saglamaile.az/site/assets/files/11328/d2748349-93b2-4409-a359-e3667112d10f.283x171.png",
+    name: "Laborator və poliklinik xidmətlər üçün ONLAYN QEYDİYYAT",
+    content:
+      "Sağlam Ailə Tibb Mərkəzi olaraq pasiyent məmnuniyyətinin artırılması, həmçinin xidmət səviyyəsinin...",
+    month: "25 İyul 2020",
+    view: "Baxış sayı: 968",
+  },
+  {
+    image:
+      "https://www.saglamaile.az/site/assets/files/2376/image_1.283x171.png",
+    name: "",
+    content:
+      "Referens dəyəri analizin cavabının qəbul olunan norması deməkdir.  Cavablar hazır olduqda bu referens...",
+    month: "23 İyul 2020",
+    view: "Baxış sayı: 1233",
+  },
+  {
+    image:
+      "https://www.saglamaile.az/site/assets/files/9575/maska-novleri-cover-s.283x171.png",
+    name: "Hansı maska virusa qarşı daha effektivdir?",
+    content: "...",
+    month: "14 İyul 2020",
+    view: "Baxış sayı: 1064",
+  },
+  {
+    image:
+      "https://www.saglamaile.az/site/assets/files/9512/image-1.283x171.png",
+    name: "Sosial şəbəkələrdə bizi izləyin",
+    content:
+      "Facebook, Instagram və Whatsapp`da Sizinləyik! Sağlam Ailə Tibb Mərkəzi hər zaman pasiyent məmnuniyyətinə...",
+    month: "10 İyul 2020",
+    view: "Baxış sayı: 1523",
+  },
+  {
+    image:
+      "https://www.saglamaile.az/site/assets/files/11333/44d89f5b-ffee-468b-bd89-4aea129c8ef1.283x171.png",
+    name: "Sağlam nümunə arxivi nədir?",
+    content:
+      "Sağlam Ailə Tibb Mərkəzində laborator müayinədən asılı olaraq, nümunələr 1-3-6 ay ərzində arxivdə...",
+    month: "1 İyul 2020",
+    view: "Baxış sayı: 824",
+  },
+  {
+    image:
+      "https://www.saglamaile.az/site/assets/files/2375/image_2.283x171.png",
+    name: "Uşaqları analiz verməyə hazırlamaq üçün məsləhətlər",
+    content:
+      "Körpələrdən qangötürmə prosesi hər bir valideyn üçün çətin və narahatçılıq doğuran bir prosesdir. ...",
+    month: "30 İyun 2020",
+    view: "Baxış sayı: 1368",
+  },
 ];
 
 xeber.forEach((xeber) => {

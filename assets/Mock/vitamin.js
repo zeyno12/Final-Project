@@ -105,6 +105,31 @@ let vitamin = [
     month: "9 Sentyabr 2021",
     view: "Baxış sayı: 6370",
   },
+  {
+    image:
+      "https://www.saglamaile.az/site/assets/files/11055/vitamin-ca-1-1.283x171.jpg",
+    name: "Kalsium nədir? kalsium tərkibli qidalar hansılardır?",
+    content:
+      "Kalsium dişlərin və sümüklərin meydana gəlməsində həyati vacib əhəmiyətə sahib mineraldır. 99% i sümük...",
+    month: "31 Avqust 2021",
+    view: "Baxış sayı: 7637",
+  },
+  {
+    image: "https://www.saglamaile.az/site/assets/files/10911/sink.283x171.jpg",
+    name: "Sink (Zn) nədir? Zn tərkibli qidalar hansılardır?",
+    content:
+      "Sink insan sağlamlığı üçün çox faydalı bir mineraldır. Metabolizm, həzm və sinir sistemini idarə edən...",
+    month: "29 İyul 2021",
+    view: "Baxış sayı: 11021",
+  },
+  {
+    image: "https://www.saglamaile.az/site/assets/files/10664/b9.283x171.jpg",
+    name: "Vitamin B9 (Fol turşusu) nədir? Hansı qidaların tərkibində var?",
+    content:
+      "Fol turşusu, bədəndə bir çox vacib funksiyası olan və sintetik fol turşusu növü olan suda həll olunan bir...",
+    month: "9 İyul 2021",
+    view: "Baxış sayı: 8427",
+  },
 ];
 
 vitamin.forEach((vitamin) => {
