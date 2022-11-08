@@ -1,0 +1,99 @@
+#Məmnunluq_anketi {
+  @include netice(7rem, relative, +999, auto);
+  .comeback {
+    margin-top: 2rem;
+    margin-left: 4rem;
+    a {
+      @include comeback__a(17px, 500, none, #0077b3);
+    }
+  }
+  .header_text {
+    @include header_text(center, 36px, #159ee3, bold, 0 0 60px);
+  }
+  .anket_items {
+    @include anket_items(
+      row,
+      nowrap,
+      space-between,
+      stretch,
+      center,
+      30px 0,
+      1px solid #dcdcdc
+    );
+    .anket_text {
+      p {
+        @include nav_item_phone_p(auto, 20px, 500, #0077b3, 0);
+      }
+    }
+    .checkboxes {
+      ul {
+        @include checkboxes_ul(nowrap, 0);
+        li {
+          @include checkboxes_li(none, inline-block, 0 0 0 15px);
+          label {
+            @include checkboxes_label(block, 50px, 50px, relative, pointer);
+            input {
+              @include checkboxes_input(0, absolute, 20px, 20px);
+            }
+            span {
+              @include checkboxes_span(
+                row,
+                nowrap,
+                center,
+                stretch,
+                center,
+                50px,
+                50px,
+                1px solid #e2e2e2,
+                18px,
+                600,
+                #404040,
+                white,
+                50%
+              );
+            }
+          }
+        }
+      }
+    }
+  }
+  .anket_form1 {
+    input {
+      @include anket_input(
+        block,
+        100%,
+        50px,
+        0 28px,
+        1px solid #c2c2c2,
+        "Gilroy",
+        16px,
+        black,
+        5px,
+        16px 0px 11px 0px
+      );
+    }
+  }
+  .anket_form2 {
+    textarea {
+      @include anket_input(
+        block,
+        100%,
+        180px,
+        10px 15px,
+        1px solid #c2c2c2,
+        "Gilroy",
+        16px,
+        black,
+        5px,
+        1rem
+      );
+    }
+    .end_btn_anket {
+      button {
+        @include flexable_button(none, #10a8e4, white, 5px, 15px 40px);
+      }
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+}

@@ -266,4 +266,15 @@
       }
     }
   }
+  #Məmnunluq_anketi {
+    .anket_items {
+      display: flex !important;
+      flex-direction: column !important;
+    }
+    .anket_form2 {
+      textarea {
+        margin: 0 !important;
+      }
+    }
+  }
 }

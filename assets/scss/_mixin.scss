@@ -518,6 +518,12 @@
   border-radius: $borderad;
   border: $border;
 }
+@mixin card_images($widht, $obfit, $borderad, $height) {
+  width: $widht;
+  object-fit: $obfit;
+  border-radius: $borderad;
+  height: $height;
+}
 @mixin slider_page(
   $widht,
   $height,
@@ -729,6 +735,12 @@
   color: $color;
   font-size: $fsize;
 }
+@mixin p_items_text($margin, $color, $fsize, $pading) {
+  margin: $margin;
+  color: $color;
+  font-size: $fsize;
+  padding: $pading;
+}
 @mixin content($position, $height, $overflow, $transition) {
   position: $position;
   height: $height;
@@ -888,4 +900,106 @@
   width: $widht;
   height: $height;
   box-shadow: $shadow;
+}
+@mixin anket_items(
+  $direction,
+  $wrap,
+  $content,
+  $aligncon,
+  $items,
+  $pading,
+  $borderbot
+) {
+  display: flex;
+  flex-direction: $direction;
+  flex-wrap: $wrap;
+  justify-content: $content;
+  align-content: $aligncon;
+  align-items: $items;
+  padding: $pading;
+  border-bottom: $borderbot;
+}
+@mixin checkboxes_ul($wspace, $margn) {
+  white-space: $wspace;
+  margin: $margn;
+}
+@mixin checkboxes_li($list, $display, $margn) {
+  list-style: $list;
+  display: $display;
+  margin: $margn;
+}
+@mixin checkboxes_label($display, $widht, $height, $position, $cursor) {
+  display: $display;
+  width: $widht;
+  height: $height;
+  position: $position;
+  cursor: $cursor;
+}
+@mixin checkboxes_input($opacity, $position, $top, $left) {
+  opacity: $opacity;
+  position: $position;
+  top: $top;
+  left: $left;
+  &:checked + span {
+    color: #fff;
+    background: #159ee3;
+    border: solid 1px #159ee3;
+  }
+}
+@mixin checkboxes_span(
+  $direction,
+  $wrap,
+  $content,
+  $alincon,
+  $items,
+  $widht,
+  $height,
+  $border,
+  $fsize,
+  $fweight,
+  $color,
+  $bg,
+  $borrad
+) {
+  display: flex;
+  flex-direction: $direction;
+  flex-wrap: $wrap;
+  justify-content: $content;
+  align-content: $alincon;
+  align-items: $items;
+  width: $widht;
+  height: $height;
+  border: $border;
+  font-size: $fsize;
+  font-weight: $fweight;
+  color: $color;
+  background: $bg;
+  border-radius: $borrad;
+}
+@mixin anket_input(
+  $display,
+  $widht,
+  $height,
+  $pading,
+  $bordr,
+  $ffamly,
+  $fsize,
+  $color,
+  $borrad,
+  $margin
+) {
+  display: $display;
+  width: $widht;
+  height: $height;
+  padding: $pading;
+  border: $bordr;
+  font-family: $ffamly;
+  font-size: $fsize;
+  color: $color;
+  border-radius: $borrad;
+  margin: $margin;
+  &:focus {
+    border: 1px solid #159ee3;
+    color: #159ee3;
+  }
 }

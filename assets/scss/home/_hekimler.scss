@@ -36,10 +36,7 @@
             margin-top: 1rem;
             cursor: pointer;
             img {
-              width: 100%;
-              border-radius: 5px;
-              height: 200px;
-              object-fit: cover;
+              @include card_images(100%, cover, 5px, 200px);
             }
           }
           .card_text {

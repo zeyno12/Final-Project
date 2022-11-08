@@ -1174,10 +1174,10 @@ footer .end_text .connection_items .scale_phone {
 
 #Hekimler ul li .panel_row .panel .card_photo img {
   width: 100%;
-  border-radius: 5px;
-  height: 200px;
   -o-object-fit: cover;
      object-fit: cover;
+  border-radius: 5px;
+  height: 200px;
 }
 
 #Hekimler ul li .panel_row .panel .card_text .blue {
@@ -1746,13 +1746,10 @@ footer .end_text .connection_items .scale_phone {
 }
 
 #Müayinələr .muaiyine_content {
+  max-height: 722px;
   background-color: white;
   border: 1px solid #9f9f9f;
   border-radius: 5px;
-}
-
-#Müayinələr .muaiyine_content .miayine_items {
-  border-right: 1px solid #dcdcdc;
 }
 
 #Müayinələr .muaiyine_content .miayine_items .accordion {
@@ -1762,6 +1759,11 @@ footer .end_text .connection_items .scale_phone {
 #Müayinələr .muaiyine_content .miayine_items .accordion .container {
   position: relative;
   margin: 10px 10px;
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 #Müayinələr .muaiyine_content .miayine_items .accordion .container .itemss_acc {
@@ -1799,20 +1801,7 @@ footer .end_text .connection_items .scale_phone {
   right: -12%;
 }
 
-#Müayinələr .muaiyine_content .miayine_items .accordion .container .content {
-  position: relative;
-  height: 0;
-  overflow: hidden;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-#Müayinələr .muaiyine_content .miayine_items .accordion .container .content .gif {
-  width: 10%;
-  height: 10%;
-}
-
-#Müayinələr .muaiyine_content .miayine_items .accordion .container .content .first {
+#Müayinələr .muaiyine_content .miayine_items .accordion .container .first {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1825,22 +1814,22 @@ footer .end_text .connection_items .scale_phone {
   gap: 10px;
 }
 
-#Müayinələr .muaiyine_content .miayine_items .accordion .container .content .first .artc_icons img {
+#Müayinələr .muaiyine_content .miayine_items .accordion .container .first .artc_icons img {
   width: 24px;
   height: 24px;
 }
 
-#Müayinələr .muaiyine_content .miayine_items .accordion .container .content .first .artc_text p {
+#Müayinələr .muaiyine_content .miayine_items .accordion .container .first .artc_text p {
   margin: 0;
   color: #0077b3;
   font-size: 1.2rem;
 }
 
-#Müayinələr .muaiyine_content .miayine_items .accordion .container .content .vertical_tab_deep ul li {
+#Müayinələr .muaiyine_content .miayine_items .accordion .container .vertical_tab_deep ul li {
   padding: 15px 10px 10px 20px;
 }
 
-#Müayinələr .muaiyine_content .miayine_items .accordion .container .content .vertical_tab_deep ul li a {
+#Müayinələr .muaiyine_content .miayine_items .accordion .container .vertical_tab_deep ul li a {
   text-decoration: none;
   color: black;
   font-size: 16px;
@@ -1848,11 +1837,11 @@ footer .end_text .connection_items .scale_phone {
   padding-left: 10px;
 }
 
-#Müayinələr .muaiyine_content .miayine_items .accordion .container .content .vertical_tab_deep ul li a:hover {
+#Müayinələr .muaiyine_content .miayine_items .accordion .container .vertical_tab_deep ul li a:hover {
   color: #0077b3;
 }
 
-#Müayinələr .muaiyine_content .miayine_items .accordion .container .content .vertical_tab_deep ul li img {
+#Müayinələr .muaiyine_content .miayine_items .accordion .container .vertical_tab_deep ul li img {
   height: 28px;
   width: 28px;
 }
@@ -1868,13 +1857,151 @@ footer .end_text .connection_items .scale_phone {
   font-weight: 400;
 }
 
+#Müayinələr .muaiyine_content .miayine_items .new-accordion .accordion-item {
+  border-radius: 0 !important;
+}
+
+#Müayinələr .muaiyine_content .miayine_items .new-accordion .accordion-item .accordion-header {
+  padding: 10px !important;
+  cursor: pointer;
+}
+
+#Müayinələr .muaiyine_content .miayine_items .new-accordion .accordion-item .accordion-header .accordion-button {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #0077b3;
+}
+
+#Müayinələr .muaiyine_content .miayine_items .new-accordion .accordion-item .accordion-header .accordion-button::after {
+  color: #0077b3;
+}
+
+#Müayinələr .muaiyine_content .miayine_items .new-accordion .accordion-item .accordion-header .accordion-button {
+  border: none !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  background: none !important;
+}
+
+#Müayinələr .muaiyine_content .miayine_items .new-accordion .accordion-item .accordion-body .content .gif {
+  width: 10%;
+  height: 10%;
+}
+
+#Müayinələr .muaiyine_content .miayine_items .new-accordion .accordion-item .accordion-body article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+
+#Müayinələr .muaiyine_content .miayine_items .new-accordion .accordion-item .accordion-body article .artc_icons img {
+  width: 24px;
+  height: 24px;
+}
+
+#Müayinələr .muaiyine_content .miayine_items .new-accordion .accordion-item .accordion-body article .artc_text p {
+  margin: 0;
+  color: #0077b3;
+  font-size: 1.2rem;
+}
+
+#Müayinələr .muaiyine_content .miayine_items .new-accordion .accordion-item .accordion-body .content {
+  position: relative;
+  height: auto !important;
+  overflow: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#Müayinələr .muaiyine_content .miayine_items .new-accordion .accordion-item .accordion-body .content .vertical_tab_deep ul li {
+  padding: 15px 10px 10px 20px;
+}
+
+#Müayinələr .muaiyine_content .miayine_items .new-accordion .accordion-item .accordion-body .content .vertical_tab_deep ul li img {
+  height: 28px;
+  width: 28px;
+}
+
+#Müayinələr .muaiyine_content .miayine_items .new-accordion .accordion-item .accordion-body .content .vertical_tab_deep ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  font-weight: 400;
+  padding-left: 10px;
+}
+
+#Müayinələr .muaiyine_content .miayine_items .sub-accordion {
+  border: none !important;
+}
+
+#Müayinələr .muaiyine_content .miayine_items .sub-accordion .accordion-item {
+  border-radius: 0 !important;
+  border: none !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  background: none !important;
+}
+
+#Müayinələr .muaiyine_content .miayine_items .sub-accordion .accordion-item .accordion-header {
+  border: none !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  background: none !important;
+}
+
+.accordion-button {
+  border: none !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  background: none !important;
+}
+
+#Müayinələr .muaiyine_content .miayine_items .sub-accordion .accordion-item .accordion-collapse {
+  border: none !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  background: none !important;
+}
+
+#Müayinələr .muaiyine_content .miayine_items .sub-accordion .accordion-item .accordion-collapse.collapse {
+  border: none !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  background: none !important;
+}
+
+#Müayinələr .muaiyine_content .miayine_items .sub-accordion .accordion-item .accordion-collapse .accordion-body ul li {
+  padding: 15px 10px 10px 20px;
+}
+
+#Müayinələr .muaiyine_content .miayine_items .sub-accordion .accordion-item .accordion-collapse .accordion-body ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  font-weight: 400;
+  padding-left: 10px;
+}
+
 #Müayinələr .muaiyine_content .accordion .container.active .content {
   height: auto;
 }
 
+#Müayinələr .muaiyine_content #vertical_tab_nav {
+  overflow-y: scroll;
+  max-height: 716px;
+  padding: 0px 20px;
+}
+
 #Müayinələr .muaiyine_content #vertical_tab_nav .flexable {
   border-bottom: 1px solid #dcdcdc;
-  padding: 25px 0px;
+  padding: 15px 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2537,6 +2664,18 @@ footer .end_text .connection_items .scale_phone {
   #footer .end_text .right_side p {
     text-align: center;
   }
+  #Məmnunluq_anketi .anket_items {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+  #Məmnunluq_anketi .anket_form2 textarea {
+    margin: 0 !important;
+  }
 }
 
 #E-həkim {
@@ -2953,6 +3092,336 @@ footer .end_text .connection_items .scale_phone {
 #Simptomlar .lab_card .lab_items .lab_data .month p {
   color: #7c7c7c;
   font-size: 15px;
+}
+
+#Məxfilik_siyasəti {
+  margin-top: 7rem;
+  position: relative;
+  z-index: 999;
+  width: auto;
+}
+
+#Məxfilik_siyasəti .comeback {
+  margin-top: 2rem;
+  margin-left: 4rem;
+}
+
+#Məxfilik_siyasəti .comeback a {
+  font-size: 17px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #0077b3;
+}
+
+#Məxfilik_siyasəti .header_text {
+  text-align: center;
+  font-size: 36px;
+  color: #159ee3;
+  font-weight: bold;
+  padding: 0 0 60px;
+}
+
+#Məxfilik_siyasəti h3 {
+  color: #159ee3;
+  padding: 0 0 40px;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+#Məxfilik_siyasəti p {
+  margin: 0;
+  color: #646464;
+  font-size: 15px;
+  padding: 0 0 25px;
+}
+
+#Ödəniş_Qaydaları {
+  margin-top: 7rem;
+  position: relative;
+  z-index: 999;
+  width: auto;
+}
+
+#Ödəniş_Qaydaları .comeback {
+  margin-top: 2rem;
+  margin-left: 4rem;
+}
+
+#Ödəniş_Qaydaları .comeback a {
+  font-size: 17px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #0077b3;
+}
+
+#Ödəniş_Qaydaları .header_text {
+  text-align: center;
+  font-size: 36px;
+  color: #159ee3;
+  font-weight: bold;
+  padding: 0 0 60px;
+}
+
+#Ödəniş_Qaydaları h3 {
+  color: #159ee3;
+  padding: 0 0 40px;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+#Ödəniş_Qaydaları p {
+  margin: 0;
+  color: #646464;
+  font-size: 15px;
+  padding: 0 0 25px;
+}
+
+#Məmnunluq_anketi {
+  margin-top: 7rem;
+  position: relative;
+  z-index: 999;
+  width: auto;
+}
+
+#Məmnunluq_anketi .comeback {
+  margin-top: 2rem;
+  margin-left: 4rem;
+}
+
+#Məmnunluq_anketi .comeback a {
+  font-size: 17px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #0077b3;
+}
+
+#Məmnunluq_anketi .header_text {
+  text-align: center;
+  font-size: 36px;
+  color: #159ee3;
+  font-weight: bold;
+  padding: 0 0 60px;
+}
+
+#Məmnunluq_anketi .anket_items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: stretch;
+      align-content: stretch;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px 0;
+  border-bottom: 1px solid #dcdcdc;
+}
+
+#Məmnunluq_anketi .anket_items .anket_text p {
+  padding: auto;
+  font-size: 20px;
+  font-weight: 500;
+  color: #0077b3;
+  margin: 0;
+}
+
+#Məmnunluq_anketi .anket_items .checkboxes ul {
+  white-space: nowrap;
+  margin: 0;
+}
+
+#Məmnunluq_anketi .anket_items .checkboxes ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 0 0 15px;
+}
+
+#Məmnunluq_anketi .anket_items .checkboxes ul li label {
+  display: block;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  cursor: pointer;
+}
+
+#Məmnunluq_anketi .anket_items .checkboxes ul li label input {
+  opacity: 0;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+#Məmnunluq_anketi .anket_items .checkboxes ul li label input:checked + span {
+  color: #fff;
+  background: #159ee3;
+  border: solid 1px #159ee3;
+}
+
+#Məmnunluq_anketi .anket_items .checkboxes ul li label span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: stretch;
+      align-content: stretch;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #e2e2e2;
+  font-size: 18px;
+  font-weight: 600;
+  color: #404040;
+  background: white;
+  border-radius: 50%;
+}
+
+#Məmnunluq_anketi .anket_form1 input {
+  display: block;
+  width: 100%;
+  height: 50px;
+  padding: 0 28px;
+  border: 1px solid #c2c2c2;
+  font-family: "Gilroy";
+  font-size: 16px;
+  color: black;
+  border-radius: 5px;
+  margin: 16px 0px 11px 0px;
+}
+
+#Məmnunluq_anketi .anket_form1 input:focus {
+  border: 1px solid #159ee3;
+  color: #159ee3;
+}
+
+#Məmnunluq_anketi .anket_form2 textarea {
+  display: block;
+  width: 100%;
+  height: 180px;
+  padding: 10px 15px;
+  border: 1px solid #c2c2c2;
+  font-family: "Gilroy";
+  font-size: 16px;
+  color: black;
+  border-radius: 5px;
+  margin: 1rem;
+}
+
+#Məmnunluq_anketi .anket_form2 textarea:focus {
+  border: 1px solid #159ee3;
+  color: #159ee3;
+}
+
+#Məmnunluq_anketi .anket_form2 .end_btn_anket {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+#Məmnunluq_anketi .anket_form2 .end_btn_anket button {
+  border: none;
+  background-color: #10a8e4;
+  color: white;
+  border-radius: 5px;
+  padding: 15px 40px;
+}
+
+#Suallar {
+  margin-top: 7rem;
+  position: relative;
+  z-index: 999;
+  width: auto;
+}
+
+#Suallar .comeback {
+  margin-top: 2rem;
+  margin-left: 4rem;
+}
+
+#Suallar .comeback a {
+  font-size: 17px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #0077b3;
+}
+
+#Suallar .header_text {
+  text-align: center;
+  font-size: 36px;
+  color: #159ee3;
+  font-weight: bold;
+  padding: 0 0 60px;
+}
+
+#Suallar .accordion_sual .container_sual {
+  position: relative;
+  margin: 10px 10px;
+}
+
+#Suallar .accordion_sual .container_sual .label_sual p {
+  display: block;
+  width: 100%;
+  padding: 20px 10px 15px 0px;
+  font-size: 18px;
+  line-height: 1.33;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  color: #4a5a69;
+  text-decoration: none;
+  position: relative;
+}
+
+#Suallar .accordion_sual .container_sual .label_sual::before {
+  content: "+";
+  color: #159ee3;
+  position: absolute;
+  top: 50%;
+  right: -15px;
+  font-size: 30px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+#Suallar .accordion_sual .container_sual .content_sual {
+  line-height: 2;
+  color: #4a5a69;
+  position: relative;
+  height: 0;
+  font-size: 16px;
+  text-align: justify;
+  width: 100%;
+  overflow: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#Suallar .accordion_sual .container_sual.activeks .content_sual {
+  height: 120px;
+}
+
+#Suallar .accordion_sual .container_sual.activeks .label_sual::before {
+  content: "-";
+  font-size: 30px;
 }
 
 *,

@@ -1,0 +1,62 @@
+#Suallar {
+  @include netice(7rem, relative, +999, auto);
+  .comeback {
+    margin-top: 2rem;
+    margin-left: 4rem;
+    a {
+      @include comeback__a(17px, 500, none, #0077b3);
+    }
+  }
+  .header_text {
+    @include header_text(center, 36px, #159ee3, bold, 0 0 60px);
+  }
+  .accordion_sual {
+    .container_sual {
+      position: relative;
+      margin: 10px 10px;
+      .label_sual {
+        p {
+          display: block;
+          width: 100%;
+          padding: 20px 10px 15px 0px;
+          font-size: 18px;
+          line-height: 1.33;
+          font-weight: 500;
+          letter-spacing: -0.01em;
+          color: #4a5a69;
+          text-decoration: none;
+          position: relative;
+        }
+        &::before {
+          content: "+";
+          color: #159ee3;
+          position: absolute;
+          top: 50%;
+          right: -15px;
+          font-size: 30px;
+          transform: translateY(-50%);
+        }
+      }
+      .content_sual {
+        line-height: 2;
+        color: #4a5a69;
+        position: relative;
+        height: 0;
+        font-size: 16px;
+        text-align: justify;
+        width: 100%;
+        overflow: hidden;
+        transition: 0.5s;
+      }
+    }
+  }
+
+  .accordion_sual .container_sual.activeks .content_sual {
+    height: 120px;
+  }
+
+  .accordion_sual .container_sual.activeks .label_sual::before {
+    content: "-";
+    font-size: 30px;
+  }
+}
