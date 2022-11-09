@@ -40,7 +40,17 @@
         @include label_span(#c2c2c2, 400);
       }
       button {
-        @include flexable_button(none, #10a8e4, white, 5px, 10px 20px);
+        @include flexable_button(
+          none,
+          #10a8e4,
+          white,
+          5px,
+          10px 25px 10px 10px
+        );
+        .hide_file {
+          opacity: 0;
+          width: 20px;
+        }
       }
     }
     .radio2 {

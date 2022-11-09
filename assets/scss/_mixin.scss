@@ -1003,3 +1003,131 @@
     color: #159ee3;
   }
 }
+@mixin label_sual(
+  $display,
+  $widht,
+  $pading,
+  $fsize,
+  $lineheight,
+  $fweight,
+  $letter,
+  $color,
+  $texdec,
+  $position
+) {
+  display: $display;
+  width: $widht;
+  padding: $pading;
+  font-size: $fsize;
+  line-height: $lineheight;
+  font-weight: $fweight;
+  letter-spacing: $letter;
+  color: $color;
+  text-decoration: $texdec;
+  position: $position;
+}
+@mixin label_sual_befor($color, $position, $top, $right, $fsize, $transform) {
+  color: $color;
+  position: $position;
+  top: $top;
+  right: $right;
+  font-size: $fsize;
+  transform: $transform;
+}
+@mixin content_sual_acc(
+  $line,
+  $color,
+  $position,
+  $height,
+  $fsize,
+  $text,
+  $widht,
+  $overflw,
+  $trasition
+) {
+  line-height: $line;
+  color: $color;
+  position: $position;
+  height: $height;
+  font-size: $fsize;
+  text-align: $text;
+  width: $widht;
+  overflow: $overflw;
+  transition: $trasition;
+}
+@mixin close_btn($right, $position, $top, $content, $padng) {
+  right: $right;
+  position: $position;
+  top: $top;
+  display: flex;
+  justify-content: $content;
+  padding: $padng;
+}
+@mixin modal_btn_a($texdec, $color, $bg, $pading, $borderrad) {
+  text-decoration: $texdec;
+  color: $color;
+  background-color: $bg;
+  padding: $pading;
+  border-radius: $borderrad;
+}
+@mixin modal_form($mt, $bg, $padng, $borrad) {
+  margin-top: $mt;
+  background: $bg;
+  padding: $padng;
+  border-radius: $borrad;
+}
+@mixin modal_con(
+  $display,
+  $position,
+  $left,
+  $top,
+  $transfrm,
+  $zindex,
+  $borrad,
+  $widht,
+  $bg,
+  $padng
+) {
+  display: $display;
+  position: $position;
+  left: $left;
+  top: $top;
+  transform: $transfrm;
+  z-index: $zindex;
+  border-radius: $borrad;
+  width: $widht;
+  background-color: $bg;
+  padding: $padng;
+}
+@mixin vertcal_item_nav($over, $height, $pading) {
+  overflow-y: $over;
+  max-height: $height;
+  padding: $pading;
+}
+@mixin image_sizess($widht, $height) {
+  width: $widht;
+  height: $height;
+}
+@mixin artc_text($margn, $color, $fsize) {
+  margin: $margn;
+  color: $color;
+  font-size: $fsize;
+}
+@mixin artc_text_content($postion, $height, $over, $transtion) {
+  position: $postion;
+  height: $height;
+  overflow: $over;
+  transition: $transtion;
+}
+@mixin vertical_tab_deep_aa($texdec, $color, $fsize, $fweight, $padle) {
+  text-decoration: $texdec;
+  color: $color;
+  font-size: $fsize;
+  font-weight: $fweight;
+  padding-left: $padle;
+}
+@mixin collapsed_acc {
+  border: none !important;
+  box-shadow: none !important;
+  background: none !important;
+}

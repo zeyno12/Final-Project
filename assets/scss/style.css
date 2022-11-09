@@ -48,6 +48,88 @@
   font-size: 3rem;
 }
 
+.modal_con {
+  display: none;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 999999;
+  border-radius: 8px;
+  width: 900px;
+  background-color: white;
+  padding: 30px 40px;
+}
+
+.modal_con .modal_image img {
+  cursor: pointer;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 5px;
+}
+
+.modal_con .modal_items .modal_text p {
+  margin: 0;
+  margin: 0;
+  color: #646464;
+  font-size: 15px;
+  padding: 0 0 25px;
+}
+
+.modal_con .modal_items .modal_btn a {
+  text-decoration: none;
+  color: white;
+  background-color: #0077b3;
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+
+.modal_con .modal_items .modal_form {
+  margin-top: 1rem;
+  background: #e7e7e7bd;
+  padding: 12px;
+  border-radius: 8px;
+}
+
+.modal_con .modal_items .modal_form form label {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.modal_con .modal_items .modal_form form input {
+  padding: 7px 8px;
+  border-radius: 8px;
+  border: 1px solid lightgray;
+}
+
+.modal_con .modal_items .modal_form form button {
+  border: none;
+  background-color: #314a6a;
+  color: white;
+  border-radius: 8px;
+  padding: 5px 10px;
+  margin: 10px;
+}
+
+.modal_con #close {
+  right: 0;
+  position: absolute;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  padding: 7px 15px;
+}
+
+.modal_con #close i {
+  font-size: 1.6rem;
+}
+
 .block {
   display: block !important;
 }
@@ -425,7 +507,7 @@ nav .nav_items .nav .transform_itemas .rightside_nav ul li,
 nav .nav_items .nav .transform_itemas .leftside_nav ul li {
   margin: 0;
   list-style: none;
-  padding: 0 0 30px;
+  padding: 10px 15px 30px;
 }
 
 nav .nav_items .nav .transform_itemas .rightside_nav ul li a,
@@ -1146,6 +1228,15 @@ footer .end_text .connection_items .scale_phone {
 }
 
 #Hekimler ul li .accordion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #159ee3;
   color: white;
   cursor: pointer;
@@ -1177,7 +1268,7 @@ footer .end_text .connection_items .scale_phone {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 5px;
-  height: 200px;
+  height: auto;
 }
 
 #Hekimler ul li .panel_row .panel .card_text .blue {
@@ -1271,7 +1362,13 @@ footer .end_text .connection_items .scale_phone {
   background-color: #10a8e4;
   color: white;
   border-radius: 5px;
-  padding: 10px 20px;
+  padding: 10px 25px 10px 10px;
+}
+
+#Onlayn_qeydiyyat .form_item .radio button .hide_file,
+#Onlayn_qeydiyyat .form_item .file2 button .hide_file {
+  opacity: 0;
+  width: 20px;
 }
 
 #Onlayn_qeydiyyat .form_item .radio2 label {
@@ -1842,8 +1939,8 @@ footer .end_text .connection_items .scale_phone {
 }
 
 #Müayinələr .muaiyine_content .miayine_items .accordion .container .vertical_tab_deep ul li img {
-  height: 28px;
   width: 28px;
+  height: 28px;
 }
 
 #Müayinələr .muaiyine_content .miayine_items .accordion .container .different_item .detals_tab img {
@@ -1867,9 +1964,9 @@ footer .end_text .connection_items .scale_phone {
 }
 
 #Müayinələr .muaiyine_content .miayine_items .new-accordion .accordion-item .accordion-header .accordion-button {
+  color: #0077b3;
   font-size: 1.4rem;
   font-weight: 600;
-  color: #0077b3;
 }
 
 #Müayinələr .muaiyine_content .miayine_items .new-accordion .accordion-item .accordion-header .accordion-button::after {
@@ -1916,8 +2013,8 @@ footer .end_text .connection_items .scale_phone {
   position: relative;
   height: auto !important;
   overflow: hidden;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 #Müayinələr .muaiyine_content .miayine_items .new-accordion .accordion-item .accordion-body .content .vertical_tab_deep ul li {
@@ -1925,8 +2022,8 @@ footer .end_text .connection_items .scale_phone {
 }
 
 #Müayinələr .muaiyine_content .miayine_items .new-accordion .accordion-item .accordion-body .content .vertical_tab_deep ul li img {
-  height: 28px;
   width: 28px;
+  height: 28px;
 }
 
 #Müayinələr .muaiyine_content .miayine_items .new-accordion .accordion-item .accordion-body .content .vertical_tab_deep ul li a {
@@ -1995,7 +2092,7 @@ footer .end_text .connection_items .scale_phone {
 
 #Müayinələr .muaiyine_content #vertical_tab_nav {
   overflow-y: scroll;
-  max-height: 716px;
+  max-height: 715px;
   padding: 0px 20px;
 }
 
@@ -2675,6 +2772,17 @@ footer .end_text .connection_items .scale_phone {
   }
   #Məmnunluq_anketi .anket_form2 textarea {
     margin: 0 !important;
+  }
+  #Popup_modal {
+    width: auto;
+    top: 95%;
+  }
+  #Popup_modal .modal_con .modal_items h5 {
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+  #Popup_modal .modal_con .modal_items .modal_text p {
+    font-size: 13px;
   }
 }
 
@@ -3411,8 +3519,8 @@ footer .end_text .connection_items .scale_phone {
   text-align: justify;
   width: 100%;
   overflow: hidden;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 
 #Suallar .accordion_sual .container_sual.activeks .content_sual {
@@ -3421,7 +3529,7 @@ footer .end_text .connection_items .scale_phone {
 
 #Suallar .accordion_sual .container_sual.activeks .label_sual::before {
   content: "-";
-  font-size: 30px;
+  font-size: 20px;
 }
 
 *,

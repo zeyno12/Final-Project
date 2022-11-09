@@ -15,6 +15,9 @@
     li {
       @include doctor_li(10px 12px, 4px 0px, none);
       .accordion {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         @include accordion_doctor(
           #159ee3,
           white,
@@ -36,7 +39,7 @@
             margin-top: 1rem;
             cursor: pointer;
             img {
-              @include card_images(100%, cover, 5px, 200px);
+              @include card_images(100%, cover, 5px, auto);
             }
           }
           .card_text {

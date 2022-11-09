@@ -8,7 +8,6 @@ function toggleShow() {
     : target.parentElement;
   const group = item.dataset.actabGroup;
   const id = item.dataset.actabId;
-
   tabs.forEach(function (tab) {
     if (tab.dataset.actabGroup === group) {
       if (tab.dataset.actabId === id) {
@@ -29,11 +28,9 @@ function toggleShow() {
     }
   });
 }
-
 labels.forEach(function (label) {
   label.addEventListener("click", toggleShow);
 });
-
 tabs.forEach(function (tab) {
   tab.addEventListener("click", toggleShow);
 });

@@ -277,4 +277,21 @@
       }
     }
   }
+  #Popup_modal {
+    width: auto;
+    top: 95%;
+    .modal_con {
+      .modal_items {
+        h5 {
+          font-size: 1rem;
+          margin-top: 10px;
+        }
+        .modal_text {
+          p {
+            font-size: 13px;
+          }
+        }
+      }
+    }
+  }
 }

@@ -16,47 +16,51 @@
       margin: 10px 10px;
       .label_sual {
         p {
-          display: block;
-          width: 100%;
-          padding: 20px 10px 15px 0px;
-          font-size: 18px;
-          line-height: 1.33;
-          font-weight: 500;
-          letter-spacing: -0.01em;
-          color: #4a5a69;
-          text-decoration: none;
-          position: relative;
+          @include label_sual(
+            block,
+            100%,
+            20px 10px 15px 0px,
+            18px,
+            1.33,
+            500,
+            -0.01em,
+            #4a5a69,
+            none,
+            relative
+          );
         }
         &::before {
           content: "+";
-          color: #159ee3;
-          position: absolute;
-          top: 50%;
-          right: -15px;
-          font-size: 30px;
-          transform: translateY(-50%);
+          @include label_sual_befor(
+            #159ee3,
+            absolute,
+            50%,
+            -15px,
+            30px,
+            translateY(-50%)
+          );
         }
       }
       .content_sual {
-        line-height: 2;
-        color: #4a5a69;
-        position: relative;
-        height: 0;
-        font-size: 16px;
-        text-align: justify;
-        width: 100%;
-        overflow: hidden;
-        transition: 0.5s;
+        @include content_sual_acc(
+          2,
+          #4a5a69,
+          relative,
+          0,
+          16px,
+          justify,
+          100%,
+          hidden,
+          0.5s ease-in-out
+        );
       }
     }
   }
-
   .accordion_sual .container_sual.activeks .content_sual {
     height: 120px;
   }
-
   .accordion_sual .container_sual.activeks .label_sual::before {
     content: "-";
-    font-size: 30px;
+    font-size: 20px;
   }
 }

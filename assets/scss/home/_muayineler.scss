@@ -80,8 +80,7 @@
             @include Flex_item(flex-start, center, 10px);
             .artc_icons {
               img {
-                width: 24px;
-                height: 24px;
+                @include image_sizess(24px, 24px);
               }
             }
             .artc_text {
@@ -99,8 +98,7 @@
                   @include vertical_tab_deep_a(none, black, 16px, 400, 10px);
                 }
                 img {
-                  height: 28px;
-                  width: 28px;
+                  @include image_sizess(28px, 28px);
                 }
               }
             }
@@ -108,8 +106,7 @@
           .different_item {
             .detals_tab {
               img {
-                width: 24px;
-                height: 24px;
+                @include image_sizess(24px, 24px);
               }
             }
             .label_deep {
@@ -127,64 +124,56 @@
             padding: 10px !important;
             cursor: pointer;
             .accordion-button {
-              font-size: 1.4rem;
-              font-weight: 600;
-              color: #0077b3;
+              @include left_side_p(#0077b3, 1.4rem, 600);
               &::after {
                 color: #0077b3;
               }
               &:not(&.collapsed) {
-                border: none !important;
-                box-shadow: none !important;
-                background: none !important;
+                @include collapsed_acc;
               }
             }
           }
           .accordion-body {
             .content {
               .gif {
-                width: 10%;
-                height: 10%;
+                @include image_sizess(10%, 10%);
               }
             }
             article {
-              display: flex;
-              justify-content: flex-start;
-              align-items: center;
-              gap: 10px;
+              @include Flex_item(flex-start, center, 10px);
               .artc_icons {
                 img {
-                  width: 24px;
-                  height: 24px;
+                  @include image_sizess(24px, 24px);
                 }
               }
               .artc_text {
                 p {
-                  margin: 0;
-                  color: #0077b3;
-                  font-size: 1.2rem;
+                  @include artc_text(0, #0077b3, 1.2rem);
                 }
               }
             }
             .content {
-              position: relative;
-              height: auto !important;
-              overflow: hidden;
-              transition: 0.5s;
+              @include artc_text_content(
+                relative,
+                auto !important,
+                hidden,
+                0.3s
+              );
               .vertical_tab_deep {
                 ul {
                   li {
                     padding: 15px 10px 10px 20px;
                     img {
-                      height: 28px;
-                      width: 28px;
+                      @include image_sizess(28px, 28px);
                     }
                     a {
-                      text-decoration: none;
-                      color: black;
-                      font-size: 16px;
-                      font-weight: 400;
-                      padding-left: 10px;
+                      @include vertical_tab_deep_aa(
+                        none,
+                        black,
+                        16px,
+                        400,
+                        10px
+                      );
                     }
                   }
                 }
@@ -197,38 +186,24 @@
         border: none !important;
         .accordion-item {
           border-radius: 0 !important;
-          border: none !important;
-          box-shadow: none !important;
-          background: none !important;
+          @include collapsed_acc;
           .accordion-header {
-            border: none !important;
-            box-shadow: none !important;
-            background: none !important;
+            @include collapsed_acc;
             .accordion-button:not(&.collapsed) {
-              border: none !important;
-              box-shadow: none !important;
-              background: none !important;
+              @include collapsed_acc;
             }
           }
           .accordion-collapse {
-            border: none !important;
-            box-shadow: none !important;
-            background: none !important;
+            @include collapsed_acc;
             &.collapse {
-              border: none !important;
-              box-shadow: none !important;
-              background: none !important;
+              @include collapsed_acc;
             }
             .accordion-body {
               ul {
                 li {
                   padding: 15px 10px 10px 20px;
                   a {
-                    text-decoration: none;
-                    color: black;
-                    font-size: 16px;
-                    font-weight: 400;
-                    padding-left: 10px;
+                    @include vertical_tab_deep_aa(none, black, 16px, 400, 10px);
                   }
                 }
               }
@@ -241,9 +216,7 @@
       height: auto;
     }
     #vertical_tab_nav {
-      overflow-y: scroll;
-      max-height: 716px;
-      padding: 0px 20px;
+      @include vertcal_item_nav(scroll, 715px, 0px 20px);
       .flexable {
         @include flexable_tab(
           1px solid #dcdcdc,

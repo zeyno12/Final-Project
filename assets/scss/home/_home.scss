@@ -31,6 +31,66 @@
     }
   }
 }
+.modal_con {
+  @include modal_con(
+    none,
+    absolute,
+    50%,
+    50%,
+    translate(-50%, -50%),
+    +999999,
+    8px,
+    900px,
+    white,
+    30px 40px
+  );
+  .modal_image {
+    img {
+      @include image_item(pointer, 100%, cover, 5px);
+    }
+  }
+  .modal_items {
+    .modal_text {
+      p {
+        margin: 0;
+        @include p_items_text(0, #646464, 15px, 0 0 25px);
+      }
+    }
+    .modal_btn {
+      a {
+        @include modal_btn_a(none, white, #0077b3, 10px 20px, 8px);
+      }
+    }
+    .modal_form {
+      @include modal_form(1rem, #e7e7e7bd, 12px, 8px);
+      form {
+        label {
+          font-weight: bold;
+          font-size: 1rem;
+        }
+        input {
+          @include form_text_input(7px 8px, 8px, 1px solid lightgray);
+        }
+        button {
+          @include flexable_button(
+            none,
+            rgb(49, 74, 106),
+            white,
+            8px,
+            5px 10px
+          );
+          margin: 10px;
+        }
+      }
+    }
+  }
+  #close {
+    @include close_btn(0, absolute, 0, end, 7px 15px);
+    i {
+      font-size: 1.6rem;
+    }
+  }
+}
 .block {
   display: block !important;
 }
@@ -298,7 +358,7 @@ nav {
             margin: 0;
             padding: 0;
             li {
-              @include leftside_nav_li(0, none, 0 0 30px);
+              @include leftside_nav_li(0, none, 10px 15px 30px);
               a {
                 @include leftside_nav_a(none, white, 0 0 18px, 17px);
               }
