@@ -5,10 +5,6 @@ let array = [...accordion];
 array.forEach((element) => {
   element.addEventListener("click", function () {
     element.nextElementSibling.classList.toggle("active2");
-    if ((openicon.style.transform = "rotate(0deg)")) {
-      openicon.style.transform = "rotate(90deg)";
-    } else {
-      openicon.style.transform = "rotate(0deg)";
-    }
+    openicon.classList.toggle("rotate");
   });
 });

@@ -18,6 +18,7 @@
     }
   }
   &-item {
+    border: none !important;
     &__label {
       position: relative;
     }
@@ -82,6 +83,8 @@
     }
   }
   &-active {
+    border: none !important;
+    background-color: inherit !important;
     background: #159ee3;
     .accordion-item {
       &__container {

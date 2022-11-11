@@ -1250,6 +1250,11 @@ footer .end_text .connection_items .scale_phone {
   border-radius: 5px;
 }
 
+#Hekimler ul li .accordion .acc_i_icon {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
 #Hekimler ul li .panel_row {
   height: 0px;
   display: -webkit-box !important;
@@ -1287,6 +1292,13 @@ footer .end_text .connection_items .scale_phone {
 .active2 {
   height: auto !important;
   visibility: visible !important;
+}
+
+.rotate {
+  -webkit-transform: rotate(90deg) !important;
+          transform: rotate(90deg) !important;
+  -webkit-transition: 0.3s ease-in-out !important;
+  transition: 0.3s ease-in-out !important;
 }
 
 #Onlayn_qeydiyyat {
@@ -1559,6 +1571,10 @@ footer .end_text .connection_items .scale_phone {
   color: white;
 }
 
+.accordion-item {
+  border: none !important;
+}
+
 .accordion-item__label {
   position: relative;
 }
@@ -1676,6 +1692,8 @@ footer .end_text .connection_items .scale_phone {
 }
 
 .accordion-active {
+  border: none !important;
+  background-color: inherit !important;
   background: #159ee3;
 }
 
@@ -3326,9 +3344,9 @@ footer .end_text .connection_items .scale_phone {
           justify-content: space-between;
   -ms-flex-line-pack: stretch;
       align-content: stretch;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   padding: 30px 0;
   border-bottom: 1px solid #dcdcdc;
 }
