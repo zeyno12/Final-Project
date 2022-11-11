@@ -211,6 +211,6 @@ xeber.forEach((xeber) => {
     let new_element = document.createElement("div");
     new_element.classList.add("col-lg-4");
     new_element.innerHTML = output_xeber;
-    element.append(new_element);
+    element ? element.append(new_element) : null;
   }
 });

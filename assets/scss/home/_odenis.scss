@@ -4,16 +4,16 @@
     margin-top: 2rem;
     margin-left: 4rem;
     a {
-      @include comeback__a(17px, 500, none, #0077b3);
+      @include comeback__a(17px, 500, none, $blue007);
     }
   }
   .header_text {
-    @include header_text(center, 36px, #159ee3, bold, 0 0 60px);
+    @include header_text(center, 36px, $blue159, bold, 0 0 60px);
   }
   h3 {
-    @include h_text(#159ee3, 0 0 40px, 26px, bold);
+    @include h_text($blue159, 0 0 40px, 26px, bold);
   }
   p {
-    @include p_items_text(0, #646464, 15px, 0 0 25px);
+    @include p_items_text(0, $gray64, 15px, 0 0 25px);
   }
 }

@@ -4,11 +4,11 @@
     margin-top: 2rem;
     margin-left: 4rem;
     a {
-      @include comeback__a(17px, 500, none, #0077b3);
+      @include comeback__a(17px, 500, none, $blue007);
     }
   }
   .header_text {
-    @include header_text(center, 36px, #159ee3, bold, 0 0 60px);
+    @include header_text(center, 36px, $blue159, bold, 0 0 60px);
   }
 
   .lab_haqqinda,
@@ -22,7 +22,7 @@
       }
     }
     p {
-      @include p_mix_items(2rem, 16px, "Gilroy", 400, 1.75, #404040);
+      @include p_mix_items(2rem, 16px, "Gilroy", 400, 1.75, $gray40);
     }
     .nezaret_img,
     .huquq_img {
@@ -33,12 +33,12 @@
       }
     }
     .blue {
-      @include left_side_p(#159ee3, 22px, 600);
+      @include left_side_p($blue159, 22px, 600);
     }
     .lists_p {
       @include list_p(0 0 10px 25px, 14px, 400, "Gilroy");
       i {
-        @include search_i_icon(#0077b3, 16px);
+        @include search_i_icon($blue007, 16px);
       }
     }
   }

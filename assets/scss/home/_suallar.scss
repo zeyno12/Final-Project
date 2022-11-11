@@ -4,11 +4,11 @@
     margin-top: 2rem;
     margin-left: 4rem;
     a {
-      @include comeback__a(17px, 500, none, #0077b3);
+      @include comeback__a(17px, 500, none, $blue007);
     }
   }
   .header_text {
-    @include header_text(center, 36px, #159ee3, bold, 0 0 60px);
+    @include header_text(center, 36px, $blue159, bold, 0 0 60px);
   }
   .accordion_sual {
     .container_sual {
@@ -24,7 +24,7 @@
             1.33,
             500,
             -0.01em,
-            #4a5a69,
+            $gray40,
             none,
             relative
           );
@@ -32,7 +32,7 @@
         &::before {
           content: "+";
           @include label_sual_befor(
-            #159ee3,
+            $blue159,
             absolute,
             50%,
             -15px,
@@ -44,7 +44,7 @@
       .content_sual {
         @include content_sual_acc(
           2,
-          #4a5a69,
+          $gray40,
           relative,
           0,
           16px,

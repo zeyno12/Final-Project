@@ -4,13 +4,13 @@
     margin-top: 2rem;
     margin-left: 4rem;
     a {
-      @include comeback__a(17px, 500, none, #0077b3);
+      @include comeback__a(17px, 500, none, $blue007);
     }
   }
   .header_text {
-    @include header_text(center, 36px, #159ee3, bold, 0 0 60px);
+    @include header_text(center, 36px, $blue159, bold, 0 0 60px);
     img {
-      @include header_text_img(30px, 6px, pointer, #159ee3, 30px, 50%);
+      @include header_text_img(30px, 6px, pointer, $blue159, 30px, 50%);
     }
   }
   .filial_items {
@@ -19,7 +19,7 @@
       .card_filial {
         .card_img_filial {
           img {
-            @include card_img(100%, cover, 5px, 1px solid lightgray);
+            @include card_img(100%, cover, 5px, 1px solid $lightBorder);
           }
           &:hover {
             opacity: 0.8;
@@ -28,7 +28,7 @@
         .card_text_filial {
           margin-top: 1rem;
           p {
-            @include leftside_nav_bold_text(24px, bold, #0077b3);
+            @include leftside_nav_bold_text(24px, bold, $blue007);
           }
         }
       }

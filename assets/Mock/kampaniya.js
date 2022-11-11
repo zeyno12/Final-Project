@@ -202,6 +202,6 @@ company.forEach((company) => {
     let new_companys = document.createElement("div");
     new_companys.classList.add("col-lg-4");
     new_companys.innerHTML = output_company;
-    companys.append(new_companys);
+    companys ? companys.append(new_companys) : null;
   }
 });

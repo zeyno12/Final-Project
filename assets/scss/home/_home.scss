@@ -3,7 +3,7 @@
     100%,
     160px,
     40px 10px,
-    white,
+    $defaultWhite,
     relative,
     0,
     0,
@@ -41,7 +41,7 @@
     +999999,
     8px,
     900px,
-    white,
+    $defaultWhite,
     30px 40px
   );
   .modal_image {
@@ -53,29 +53,29 @@
     .modal_text {
       p {
         margin: 0;
-        @include p_items_text(0, #646464, 15px, 0 0 25px);
+        @include p_items_text(0, $gray64, 15px, 0 0 25px);
       }
     }
     .modal_btn {
       a {
-        @include modal_btn_a(none, white, #0077b3, 10px 20px, 8px);
+        @include modal_btn_a(none, $defaultWhite, $blue007, 10px 20px, 8px);
       }
     }
     .modal_form {
-      @include modal_form(1rem, #e7e7e7bd, 12px, 8px);
+      @include modal_form(1rem, $formLight, 12px, 8px);
       form {
         label {
           font-weight: bold;
           font-size: 1rem;
         }
         input {
-          @include form_text_input(7px 8px, 8px, 1px solid lightgray);
+          @include form_text_input(7px 8px, 8px, 1px solid $lightBorder);
         }
         button {
           @include flexable_button(
             none,
-            rgb(49, 74, 106),
-            white,
+            $btnFlex,
+            $defaultWhite,
             8px,
             5px 10px
           );
@@ -119,18 +119,14 @@ header {
           210px !important,
           100px,
           none,
-          rgb(15, 200, 240),
-          linear-gradient(
-            180deg,
-            rgba(15, 200, 240, 1) 27%,
-            rgba(20, 157, 226, 1) 86%
-          ),
+          $BoxColor,
+          $linerGradient,
           25px 10px,
-          3px 11px 41px 0px lightslategrey,
+          3px 11px 41px 0px $greyColor,
           16px
         );
         .xidmet_item {
-          @include xidmet_item(space-around, center, white, relative);
+          @include xidmet_item(space-around, center, $defaultWhite, relative);
           .circle {
             &::before {
               content: "";
@@ -139,7 +135,7 @@ header {
                 -53px,
                 -46px,
                 98px,
-                #0fc8f0,
+                $circleColor,
                 absolute,
                 50%,
                 0.6
@@ -177,7 +173,7 @@ header {
     right,
     84%,
     100vh,
-    #ecf9ff,
+    $sliderPage1,
     circle(61.6% at 63% 51%),
     relative
   );
@@ -186,7 +182,7 @@ header {
       right,
       86%,
       100vh,
-      #0fc8f021,
+      $sliderPage2,
       circle(61.6% at 63% 51%),
       absolute,
       0%
@@ -197,7 +193,7 @@ header {
       right,
       82%,
       100vh,
-      #0077b3,
+      $blue007,
       circle(61.6% at 63% 51%),
       absolute,
       0%
@@ -213,7 +209,7 @@ header {
         @include swiper-slide(
           center,
           18px,
-          #0077b3,
+          $blue007,
           center,
           center,
           imgscale 5s linear 2s infinite alternate
@@ -236,13 +232,13 @@ header {
             40px,
             60px,
             800,
-            white,
+            $defaultWhite,
             40px 0px 0px,
             140px
           );
         }
         a {
-          @include swiper_position_text_a(none, white, 1.2rem, pointer);
+          @include swiper_position_text_a(none, $defaultWhite, 1.2rem, pointer);
         }
       }
     }
@@ -259,8 +255,8 @@ nav {
         20px,
         27%,
         999,
-        white,
-        #3d99de,
+        $defaultWhite,
+        $blue3d,
         50px,
         50px,
         center,
@@ -269,15 +265,21 @@ nav {
       );
     }
     .phone {
-      @include nav_item_phone(pointer, absolute, 20px, 20px, 15%, +999999);
+      @include nav_item_phone(pointer, absolute, 20px, 20px, 15%, +9999);
       .phone_text {
         p {
-          @include nav_item_phone_p(0 17px 5px, 13px, 500, white, 0);
+          @include nav_item_phone_p(0 17px 5px, 13px, 500, $defaultWhite, 0);
         }
       }
       .number {
         a {
-          @include nav_item_phone_a(none, white, inline-block, 22px, 700);
+          @include nav_item_phone_a(
+            none,
+            $defaultWhite,
+            inline-block,
+            22px,
+            700
+          );
           sub {
             @include nav_item_phone_sub(inline-block, baseline, 16px);
           }
@@ -296,8 +298,8 @@ nav {
           20px,
           30px,
           +999999,
-          black,
-          white,
+          $defautBlack,
+          $defaultWhite,
           50px,
           50px,
           center,
@@ -307,7 +309,7 @@ nav {
         p {
           @include language_p(0, 15px, 500);
           i {
-            color: #159ee3;
+            color: $blue159;
           }
         }
       }
@@ -321,8 +323,8 @@ nav {
           50px,
           50px,
           50%,
-          black,
-          white,
+          $defautBlack,
+          $defaultWhite,
           hidden,
           0.7s ease-in-out
         );
@@ -332,8 +334,8 @@ nav {
       }
       .az:hover + .ru {
         visibility: visible;
-        background-color: #159ee3;
-        color: white;
+        background-color: $blue159;
+        color: $defaultWhite;
       }
     }
     .nav {
@@ -350,7 +352,7 @@ nav {
           65px 12px 0 12px,
           none,
           scroll,
-          #159ee3
+          $blue159
         );
         .rightside_nav,
         .leftside_nav {
@@ -360,10 +362,10 @@ nav {
             li {
               @include leftside_nav_li(0, none, 10px 15px 30px);
               a {
-                @include leftside_nav_a(none, white, 0 0 18px, 17px);
+                @include leftside_nav_a(none, $defaultWhite, 0 0 18px, 17px);
               }
               .bold_text {
-                @include leftside_nav_bold_text(24px, bold, white);
+                @include leftside_nav_bold_text(24px, bold, $defaultWhite);
               }
               &:hover {
                 text-decoration: underline;
@@ -382,7 +384,7 @@ nav {
         50%,
         20px,
         9%,
-        white,
+        $defaultWhite,
         none,
         11px,
         pointer,
@@ -390,7 +392,7 @@ nav {
       );
     }
     .icon-bar {
-      @include icon-bar(block, 6px 0, 26px, 2px, #159ee3);
+      @include icon-bar(block, 6px 0, 26px, 2px, $blue159);
     }
     .icon-bar {
       transition: all 0.7s ease;
@@ -398,7 +400,7 @@ nav {
     }
     .animated .icon-bar {
       z-index: 999999;
-      background-color: #159ee3;
+      background-color: $blue159;
     }
     .animated .top {
       transform: translateY(7px) rotateZ(45deg);
@@ -417,36 +419,23 @@ footer {
     .left_side {
       @include left_side(absolute, 570px, 22px);
       p {
-        @include left_side_p(rgba(0, 0, 0, 0.3), 14px, 500);
+        @include left_side_p($blackOpasity2, 14px, 500);
         a {
-          @include left_side_a(
-            inline-block,
-            rgba(175, 175, 175, 0.6),
-            13px,
-            500,
-            none
-          );
+          @include left_side_a(inline-block, $grayOpacty175, 13px, 500, none);
         }
       }
     }
     .right_side {
       @include right_side(absolute, 567px, 25px, 20px);
       p {
-        @include right_side_p(
-          14px,
-          24px,
-          500,
-          rgba(175, 175, 175, 0.6),
-          0,
-          100%
-        );
+        @include right_side_p(14px, 24px, 500, $grayOpacty175, 0, 100%);
       }
       ul {
         @include right_side_ul(center, 20px, center, 100%, 0);
         li {
           list-style: none;
           a {
-            @include right_side_a(none, rgba(175, 175, 175, 0.6));
+            @include right_side_a(none, $grayOpacty175);
           }
         }
       }
@@ -461,22 +450,22 @@ footer {
           50px,
           50px,
           50%,
-          white,
+          $defaultWhite,
           center,
           center,
           1.5rem
         );
         i {
-          color: #159ee3;
+          color: $blue159;
         }
       }
       .f_search {
         display: none;
       }
       .lemon_connect {
-        background-color: #159ee3;
+        background-color: $blue159;
         i {
-          color: white;
+          color: $defaultWhite;
         }
       }
       .scale_phone {

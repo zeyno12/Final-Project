@@ -158,6 +158,6 @@ vitamin.forEach((vitamin) => {
     let new_mikro = document.createElement("div");
     new_mikro.classList.add("col-lg-4");
     new_mikro.innerHTML = output_vitamin;
-    mikro.append(new_mikro);
+    mikro ? mikro.append(new_mikro) : null;
   }
 });

@@ -4,14 +4,14 @@
     margin-top: 2rem;
     margin-left: 4rem;
     a {
-      @include comeback__a(17px, 500, none, #0077b3);
+      @include comeback__a(17px, 500, none, $blue007);
     }
   }
   .header_text {
-    @include header_text(center, 36px, #159ee3, bold, 0 0 60px);
+    @include header_text(center, 36px, $blue159, bold, 0 0 60px);
   }
   .h_text {
-    @include h_text(#404040, 0 0 5px, 14px, 300);
+    @include h_text($gray40, 0 0 5px, 14px, 300);
   }
   .check_items {
     a {
@@ -19,13 +19,13 @@
       .check_cards {
         .card_img {
           img {
-            @include card_img(100%, cover, 5px, 1px solid lightgray);
+            @include card_img(100%, cover, 5px, 1px solid $lightBorder);
           }
         }
         .card_text {
           margin-top: 1rem;
           p {
-            @include left_side_p(#0077b3, 24px, bold);
+            @include left_side_p($blue007, 24px, bold);
           }
         }
       }

@@ -4,11 +4,11 @@
     margin-top: 2rem;
     margin-left: 4rem;
     a {
-      @include comeback__a(17px, 500, none, #0077b3);
+      @include comeback__a(17px, 500, none, $blue007);
     }
   }
   .header_text {
-    @include header_text(center, 36px, #159ee3, bold, 0 0 60px);
+    @include header_text(center, 36px, $blue159, bold, 0 0 60px);
   }
   ul {
     padding: 0;
@@ -19,8 +19,8 @@
         justify-content: space-between;
         align-items: center;
         @include accordion_doctor(
-          #159ee3,
-          white,
+          $blue159,
+          $defaultWhite,
           pointer,
           21px 60px 21px 35px,
           18px,
@@ -33,6 +33,10 @@
         );
         .acc_i_icon {
           transform: rotate(0deg);
+          &:hover {
+            transform: rotate(90deg);
+            transition: 1s ease-in-out;
+          }
         }
       }
       .panel_row {
@@ -47,10 +51,10 @@
           }
           .card_text {
             .blue {
-              @include nav_item_phone_p(0 0 8px, 13px, 500, #159ee3, 0);
+              @include nav_item_phone_p(0 0 8px, 13px, 500, $blue159, 0);
             }
             .gray {
-              @include search_i_icon(#7c7c7c, 13px);
+              @include search_i_icon($gray7c, 13px);
             }
           }
         }
@@ -61,9 +65,4 @@
 .active2 {
   height: auto !important;
   visibility: visible !important;
-}
-
-.rotate {
-  transform: rotate(90deg) !important;
-  transition: 0.3s ease-in-out !important;
 }

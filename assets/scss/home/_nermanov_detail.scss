@@ -1,19 +1,19 @@
 .accordion {
   .accordion-tabs {
-    @include accordion-tabs(#159ee3, 1px solid #cccccc, 5px);
+    @include accordion-tabs($blue159, 1px solid $lightBorder, 5px);
     .accordion-tab {
       @include acc_tab_second(
-        white,
+        $defaultWhite,
         10px,
-        #159ee3,
+        $blue159,
         1,
         none,
         pointer,
-        1px solid #cccccc
+        1px solid $lightBorder
       );
       &.accordion-active {
-        background: #159ee3;
-        color: white;
+        background: $blue159;
+        color: $defaultWhite;
       }
     }
   }
@@ -27,10 +27,10 @@
       .adress_items {
         padding: 5px 0px;
         h2 {
-          @include h_text(#159ee3, 0 0 30px, 24px, bold);
+          @include h_text($blue159, 0 0 30px, 24px, bold);
         }
         p {
-          @include search_i_icon(#5a5a5a, 14px);
+          @include search_i_icon($gray7c, 14px);
         }
         .cursor {
           cursor: pointer;
@@ -43,12 +43,12 @@
             height: 835px;
           }
           a {
-            @include right_side_a(none, gray);
+            @include right_side_a(none, $greyColor);
           }
         }
       }
       .tab_items {
-        @include tab_items(200px, 142px, #159ee3, 8px, pointer);
+        @include tab_items(200px, 142px, $blue159, 8px, pointer);
         .tab_img {
           @include main_flex(center, center);
           margin-top: 2rem;

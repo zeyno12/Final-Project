@@ -46,7 +46,7 @@
               0 17px 5px,
               13px,
               500,
-              #159ee3 !important,
+              $blue159 !important,
               0
             );
           }
@@ -55,7 +55,38 @@
           a {
             @include nav_item_phone_a(
               none,
-              #159ee3 !important,
+              $blue159 !important,
+              inline-block,
+              22px,
+              700
+            );
+            sub {
+              @include nav_item_phone_sub(inline-block, baseline, 16px);
+            }
+            i {
+              font-size: 20px;
+            }
+          }
+        }
+      }
+      .phone {
+        @include nav_item_phone(pointer, absolute, 20px, 20px, 15%, 999);
+        .phone_text {
+          p {
+            @include nav_item_phone_p(
+              0 17px 5px,
+              13px,
+              500,
+              $blue159 !important,
+              0
+            );
+          }
+        }
+        .number {
+          a {
+            @include nav_item_phone_a(
+              none,
+              $blue159 !important,
               inline-block,
               22px,
               700
@@ -70,13 +101,13 @@
         }
       }
       .btn-nav {
-        @include btn_nav_res(#159ee3, 30px, 18px);
+        @include btn_nav_res($blue159, 30px, 18px);
       }
       .icon-bar {
-        @include icon_bar_res(5px 3px, 21px, white);
+        @include icon_bar_res(5px 3px, 21px, $defaultWhite);
       }
       .animated .icon-bar {
-        background-color: white;
+        background-color: $defaultWhite;
       }
     }
   }
@@ -98,7 +129,7 @@
         .f_anket,
         .f_sual,
         .f_connect {
-          box-shadow: 7px 8px 9px -4px grey;
+          box-shadow: 7px 8px 9px -4px $greyColor;
         }
         .f_search {
           @include f_search_res(
@@ -107,15 +138,15 @@
             absolute,
             20px,
             999,
-            white,
-            #159ee3,
+            $defaultWhite,
+            $blue159,
             center,
             center,
             50%,
             -73px,
             57px,
             57px,
-            7px 8px 9px -4px grey
+            7px 8px 9px -4px $greyColor
           );
         }
       }

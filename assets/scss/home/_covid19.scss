@@ -3,7 +3,7 @@
   @include slider_page(
     330px,
     120%,
-    #f8fcfe,
+    $sliderColor,
     fixed,
     -10%,
     ellipse(100% 50% at 100% 50%),
@@ -14,7 +14,7 @@
     @include slider_page(
       330px,
       110%,
-      #eaf6fd,
+      $sliderColor2,
       fixed,
       -5%,
       ellipse(100% 50% at 100% 50%),
@@ -25,7 +25,7 @@
       @include slider_page(
         330px,
         100%,
-        #d5edfa,
+        $sliderColor3,
         fixed,
         -0%,
         ellipse(100% 50% at 100% 50%),
@@ -41,12 +41,12 @@
     margin-top: 8rem;
     margin-left: 4rem;
     a {
-      @include comeback__a(17px, 500, none, #0077b3);
+      @include comeback__a(17px, 500, none, $blue007);
     }
   }
   .tibbi_melumat_photo {
     .header_text {
-      @include header_text(center, 36px, #159ee3, bold, 0 0 60px);
+      @include header_text(center, 36px, $blue159, bold, 0 0 60px);
     }
 
     .photo_tibb {
@@ -58,15 +58,15 @@
   .text_covid {
     margin-top: 5rem;
     h3 {
-      @include h_text(#404040, 0 0 16px, 24px, 500);
+      @include h_text($gray40, 0 0 16px, 24px, 500);
     }
     p {
-      @include h_text(#2e2e2ec4, 0 0 5px, 13px, 400);
+      @include h_text($colorText, 0 0 5px, 13px, 400);
     }
     .lists_p {
-      @include h_text(#2e2e2ec4, 0 0 10px 25px, 15px, 500);
+      @include h_text($colorText, 0 0 10px 25px, 15px, 500);
       i {
-        color: #0077b3;
+        color: $blue007;
         font-size: 16px;
       }
     }
@@ -77,15 +77,9 @@
     @include end_text(space-between, 1.2rem, 0px 10px);
     .left_side {
       p {
-        @include left_side_p(rgba(0, 0, 0, 0.3), 14px, 500);
+        @include left_side_p($blackOpasity2, 14px, 500);
         a {
-          @include left_side_a(
-            inline-block,
-            rgba(175, 175, 175, 0.6),
-            13px,
-            500,
-            none
-          );
+          @include left_side_a(inline-block, $grayOpacty175, 13px, 500, none);
         }
       }
     }
@@ -93,21 +87,14 @@
       display: flex;
       gap: 20px;
       p {
-        @include right_side_p(
-          14px,
-          24px,
-          500,
-          rgba(175, 175, 175, 0.6),
-          0,
-          100%
-        );
+        @include right_side_p(14px, 24px, 500, $grayOpacty175, 0, 100%);
       }
       ul {
         @include right_side_ul(center, 20px, center, 100%, 0);
         li {
           list-style: none;
           a {
-            @include right_side_a(none, rgba(175, 175, 175, 0.6));
+            @include right_side_a(none, $grayOpacty175);
           }
         }
       }
@@ -124,23 +111,23 @@
         50px,
         50px,
         50%,
-        white,
+        $defaultWhite,
         center,
         center,
         1.5rem
       );
-      box-shadow: 7px 8px 9px -4px grey;
+      box-shadow: 7px 8px 9px -4px $defaultGray;
       i {
-        color: #159ee3;
+        color: $blue159;
       }
     }
     .f_search {
       display: none;
     }
     .lemon_connect {
-      background-color: #159ee3;
+      background-color: $blue159;
       i {
-        color: white;
+        color: $defaultWhite;
       }
     }
     .scale_phone {
@@ -148,22 +135,16 @@
     }
   }
 }
-.phone_second {
+.phone_seconds {
   @include nav_item_phone(pointer, absolute, 20px, 20px, 15%, 999);
   .phone_text {
     p {
-      @include nav_item_phone_p(0 17px 5px, 13px, 500, #159ee3 !important, 0);
+      @include nav_item_phone_p(0 17px 5px, 13px, 500, $blue159, 0);
     }
   }
   .number {
     a {
-      @include nav_item_phone_a(
-        none,
-        #159ee3 !important,
-        inline-block,
-        22px,
-        700
-      );
+      @include nav_item_phone_a(none, $blue159, inline-block, 22px, 700);
       sub {
         @include nav_item_phone_sub(inline-block, baseline, 16px);
       }

@@ -4,11 +4,11 @@
     margin-top: 2rem;
     margin-left: 4rem;
     a {
-      @include comeback__a(17px, 500, none, #0077b3);
+      @include comeback__a(17px, 500, none, $blue007);
     }
   }
   .header_text {
-    @include header_text(center, 36px, #159ee3, bold, 0 0 60px);
+    @include header_text(center, 36px, $blue159, bold, 0 0 60px);
   }
   .lab_card {
     padding: 8px;
@@ -19,27 +19,21 @@
     }
     .lab_items {
       h4 {
-        @include axtaris_items_h4(7px 0 12px, 500, 17px, 1.41, #404040);
+        @include axtaris_items_h4(7px 0 12px, 500, 17px, 1.41, $gray40);
       }
       p {
-        @include axtaris_items_h4(
-          0 0 15px,
-          300,
-          14px,
-          1.33,
-          rgba(39, 39, 39, 0.8)
-        );
+        @include axtaris_items_h4(0 0 15px, 300, 14px, 1.33, $blackOpasity39);
       }
       .lab_data {
         @include main_flex(space-between, center);
         .month {
           p {
-            @include search_i_icon(#7c7c7c, 15px);
+            @include search_i_icon($gray7c, 15px);
           }
         }
         .view {
           p {
-            @include search_i_icon(#7c7c7c, 12px);
+            @include search_i_icon($gray7c, 12px);
           }
         }
       }

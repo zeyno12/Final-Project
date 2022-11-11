@@ -291,6 +291,8 @@ data.forEach((data) => {
     let new_el = document.createElement("div");
     new_el.classList.add("col-lg-4");
     new_el.innerHTML = output;
-    ell.append(new_el);
+    if (ell) {
+      ell.append(new_el);
+    }
   }
 });

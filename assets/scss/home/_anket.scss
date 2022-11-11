@@ -4,11 +4,11 @@
     margin-top: 2rem;
     margin-left: 4rem;
     a {
-      @include comeback__a(17px, 500, none, #0077b3);
+      @include comeback__a(17px, 500, none, $blue007);
     }
   }
   .header_text {
-    @include header_text(center, 36px, #159ee3, bold, 0 0 60px);
+    @include header_text(center, 36px, $blue159, bold, 0 0 60px);
   }
   .anket_items {
     @include anket_items(
@@ -18,11 +18,11 @@
       stretch,
       flex-start,
       30px 0,
-      1px solid #dcdcdc
+      1px solid $lighhtCD
     );
     .anket_text {
       p {
-        @include nav_item_phone_p(auto, 20px, 500, #0077b3, 0);
+        @include nav_item_phone_p(auto, 20px, 500, $blue007, 0);
       }
     }
     .checkboxes {
@@ -44,11 +44,11 @@
                 center,
                 50px,
                 50px,
-                1px solid #e2e2e2,
+                1px solid $lighte2,
                 18px,
                 600,
-                #404040,
-                white,
+                $gray40,
+                $defaultWhite,
                 50%
               );
             }
@@ -64,10 +64,10 @@
         100%,
         50px,
         0 28px,
-        1px solid #c2c2c2,
+        1px solid $lightc2,
         "Gilroy",
         16px,
-        black,
+        $defautBlack,
         5px,
         16px 0px 11px 0px
       );
@@ -80,17 +80,17 @@
         100%,
         180px,
         10px 15px,
-        1px solid #c2c2c2,
+        1px solid $lightc2,
         "Gilroy",
         16px,
-        black,
+        $defautBlack,
         5px,
         1rem
       );
     }
     .end_btn_anket {
       button {
-        @include flexable_button(none, #10a8e4, white, 5px, 15px 40px);
+        @include flexable_button(none, $blue10a, $defaultWhite, 5px, 15px 40px);
       }
       display: flex;
       justify-content: flex-end;

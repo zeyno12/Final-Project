@@ -133,6 +133,8 @@ cavab.forEach((cavab) => {
     let new_elem = document.createElement("div");
     new_elem.classList.add("col-lg-4");
     new_elem.innerHTML = output_cavab;
-    elem.append(new_elem);
+    if (elem) {
+      elem.append(new_elem);
+    }
   }
 });

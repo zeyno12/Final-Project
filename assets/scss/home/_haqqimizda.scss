@@ -4,11 +4,11 @@
     margin-top: 2rem;
     margin-left: 4rem;
     a {
-      @include comeback__a(17px, 500, none, #0077b3);
+      @include comeback__a(17px, 500, none, $blue007);
     }
   }
   .header_text {
-    @include header_text(center, 36px, #159ee3, bold, 0 0 60px);
+    @include header_text(center, 36px, $blue159, bold, 0 0 60px);
   }
   .accordion-item__container {
     .rehberlik {
@@ -20,7 +20,7 @@
         }
       }
       .rehber_text {
-        @include text_items(15px, 1.75, #404040, 300);
+        @include text_items(15px, 1.75, $gray40, 300);
         p {
           padding: 0 0 25px;
         }
@@ -32,11 +32,11 @@
     .karyeras {
       padding: 10px;
       .kayyeratext {
-        @include text_items(15px, 1.75, #404040, 300);
+        @include text_items(15px, 1.75, $gray40, 300);
       }
       .karyeraimg {
         h3 {
-          @include header_text(center, 26px, #159ee3, bold, 0 0 50px);
+          @include header_text(center, 26px, $blue159, bold, 0 0 50px);
         }
       }
       .karyeimg {
@@ -57,7 +57,7 @@
         }
         .lisenziya_text {
           p {
-            @include text_content(18px, 1.44, #404040, bold, center);
+            @include text_content(18px, 1.44, $gray40, bold, center);
           }
         }
       }
@@ -65,7 +65,7 @@
     .history {
       padding: 10px;
       p {
-        @include text_items(15px, 1.75, #404040, 300);
+        @include text_items(15px, 1.75, $gray40, 300);
       }
       img {
         @include image_logo(cover, 100%);

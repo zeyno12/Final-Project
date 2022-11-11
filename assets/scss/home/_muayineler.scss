@@ -4,21 +4,21 @@
     margin-top: 2rem;
     margin-left: 4rem;
     a {
-      @include comeback__a(17px, 500, none, #0077b3);
+      @include comeback__a(17px, 500, none, $blue007);
     }
   }
   .header_text {
-    @include header_text(center, 36px, #159ee3, bold, 0 0 60px);
+    @include header_text(center, 36px, $blue159, bold, 0 0 60px);
   }
   .muayine_search {
     position: relative;
     input {
-      @include muayine_search_Input(80%, 17px, 1px solid lightgray, 4px);
+      @include muayine_search_Input(80%, 17px, 1px solid $lightBorder, 4px);
     }
     .abs {
       @include muayine_search_abs(absolute, 16px, 25%);
       i {
-        @include search_i_icon(gray, 16px);
+        @include search_i_icon($defaultGray, 16px);
       }
     }
   }
@@ -30,22 +30,17 @@
         18px,
         5px,
         none,
-        white,
-        rgb(21, 158, 227),
-        linear-gradient(
-          267deg,
-          rgba(21, 158, 227, 1) 31%,
-          rgba(47, 205, 243, 1) 91%
-        )
+        $defaultWhite,
+        $BoxColor,
+        $linerGradient
       );
     }
   }
   .muaiyine_content {
-    max-height: 722px;
-    @include muaiyine_content(white, 1px solid rgb(159, 159, 159), 5px);
+    @include muaiyine_content($defaultWhite, 1px solid $light159, 5px);
     .miayine_items {
       .accordion {
-        border-bottom: 1px solid #dcdcdc;
+        border-bottom: 1px solid $lightdc;
         .container {
           position: relative;
           margin: 10px 10px;
@@ -57,7 +52,7 @@
                 10px 0,
                 1.4rem,
                 600,
-                #0077b3,
+                $blue007,
                 pointer
               );
               &::before {
@@ -68,7 +63,7 @@
                   0,
                   solid,
                   6px 5.5px 0 5.5px,
-                  #0077b3 transparent,
+                  $blue007 transparent,
                   absolute,
                   calc(50% - 2px),
                   -12%
@@ -85,7 +80,7 @@
             }
             .artc_text {
               p {
-                @include artc_text(0, #0077b3, 1.2rem);
+                @include artc_text(0, $blue007, 1.2rem);
               }
             }
           }
@@ -95,7 +90,13 @@
               li {
                 padding: 15px 10px 10px 20px;
                 a {
-                  @include vertical_tab_deep_a(none, black, 16px, 400, 10px);
+                  @include vertical_tab_deep_a(
+                    none,
+                    $defautBlack,
+                    16px,
+                    400,
+                    10px
+                  );
                 }
                 img {
                   @include image_sizess(28px, 28px);
@@ -111,7 +112,7 @@
             }
             .label_deep {
               span {
-                @include left_side_p(#0077b3, 16px, 400);
+                @include left_side_p($blue007, 16px, 400);
               }
             }
           }
@@ -124,9 +125,9 @@
             padding: 10px !important;
             cursor: pointer;
             .accordion-button {
-              @include left_side_p(#0077b3, 1.4rem, 600);
+              @include left_side_p($blue007, 1.4rem, 600);
               &::after {
-                color: #0077b3;
+                color: $blue007;
               }
               &:not(&.collapsed) {
                 @include collapsed_acc;
@@ -148,7 +149,7 @@
               }
               .artc_text {
                 p {
-                  @include artc_text(0, #0077b3, 1.2rem);
+                  @include artc_text(0, $blue007, 1.2rem);
                 }
               }
             }
@@ -169,7 +170,7 @@
                     a {
                       @include vertical_tab_deep_aa(
                         none,
-                        black,
+                        $defautBlack,
                         16px,
                         400,
                         10px
@@ -203,7 +204,13 @@
                 li {
                   padding: 15px 10px 10px 20px;
                   a {
-                    @include vertical_tab_deep_aa(none, black, 16px, 400, 10px);
+                    @include vertical_tab_deep_aa(
+                      none,
+                      $defautBlack,
+                      16px,
+                      400,
+                      10px
+                    );
                   }
                 }
               }
@@ -216,37 +223,37 @@
       height: auto;
     }
     #vertical_tab_nav {
-      @include vertcal_item_nav(scroll, 715px, 0px 20px);
+      padding: 0 20px;
       .flexable {
         @include flexable_tab(
-          1px solid #dcdcdc,
+          1px solid $lightdc,
           15px 0px,
           center,
           space-between
         );
         .leftside {
           h4 {
-            @include left_side_p(#0077b3, 1.2rem, 600);
+            @include left_side_p($blue007, 1.2rem, 600);
           }
           p {
-            @include flexable_leftside(rgb(115, 115, 115), 1rem, 400, pointer);
+            @include flexable_leftside($light115, 1rem, 400, pointer);
           }
         }
         .rightside {
           span {
-            color: #0077b3;
+            color: $blue007;
           }
           button {
             @include flexable_button(
-              2px solid #0077b3,
+              2px solid $blue007,
               inherit,
-              #0077b3,
+              $blue007,
               30px,
               10px 15px
             );
           }
           i {
-            color: #0077b3;
+            color: $blue007;
           }
         }
       }

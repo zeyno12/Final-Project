@@ -233,6 +233,6 @@ simptom.forEach((simptom) => {
     let new_simptomss = document.createElement("div");
     new_simptomss.classList.add("col-lg-4");
     new_simptomss.innerHTML = output_simptom;
-    simptomss.append(new_simptomss);
+    simptomss ? simptomss.append(new_simptomss) : null;
   }
 });

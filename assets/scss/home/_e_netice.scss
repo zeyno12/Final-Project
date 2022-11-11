@@ -4,17 +4,17 @@
     margin-top: 2rem;
     margin-left: 4rem;
     a {
-      @include comeback__a(17px, 500, none, #0077b3);
+      @include comeback__a(17px, 500, none, $blue007);
     }
   }
   .netice {
     form {
       @include flex_items(center, center, column);
       input {
-        @include netice_input(10px, 50%, 10px, 10px, 1px solid gray);
+        @include netice_input(10px, 50%, 10px, 10px, 1px solid $defaultGray);
       }
       button {
-        @include netice_button(none, 12px 40px, 10px, #ffcc00, 15px);
+        @include netice_button(none, 12px 40px, 10px, $orangeBtn, 15px);
       }
     }
   }

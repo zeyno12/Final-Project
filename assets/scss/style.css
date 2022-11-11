@@ -9,7 +9,7 @@
 }
 
 ::-webkit-scrollbar-track {
-  background-color: #f6f6f6;
+  background-color: white;
 }
 
 #Main_serch {
@@ -379,7 +379,7 @@ nav .nav_items .phone {
   top: 20px;
   font-size: 20px;
   right: 15%;
-  z-index: 999999;
+  z-index: 9999;
 }
 
 nav .nav_items .phone .phone_text p {
@@ -1155,7 +1155,7 @@ footer .end_text .connection_items .scale_phone {
           animation: phonescale 1s ease-in-out infinite;
 }
 
-.phone_second {
+.phone_seconds {
   cursor: pointer;
   position: absolute;
   top: 20px;
@@ -1164,29 +1164,29 @@ footer .end_text .connection_items .scale_phone {
   z-index: 999;
 }
 
-.phone_second .phone_text p {
+.phone_seconds .phone_text p {
   padding: 0 17px 5px;
   font-size: 13px;
   font-weight: 500;
-  color: #159ee3 !important;
+  color: #159ee3;
   margin: 0;
 }
 
-.phone_second .number a {
+.phone_seconds .number a {
   text-decoration: none;
-  color: #159ee3 !important;
+  color: #159ee3;
   display: inline-block;
   font-size: 22px;
   font-weight: 700;
 }
 
-.phone_second .number a sub {
+.phone_seconds .number a sub {
   display: inline-block;
   vertical-align: baseline;
   font-size: 16px;
 }
 
-.phone_second .number a i {
+.phone_seconds .number a i {
   font-size: 20px;
 }
 
@@ -1255,6 +1255,13 @@ footer .end_text .connection_items .scale_phone {
           transform: rotate(0deg);
 }
 
+#Hekimler ul li .accordion .acc_i_icon:hover {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+}
+
 #Hekimler ul li .panel_row {
   height: 0px;
   display: -webkit-box !important;
@@ -1292,13 +1299,6 @@ footer .end_text .connection_items .scale_phone {
 .active2 {
   height: auto !important;
   visibility: visible !important;
-}
-
-.rotate {
-  -webkit-transform: rotate(90deg) !important;
-          transform: rotate(90deg) !important;
-  -webkit-transition: 0.3s ease-in-out !important;
-  transition: 0.3s ease-in-out !important;
 }
 
 #Onlayn_qeydiyyat {
@@ -1401,7 +1401,7 @@ footer .end_text .connection_items .scale_phone {
 }
 
 #Onlayn_qeydiyyat .form_item .end_label label {
-  color: #737373;
+  color: #a9a9a978;
   font-size: 14px;
   font-weight: 300;
 }
@@ -1546,7 +1546,7 @@ footer .end_text .connection_items .scale_phone {
   display: -ms-flexbox;
   display: flex;
   background: #159ee3;
-  border: 1px solid #cccccc;
+  border: 1px solid lightgray;
   border-radius: 5px;
 }
 
@@ -1559,7 +1559,7 @@ footer .end_text .connection_items .scale_phone {
           flex: 1;
   border: none;
   cursor: pointer;
-  border-left: 1px solid #cccccc;
+  border-left: 1px solid lightgray;
 }
 
 .accordion .accordion-tabs .accordion-tab:hover {
@@ -1599,7 +1599,7 @@ footer .end_text .connection_items .scale_phone {
 }
 
 .accordion-item__container .adress_items p {
-  color: #5a5a5a;
+  color: #7c7c7c;
   font-size: 14px;
 }
 
@@ -1614,7 +1614,7 @@ footer .end_text .connection_items .scale_phone {
 
 .accordion-item__container .mapouter .gmap_canvas a {
   text-decoration: none;
-  color: gray;
+  color: lightslategrey;
 }
 
 .accordion-item__container .mapouter .gmap_canvas a:hover {
@@ -1834,7 +1834,7 @@ footer .end_text .connection_items .scale_phone {
 }
 
 #Müayinələr .muayine_search .abs i {
-  color: gray;
+  color: grey;
   font-size: 16px;
 }
 
@@ -1856,12 +1856,12 @@ footer .end_text .connection_items .scale_phone {
   border-radius: 5px;
   border: none;
   color: white;
-  background: #159ee3;
-  background: linear-gradient(267deg, #159ee3 31%, #2fcdf3 91%);
+  background: #0fc8f0;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(27%, #0fc8f0), color-stop(86%, #149de2));
+  background: linear-gradient(180deg, #0fc8f0 27%, #149de2 86%);
 }
 
 #Müayinələr .muaiyine_content {
-  max-height: 722px;
   background-color: white;
   border: 1px solid #9f9f9f;
   border-radius: 5px;
@@ -2109,9 +2109,7 @@ footer .end_text .connection_items .scale_phone {
 }
 
 #Müayinələr .muaiyine_content #vertical_tab_nav {
-  overflow-y: scroll;
-  max-height: 715px;
-  padding: 0px 20px;
+  padding: 0 20px;
 }
 
 #Müayinələr .muaiyine_content #vertical_tab_nav .flexable {
@@ -2201,7 +2199,7 @@ footer .end_text .connection_items .scale_phone {
   width: 50%;
   padding: 10px;
   border-radius: 10px;
-  border: 1px solid gray;
+  border: 1px solid grey;
 }
 
 #E-nəticə .netice form button {
@@ -2571,6 +2569,36 @@ footer .end_text .connection_items .scale_phone {
   nav .nav_items .phone_seconds .number a i {
     font-size: 20px;
   }
+  nav .nav_items .phone {
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    font-size: 20px;
+    right: 15%;
+    z-index: 999;
+  }
+  nav .nav_items .phone .phone_text p {
+    padding: 0 17px 5px;
+    font-size: 13px;
+    font-weight: 500;
+    color: #159ee3 !important;
+    margin: 0;
+  }
+  nav .nav_items .phone .number a {
+    text-decoration: none;
+    color: #159ee3 !important;
+    display: inline-block;
+    font-size: 22px;
+    font-weight: 700;
+  }
+  nav .nav_items .phone .number a sub {
+    display: inline-block;
+    vertical-align: baseline;
+    font-size: 16px;
+  }
+  nav .nav_items .phone .number a i {
+    font-size: 20px;
+  }
   nav .nav_items .btn-nav {
     background-color: #159ee3;
     top: 30px;
@@ -2605,8 +2633,8 @@ footer .end_text .connection_items .scale_phone {
   footer .end_text .connection_items .f_anket,
   footer .end_text .connection_items .f_sual,
   footer .end_text .connection_items .f_connect {
-    -webkit-box-shadow: 7px 8px 9px -4px grey;
-            box-shadow: 7px 8px 9px -4px grey;
+    -webkit-box-shadow: 7px 8px 9px -4px lightslategrey;
+            box-shadow: 7px 8px 9px -4px lightslategrey;
   }
   footer .end_text .connection_items .f_search {
     display: block;
@@ -2629,8 +2657,8 @@ footer .end_text .connection_items .scale_phone {
     left: -73px;
     width: 57px;
     height: 57px;
-    -webkit-box-shadow: 7px 8px 9px -4px grey;
-            box-shadow: 7px 8px 9px -4px grey;
+    -webkit-box-shadow: 7px 8px 9px -4px lightslategrey;
+            box-shadow: 7px 8px 9px -4px lightslategrey;
   }
   #Hekimler .panel .card_text {
     text-align: center;
@@ -3200,7 +3228,7 @@ footer .end_text .connection_items .scale_phone {
   font-weight: 300;
   font-size: 14px;
   line-height: 1.33;
-  color: rgba(39, 39, 39, 0.8);
+  color: \$blackOpasity39;
 }
 
 #Simptomlar .lab_card .lab_items .lab_data {
@@ -3512,7 +3540,7 @@ footer .end_text .connection_items .scale_phone {
   line-height: 1.33;
   font-weight: 500;
   letter-spacing: -0.01em;
-  color: #4a5a69;
+  color: #404040;
   text-decoration: none;
   position: relative;
 }
@@ -3530,7 +3558,7 @@ footer .end_text .connection_items .scale_phone {
 
 #Suallar .accordion_sual .container_sual .content_sual {
   line-height: 2;
-  color: #4a5a69;
+  color: #404040;
   position: relative;
   height: 0;
   font-size: 16px;

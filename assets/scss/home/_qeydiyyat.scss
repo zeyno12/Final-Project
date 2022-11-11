@@ -4,46 +4,46 @@
     margin-top: 3rem;
     margin-left: 4rem;
     a {
-      @include comeback__a(17px, 500, none, #0077b3);
+      @include comeback__a(17px, 500, none, $blue007);
     }
   }
   .header_text {
-    @include header_text(center, 33px, #159ee3, bold, 0 0 60px);
+    @include header_text(center, 33px, $blue159, bold, 0 0 60px);
   }
   .form_item {
     .form_text {
       input {
-        @include form_text_input(14px, 5px, 1px solid #a9a9a978);
+        @include form_text_input(14px, 5px, 1px solid $lighta9);
       }
     }
     .select {
       label {
-        @include leftside_nav_bold_text(15px, 300, #c2c2c2);
+        @include leftside_nav_bold_text(15px, 300, $lightc2);
       }
       select {
-        @include select(13px 15px, 100%, 5px, 1px solid #a9a9a978);
+        @include select(13px 15px, 100%, 5px, 1px solid $lighta9);
       }
     }
     .email_tel,
     .text2 {
       input {
         margin-top: 1rem;
-        @include muayine_search_Input(100%, 13px 3px, 1px solid #a9a9a978, 5px);
+        @include muayine_search_Input(100%, 13px 3px, 1px solid $lighta9, 5px);
       }
     }
     .radio,
     .file2 {
       label {
-        @include label_span(#c2c2c2, 300);
+        @include label_span($lightc2, 300);
       }
       span {
-        @include label_span(#c2c2c2, 400);
+        @include label_span($lightc2, 400);
       }
       button {
         @include flexable_button(
           none,
-          #10a8e4,
-          white,
+          $blue10a,
+          $defaultWhite,
           5px,
           10px 25px 10px 10px
         );
@@ -55,10 +55,10 @@
     }
     .radio2 {
       label {
-        @include label_span(#c2c2c2, 300);
+        @include label_span($lightc2, 300);
       }
       p {
-        @include label_span(#c2c2c2, 400);
+        @include label_span($lightc2, 400);
       }
     }
     .qeyd {
@@ -68,12 +68,12 @@
     }
     .end_label {
       label {
-        @include left_side_p(#737373, 14px, 300);
+        @include left_side_p($lighta9, 14px, 300);
       }
     }
     .end_button {
       button {
-        @include flexable_button(none, #10a8e4, white, 5px, 15px 50px);
+        @include flexable_button(none, $blue10a, $defaultWhite, 5px, 15px 50px);
       }
       display: flex;
       justify-content: flex-end;
